@@ -1,3 +1,35 @@
+@mixin container() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $container-width-default;
+}
+
+@mixin text($fontSize, $fontWeight, $lineHeight) {
+  font-size: $fontSize;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: white;
+}
+
+@mixin for-type($type) {
+  @if $type==mobile {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $type==tablet {
+    @media (max-width: 1360px) {
+      @content;
+    }
+  } @else if $type==desktop {
+    @media (min-width: 1361px) {
+      @content;
+    }
+  }
+}
+
 @mixin toast($color) {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 2px;
@@ -33,5 +65,98 @@
     width: 100%;
     bottom: 0px;
     left: 0;
+  }
+}
+
+@mixin input($width) {
+  width: $width;
+  position: relative;
+  .inputLabel {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    left: 6px;
+    position: absolute;
+    bottom: 8px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  .inputField {
+    color: white;
+    width: 100%;
+    padding: 4px 27px 4px 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    outline: none;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #807e7e;
+    transition: 0.3s;
+    background-color: transparent;
+
+    &::placeholder {
+      transition: 0.3s;
+      color: transparent;
+    }
+
+    &:focus {
+      border-bottom: 3px solid $purple-color-web;
+    }
+    &:not(:placeholder-shown),
+    &:focus {
+      border-bottom: 3px solid $purple-color-web;
+      ~ .inputLabel {
+        padding: 2px 2px;
+        color: $purple-color-web;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+        left: 4px;
+        display: inline-block;
+        position: absolute;
+        bottom: 28px;
+        transition: 0.3s;
+        background-color: $back-color-web;
+      }
+      padding-bottom: 6px;
+      font-weight: 700;
+      border-width: 3px;
+      border-image: linear-gradient(
+        to right,
+        $purple-color-web,
+        $pink-color-web
+      );
+      border-image-slice: 1;
+    }
+  }
+}
+
+@mixin buttonMain($width,$height) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  background-color: $button-purple-color;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: $border-radius-default;
+  @include text(16px, 800, 140%);
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: $width;
+  height: $height;
+  .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  &:hover {
+    scale: 1.02;
+  }
+  &:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset,
+      rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
   }
 }

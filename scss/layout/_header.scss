@@ -1,0 +1,275 @@
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 20px;
+    margin-block: 5px;
+    background-color: rgba(22, 5, 44, 0.788);
+    
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: rgba(214, 142, 255, 0.781);
+}
+
+* {
+
+  box-sizing: border-box;
+}
+body {
+  background-color: $back-color-web;
+}
+header {
+  background-color: $top-color-web;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .boxTop {
+    @include container();
+    .boxContent {
+      padding: 10px 0px;
+      height: 66px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .logo {
+          position: absolute;
+          height: 100px;
+          top: 0px;
+          left: -20px;
+        }
+        .mySearchForm {
+          margin-left: 80px;
+          @include input(400px);
+          .searchIcon {
+            height: 20px;
+            opacity: 0.8;
+            position: absolute;
+            bottom: 1px;
+            right: 5px;
+            bottom: 8px;
+            cursor: pointer;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .myBtn {
+          @include buttonMain(104px, 37px);
+        }
+
+        .accountHolder {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 3px;
+          background-color: transparent;
+          border-radius: 20px;
+          cursor: pointer;
+          padding: 4px;
+          transition: 0.2s;
+          position: relative;
+          .pfp {
+            height: 33px;
+            width: 33px;
+            border-radius: 50%;
+            border: 2px solid $purple-color-web;
+          }
+          .chevronAcc {
+            width: 14px;
+            height: 14px;
+            opacity: 0.6;
+            transition: 0.1s;
+          }
+          &:hover {
+            .chevronAcc {
+              opacity: 1;
+            }
+            background-color: rgba(137, 43, 226, 0.3);
+          }
+          .accountContent {
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            padding: 20px;
+            background-color: $grey-color-web;
+            border-radius: $border-radius-default;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+              0 3px 6px rgba(0, 0, 0, 0.23);
+            flex-direction: column;
+            border: 2px solid $purple-color-web;
+            display: none;
+            transition: 0.1s;
+            &.active {
+              display: flex;
+            }
+            .accountLine {
+              text-decoration: none;
+              &:not(:first-child) {
+                margin-top: 10px;
+              }
+              width: max-content;
+
+              margin-bottom: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+              gap: 10px;
+              > p {
+                @include text(16px, 600, 120%);
+              }
+              > img {
+                height: 22px;
+              }
+            }
+
+            .divider {
+              background-color: rgb(95, 95, 95);
+              height: 1px;
+              width: 120%;
+              align-self: center;
+            }
+          }
+        }
+
+        .basketHolder {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 3px;
+          background-color: transparent;
+          border-radius: 20px;
+          cursor: pointer;
+          padding: 4px;
+          transition: 0.2s;
+          position: relative;
+          .basketIcon {
+            width: 30px;
+            height: 30px;
+          }
+          .chevronBasket {
+            width: 14px;
+            height: 14px;
+            opacity: 0.6;
+            transition: 0.1s;
+          }
+          &:hover {
+            .chevronBasket {
+              opacity: 1;
+            }
+            background-color: rgba(137, 43, 226, 0.3);
+          }
+          .basketContent {
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            padding: 20px;
+            background-color: $grey-color-web;
+            border-radius: $border-radius-default;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+              0 3px 6px rgba(0, 0, 0, 0.23);
+            flex-direction: column;
+            border: 2px solid $purple-color-web;
+            display: none;
+            transition: 0.1s;
+            max-height: 437px;
+            overflow: auto;
+            &.active {
+              display: flex;
+            }
+            .oneBeat {
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+              &:not(:first-child) {
+                margin-top: 16px;
+              }
+              width: max-content;
+              margin-bottom: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              .beatDetail {
+                text-decoration: none;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 10px;
+                width: 300px;
+                .title {
+                  @include text(20px, 600, 40px);
+                  height: 40px;
+                  width: fit-content;
+                  opacity: 0.8;
+                  &:hover {
+                    opacity: 1;
+                  }
+                }
+                overflow: hidden;
+                .beatCover {
+                   
+                  height: 40px;
+                  border: 1px solid transparent;
+                  transition: 0.2s;
+                  &:hover {
+                    border: 1px solid $purple-color-web;
+                  }
+                }
+              }
+              .price {
+                @include text(14px, 800, 40px);
+                cursor: text;
+              }
+              .removeBasket {
+                .ex {
+                  transform: rotate(45deg);
+                  transition: 0.3s;
+                  &:hover{
+                  transform: rotate(225deg);
+
+                  }
+                }
+              }
+            }
+
+            .divider {
+              background-color: rgba(95, 95, 95, 0.445);
+              height: 2px;
+              width: 100%;
+              align-self: center;
+            }
+            .checkout {
+              margin-top: 16px;
+              @include buttonMain(100%, 37px);
+              padding: 10px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+nav {
+  background-color: $grey-color-web;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .boxBottom {
+    @include container();
+    .bottomBoxContent {
+      padding: 10px 30px;
+      height: 40px;
+      width: 100%;
+    }
+  }
+}

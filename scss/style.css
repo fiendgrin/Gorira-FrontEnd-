@@ -1,0 +1,754 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+@keyframes toastSlide {
+  80% {
+    left: -15px;
+  }
+  90% {
+    left: 15px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes toastTimer {
+  100% {
+    width: 0px;
+  }
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  margin-block: 5px;
+  background-color: rgba(22, 5, 44, 0.788);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(214, 142, 255, 0.781);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0e10;
+}
+
+header {
+  background-color: rgb(8, 8, 8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .boxTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+}
+header .boxTop .boxContent {
+  padding: 10px 0px;
+  height: 66px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .boxTop .boxContent .left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header .boxTop .boxContent .left .logo {
+  position: absolute;
+  height: 100px;
+  top: 0px;
+  left: -20px;
+}
+header .boxTop .boxContent .left .mySearchForm {
+  margin-left: 80px;
+  width: 400px;
+  position: relative;
+}
+header .boxTop .boxContent .left .mySearchForm .inputLabel {
+  color: #807e7e;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  left: 6px;
+  position: absolute;
+  bottom: 8px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+header .boxTop .boxContent .left .mySearchForm .inputField {
+  color: white;
+  width: 100%;
+  padding: 4px 27px 4px 5px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  outline: none;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #807e7e;
+  transition: 0.3s;
+  background-color: transparent;
+}
+header .boxTop .boxContent .left .mySearchForm .inputField::-moz-placeholder {
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  color: transparent;
+}
+header .boxTop .boxContent .left .mySearchForm .inputField::placeholder {
+  transition: 0.3s;
+  color: transparent;
+}
+header .boxTop .boxContent .left .mySearchForm .inputField:focus {
+  border-bottom: 3px solid #8c01cf;
+}
+header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder-shown) {
+  border-bottom: 3px solid #8c01cf;
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #8c01cf, #d9a5ef);
+  border-image-slice: 1;
+}
+header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-shown), header .boxTop .boxContent .left .mySearchForm .inputField:focus {
+  border-bottom: 3px solid #8c01cf;
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #8c01cf, #d9a5ef);
+     border-image: linear-gradient(to right, #8c01cf, #d9a5ef);
+  border-image-slice: 1;
+}
+header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder-shown) ~ .inputLabel {
+  padding: 2px 2px;
+  color: #8c01cf;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  left: 4px;
+  display: inline-block;
+  position: absolute;
+  bottom: 28px;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #0e0e10;
+}
+header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-shown) ~ .inputLabel, header .boxTop .boxContent .left .mySearchForm .inputField:focus ~ .inputLabel {
+  padding: 2px 2px;
+  color: #8c01cf;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  left: 4px;
+  display: inline-block;
+  position: absolute;
+  bottom: 28px;
+  transition: 0.3s;
+  background-color: #0e0e10;
+}
+header .boxTop .boxContent .left .mySearchForm .searchIcon {
+  height: 20px;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 1px;
+  right: 5px;
+  bottom: 8px;
+  cursor: pointer;
+}
+header .boxTop .boxContent .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .boxTop .boxContent .right .myBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 104px;
+  height: 37px;
+}
+header .boxTop .boxContent .right .myBtn .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+header .boxTop .boxContent .right .myBtn:hover {
+  scale: 1.02;
+}
+header .boxTop .boxContent .right .myBtn:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+header .boxTop .boxContent .right .accountHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+header .boxTop .boxContent .right .accountHolder .pfp {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  border: 2px solid #8c01cf;
+}
+header .boxTop .boxContent .right .accountHolder .chevronAcc {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+  transition: 0.1s;
+}
+header .boxTop .boxContent .right .accountHolder:hover {
+  background-color: rgba(137, 43, 226, 0.3);
+}
+header .boxTop .boxContent .right .accountHolder:hover .chevronAcc {
+  opacity: 1;
+}
+header .boxTop .boxContent .right .accountHolder .accountContent {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  padding: 20px;
+  background-color: #252425;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  flex-direction: column;
+  border: 2px solid #8c01cf;
+  display: none;
+  transition: 0.1s;
+}
+header .boxTop .boxContent .right .accountHolder .accountContent.active {
+  display: flex;
+}
+header .boxTop .boxContent .right .accountHolder .accountContent .accountLine {
+  text-decoration: none;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+header .boxTop .boxContent .right .accountHolder .accountContent .accountLine:not(:first-child) {
+  margin-top: 10px;
+}
+header .boxTop .boxContent .right .accountHolder .accountContent .accountLine > p {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 120%;
+  color: white;
+}
+header .boxTop .boxContent .right .accountHolder .accountContent .accountLine > img {
+  height: 22px;
+}
+header .boxTop .boxContent .right .accountHolder .accountContent .divider {
+  background-color: rgb(95, 95, 95);
+  height: 1px;
+  width: 120%;
+  align-self: center;
+}
+header .boxTop .boxContent .right .basketHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+header .boxTop .boxContent .right .basketHolder .basketIcon {
+  width: 30px;
+  height: 30px;
+}
+header .boxTop .boxContent .right .basketHolder .chevronBasket {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+  transition: 0.1s;
+}
+header .boxTop .boxContent .right .basketHolder:hover {
+  background-color: rgba(137, 43, 226, 0.3);
+}
+header .boxTop .boxContent .right .basketHolder:hover .chevronBasket {
+  opacity: 1;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  padding: 20px;
+  background-color: #252425;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  flex-direction: column;
+  border: 2px solid #8c01cf;
+  display: none;
+  transition: 0.1s;
+  max-height: 437px;
+  overflow: auto;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent.active {
+  display: flex;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat:not(:first-child) {
+  margin-top: 16px;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail {
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  overflow: hidden;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail .title {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+  color: white;
+  height: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 0.8;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail .title:hover {
+  opacity: 1;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail .beatCover {
+  height: 40px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail .beatCover:hover {
+  border: 1px solid #8c01cf;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .price {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 40px;
+  color: white;
+  cursor: text;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .removeBasket .ex {
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .removeBasket .ex:hover {
+  transform: rotate(225deg);
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .divider {
+  background-color: rgba(95, 95, 95, 0.445);
+  height: 2px;
+  width: 100%;
+  align-self: center;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .checkout {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 100%;
+  height: 37px;
+  padding: 10px;
+  text-decoration: none;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .checkout .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .checkout:hover {
+  scale: 1.02;
+}
+header .boxTop .boxContent .right .basketHolder .basketContent .checkout:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+
+nav {
+  background-color: #252425;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .boxBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+}
+nav .boxBottom .bottomBoxContent {
+  padding: 10px 30px;
+  height: 40px;
+  width: 100%;
+}
+
+#toastBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  overflow: hidden;
+}
+#toastBox .invalid {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 2px;
+  background-color: white;
+  width: 250px;
+  height: 60px;
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 140%;
+  color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 14px;
+  justify-content: flex-start;
+  gap: 10px;
+  position: relative;
+  left: calc(100% + 30px);
+}
+#toastBox .invalid .imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+}
+#toastBox .invalid .imageBox > img {
+  height: 25px;
+}
+#toastBox .invalid::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: #ff0015;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+}
+#toastBox .success {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 2px;
+  background-color: white;
+  width: 250px;
+  height: 60px;
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 140%;
+  color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 14px;
+  justify-content: flex-start;
+  gap: 10px;
+  position: relative;
+  left: calc(100% + 30px);
+}
+#toastBox .success .imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+}
+#toastBox .success .imageBox > img {
+  height: 25px;
+}
+#toastBox .success::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: #4fc232;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+}
+#toastBox .animated {
+  animation: toastSlide 0.5s ease-out forwards;
+}
+#toastBox .animated::after {
+  animation: toastTimer 1.5s linear 0.5s forwards;
+}
+
+@media (max-width: 1360px) {
+  #toastBox {
+    gap: 12px;
+    right: 25px;
+    top: 25px;
+  }
+  #toastBox .invalid {
+    width: 200px;
+    height: 55px;
+    font-size: 12px;
+    padding: 0px 0px 0px 12px;
+    gap: 10px;
+    left: calc(100% + 25px);
+  }
+  #toastBox .invalid .imageBox > img {
+    height: 20px;
+  }
+  #toastBox .invalid::after {
+    height: 3px;
+  }
+  #toastBox .success {
+    width: 200px;
+    height: 55px;
+    font-size: 12px;
+    padding: 0px 0px 0px 12px;
+    gap: 10px;
+    left: calc(100% + 25px);
+  }
+  #toastBox .success .imageBox > img {
+    height: 20px;
+  }
+  #toastBox .success::after {
+    height: 3px;
+  }
+}
+@media (max-width: 768px) {
+  #toastBox {
+    gap: 8px;
+    right: 10px;
+    top: 10px;
+  }
+  #toastBox .invalid {
+    height: 45px;
+    font-size: 12px;
+    padding: 0px 0px 0px 2px;
+    gap: 10px;
+    left: calc(100% + 25px);
+  }
+  #toastBox .invalid .imageBox > img {
+    height: 18px;
+  }
+  #toastBox .invalid::after {
+    height: 2px;
+  }
+  #toastBox .success {
+    height: 45px;
+    font-size: 12px;
+    padding: 0px 0px 0px 2px;
+    gap: 10px;
+    left: calc(100% + 25px);
+  }
+  #toastBox .success .imageBox > img {
+    height: 18px;
+  }
+  #toastBox .success::after {
+    height: 2px;
+  }
+}
