@@ -1,7 +1,7 @@
 #homeMain {
   position: relative;
   background-color: $back-color-web;
-  
+
   .swiper {
     width: 100%;
     height: 700px;
@@ -11,17 +11,25 @@
       .swiper-slide {
         position: relative;
         .gradient {
-            box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.986) inset;
-            background: linear-gradient(
-              180deg,
-              rgba(162, 89, 255, 0) 0%,
-              $back-color-web 100%
+          background: linear-gradient(
+            180deg,
+            rgba(162, 89, 255, 0) 0%,
+            $back-color-web 100%
             );
             z-index: 2;
             height: 700px;
             width: 100%;
             position: absolute;
+            box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.986) inset;
           }
+          .slidebtn {
+            @include buttonMain(200px, 50px);
+            display: flex;
+            position: absolute;
+          top: 70%;
+          right: 10%;
+          z-index: 3;
+        }
         .slidetext {
           top: 20%;
           left: 10%;
@@ -45,6 +53,63 @@
         }
       }
     }
-
   }
+
+
+  @include for-type(tablet){
+    .swiper {
+      height: 650px;
+  
+      .swiper-wrapper {
+        .swiper-slide {
+          .gradient {
+            height: 650px;
+          }
+          .slidebtn {
+            width: 180px;
+            height: 45px;
+          }
+          .slidetext {
+            width: 550px;
+            height: 400px;
+            overflow: hidden;
+            @include text(70px, 800, 100%);
+          }
+          img {
+            height: 650px;
+          }
+        }
+      }
+    }
+  }
+
+  @include for-type(mobile){
+    .swiper {
+      height: 500px;
+  
+      .swiper-wrapper {
+        .swiper-slide {
+          .gradient {
+            height: 500px;
+          }
+          .slidebtn {
+            width: 100px;
+            height: 40px;
+          }
+          .slidetext {
+            width: 350px;
+            height: 250px;
+            overflow: hidden;
+            @include text(50px, 600, 100%);
+          }
+          img {
+            height: 650px;
+          }
+        }
+      }
+    }
+  }
+
+
+
 }

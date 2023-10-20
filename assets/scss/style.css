@@ -1535,12 +1535,120 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   position: relative;
 }
 #homeMain .swiper .swiper-wrapper .swiper-slide .gradient {
-  box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.986) inset;
   background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #0e0e10 100%);
   z-index: 2;
   height: 700px;
   width: 100%;
   position: absolute;
+  box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.986) inset;
+}
+#homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  z-index: 3;
+}
+#homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn:hover {
+  scale: 1.02;
+}
+#homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 200px;
+    height: 50px;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn:hover {
+    scale: 1.02;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 200px;
+    height: 50px;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn:hover {
+    scale: 1.02;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
 }
 #homeMain .swiper .swiper-wrapper .swiper-slide .slidetext {
   top: 20%;
@@ -1568,4 +1676,56 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
      object-fit: cover;
   height: 700px;
   width: 100%;
+}
+@media (max-width: 1359px) {
+  #homeMain .swiper {
+    height: 650px;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .gradient {
+    height: 650px;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn {
+    width: 180px;
+    height: 45px;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidetext {
+    width: 550px;
+    height: 400px;
+    overflow: hidden;
+    font-size: 70px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide img {
+    height: 650px;
+  }
+}
+@media (max-width: 768px) {
+  #homeMain .swiper {
+    height: 500px;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .gradient {
+    height: 500px;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidebtn {
+    width: 100px;
+    height: 40px;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide .slidetext {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    font-size: 50px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain .swiper .swiper-wrapper .swiper-slide img {
+    height: 650px;
+  }
 }

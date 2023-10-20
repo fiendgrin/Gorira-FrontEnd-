@@ -71,3 +71,8 @@ window.addEventListener("resize", () => {
     navBar.style.display = "flex";
   }
 });
+
+
+  if (window.innerWidth <= 768) {
+    navBar.style.display = "none";
+  } 
