@@ -176,6 +176,7 @@ body {
 }
 
 header {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: rgb(8, 8, 8);
   display: flex;
   justify-content: center;
@@ -201,11 +202,15 @@ header .boxTop .boxContent .left {
   justify-content: start;
   align-items: center;
 }
+header .boxTop .boxContent .left .burger {
+  display: none;
+}
 header .boxTop .boxContent .left .logo {
   position: absolute;
   height: 100px;
   top: 0px;
   left: -20px;
+  z-index: 1;
 }
 header .boxTop .boxContent .left .mySearchForm {
   margin-left: 80px;
@@ -292,6 +297,172 @@ header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-show
   transition: 0.3s;
   background-color: #0e0e10;
 }
+@media (max-width: 1359px) {
+  header .boxTop .boxContent .left .mySearchForm .inputLabel {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    left: 6px;
+    position: absolute;
+    bottom: 8px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField {
+    color: white;
+    width: 100%;
+    padding: 4px 20px 4px 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    outline: none;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #807e7e;
+    transition: 0.3s;
+    background-color: transparent;
+    height: 30px;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField::-moz-placeholder {
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    color: transparent;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField::placeholder {
+    transition: 0.3s;
+    color: transparent;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:focus {
+    border-bottom: 3px solid #8c01cf;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder-shown) {
+    border-bottom: 3px solid #8c01cf;
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #8c01cf, #d9a5ef);
+    border-image-slice: 1;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-shown), header .boxTop .boxContent .left .mySearchForm .inputField:focus {
+    border-bottom: 3px solid #8c01cf;
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    -o-border-image: linear-gradient(to right, #8c01cf, #d9a5ef);
+       border-image: linear-gradient(to right, #8c01cf, #d9a5ef);
+    border-image-slice: 1;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder-shown) ~ .inputLabel {
+    padding: 2px 2px;
+    color: #8c01cf;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 21px;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #0e0e10;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-shown) ~ .inputLabel, header .boxTop .boxContent .left .mySearchForm .inputField:focus ~ .inputLabel {
+    padding: 2px 2px;
+    color: #8c01cf;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 21px;
+    transition: 0.3s;
+    background-color: #0e0e10;
+  }
+}
+@media (max-width: 768px) {
+  header .boxTop .boxContent .left .mySearchForm .inputLabel {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    left: 6px;
+    position: absolute;
+    bottom: 8px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField {
+    color: white;
+    width: 100%;
+    padding: 4px 18px 4px 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    outline: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #807e7e;
+    transition: 0.3s;
+    background-color: transparent;
+    height: 30px;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField::-moz-placeholder {
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    color: transparent;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField::placeholder {
+    transition: 0.3s;
+    color: transparent;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:focus {
+    border-bottom: 2px solid #8c01cf;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder-shown) {
+    border-bottom: 2px solid #8c01cf;
+    padding-bottom: 6px;
+    font-weight: 500;
+    border-width: 2px;
+    border-image: linear-gradient(to right, #8c01cf, #d9a5ef);
+    border-image-slice: 1;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-shown), header .boxTop .boxContent .left .mySearchForm .inputField:focus {
+    border-bottom: 2px solid #8c01cf;
+    padding-bottom: 6px;
+    font-weight: 500;
+    border-width: 2px;
+    -o-border-image: linear-gradient(to right, #8c01cf, #d9a5ef);
+       border-image: linear-gradient(to right, #8c01cf, #d9a5ef);
+    border-image-slice: 1;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder-shown) ~ .inputLabel {
+    padding: 2px 2px;
+    color: #8c01cf;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 21px;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #0e0e10;
+  }
+  header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-shown) ~ .inputLabel, header .boxTop .boxContent .left .mySearchForm .inputField:focus ~ .inputLabel {
+    padding: 2px 2px;
+    color: #8c01cf;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 21px;
+    transition: 0.3s;
+    background-color: #0e0e10;
+  }
+}
 header .boxTop .boxContent .left .mySearchForm .searchIcon {
   height: 20px;
   opacity: 0.8;
@@ -340,13 +511,82 @@ header .boxTop .boxContent .right .myBtn:active {
   box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
   scale: 0.98;
 }
+@media (max-width: 1359px) {
+  header .boxTop .boxContent .right .myBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 104px;
+    height: 37px;
+  }
+  header .boxTop .boxContent .right .myBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  header .boxTop .boxContent .right .myBtn:hover {
+    scale: 1.02;
+  }
+  header .boxTop .boxContent .right .myBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  header .boxTop .boxContent .right .myBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 104px;
+    height: 37px;
+  }
+  header .boxTop .boxContent .right .myBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  header .boxTop .boxContent .right .myBtn:hover {
+    scale: 1.02;
+  }
+  header .boxTop .boxContent .right .myBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
 header .boxTop .boxContent .right .accountHolder {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3px;
   background-color: transparent;
-  border-radius: 20px;
   cursor: pointer;
   padding: 4px;
   transition: 0.2s;
@@ -365,6 +605,7 @@ header .boxTop .boxContent .right .accountHolder .chevronAcc {
   transition: 0.1s;
 }
 header .boxTop .boxContent .right .accountHolder:hover {
+  border-radius: 20px;
   background-color: rgba(137, 43, 226, 0.3);
 }
 header .boxTop .boxContent .right .accountHolder:hover .chevronAcc {
@@ -372,6 +613,7 @@ header .boxTop .boxContent .right .accountHolder:hover .chevronAcc {
 }
 header .boxTop .boxContent .right .accountHolder .accountContent {
   position: absolute;
+  z-index: 10;
   top: 50px;
   right: 0px;
   padding: 20px;
@@ -422,7 +664,6 @@ header .boxTop .boxContent .right .basketHolder {
   align-items: center;
   gap: 3px;
   background-color: transparent;
-  border-radius: 20px;
   cursor: pointer;
   padding: 4px;
   transition: 0.2s;
@@ -439,6 +680,7 @@ header .boxTop .boxContent .right .basketHolder .chevronBasket {
   transition: 0.1s;
 }
 header .boxTop .boxContent .right .basketHolder:hover {
+  border-radius: 20px;
   background-color: rgba(137, 43, 226, 0.3);
 }
 header .boxTop .boxContent .right .basketHolder:hover .chevronBasket {
@@ -446,6 +688,7 @@ header .boxTop .boxContent .right .basketHolder:hover .chevronBasket {
 }
 header .boxTop .boxContent .right .basketHolder .basketContent {
   position: absolute;
+  z-index: 10;
   top: 50px;
   right: 0px;
   padding: 20px;
@@ -565,12 +808,86 @@ header .boxTop .boxContent .right .basketHolder .basketContent .checkout:active 
   box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
   scale: 0.98;
 }
+@media (max-width: 1359px) {
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 37px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout:hover {
+    scale: 1.02;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 37px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout:hover {
+    scale: 1.02;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
 
 nav {
   background-color: #252425;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 nav .boxBottom {
   display: flex;
@@ -580,10 +897,455 @@ nav .boxBottom {
 }
 nav .boxBottom .bottomBoxContent {
   padding: 10px 30px;
-  height: 40px;
+  height: 50px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+nav .boxBottom .bottomBoxContent > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 100%;
+  color: white;
+  color: rgb(151, 151, 151);
+  transition: 0.3s;
+}
+nav .boxBottom .bottomBoxContent > a:hover {
+  color: rgb(216, 216, 216);
+  transform: translateY(-5px);
+  scale: 1.05;
+  box-shadow: rgba(162, 16, 247, 0.4) 0px 5px, rgba(162, 16, 247, 0.3) 0px 10px, rgba(162, 16, 247, 0.2) 0px 15px, rgba(162, 16, 247, 0.1) 0px 20px, rgba(162, 16, 247, 0.05) 0px 25px;
+}
+nav .boxBottom .bottomBoxContent #home {
+  font-size: 28px;
+}
+nav .boxBottom .bottomBoxContent #home:hover {
+  box-shadow: rgba(162, 16, 247, 0.4) 0px 5px, rgba(162, 16, 247, 0.3) 0px 10px, rgba(162, 16, 247, 0.2) 0px 15px, rgba(162, 16, 247, 0.1) 0px 20px, rgba(162, 16, 247, 0.05) 0px 25px;
+}
+nav .boxBottom .bottomBoxContent #myMedia,
+nav .boxBottom .bottomBoxContent #tracks {
+  font-size: 20px;
+}
+nav .boxBottom .bottomBoxContent #tracks,
+nav .boxBottom .bottomBoxContent #artists {
+  transform: translateY(1px);
+}
+nav .boxBottom .bottomBoxContent #tracks:last-child,
+nav .boxBottom .bottomBoxContent #artists:last-child {
+  transform: translateY(2px);
+}
+nav .boxBottom .bottomBoxContent #tracks:hover,
+nav .boxBottom .bottomBoxContent #artists:hover {
+  transform: translateX(-3px);
+  box-shadow: rgba(162, 16, 247, 0.4) 5px 5px, rgba(162, 16, 247, 0.3) 10px 10px, rgba(162, 16, 247, 0.2) 15px 15px, rgba(162, 16, 247, 0.1) 20px 20px, rgba(162, 16, 247, 0.05) 25px 25px;
+}
+nav .boxBottom .bottomBoxContent #tracks:hover:first-child,
+nav .boxBottom .bottomBoxContent #artists:hover:first-child {
+  transform: translateX(-5px);
+  transform: translateY(-2px);
+}
+nav .boxBottom .bottomBoxContent #myMedia,
+nav .boxBottom .bottomBoxContent #feed {
+  transform: translateY(1px);
+}
+nav .boxBottom .bottomBoxContent #myMedia:first-child,
+nav .boxBottom .bottomBoxContent #feed:first-child {
+  transform: translateY(2px);
+}
+nav .boxBottom .bottomBoxContent #myMedia:hover,
+nav .boxBottom .bottomBoxContent #feed:hover {
+  transform: translateX(3px);
+  box-shadow: rgba(162, 16, 247, 0.4) -5px 5px, rgba(162, 16, 247, 0.3) -10px 10px, rgba(162, 16, 247, 0.2) -15px 15px, rgba(162, 16, 247, 0.1) -20px 20px, rgba(162, 16, 247, 0.05) -25px 25px;
+}
+nav .boxBottom .bottomBoxContent #myMedia:hover:last-child,
+nav .boxBottom .bottomBoxContent #feed:hover:last-child {
+  transform: translateX(5px);
+  transform: translateY(-2px);
 }
 
+@media (max-width: 1359px) {
+  header .boxTop {
+    width: 768px;
+  }
+  header .boxTop .boxContent {
+    padding: 8px 0px;
+    height: 56px;
+  }
+  header .boxTop .boxContent .left .mySearchForm {
+    margin-left: 70px;
+    width: 300px;
+  }
+  header .boxTop .boxContent .left .mySearchForm .searchIcon {
+    height: 16px;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+    bottom: 7px;
+    cursor: pointer;
+  }
+  header .boxTop .boxContent .right {
+    gap: 18px;
+  }
+  header .boxTop .boxContent .right .myBtn {
+    width: 94px;
+    height: 32px;
+  }
+  header .boxTop .boxContent .right .accountHolder .pfp {
+    height: 30px;
+    width: 30px;
+  }
+  header .boxTop .boxContent .right .accountHolder .chevronAcc {
+    width: 12px;
+    height: 12px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent {
+    top: 44px;
+    right: 0px;
+    padding: 14px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .accountLine {
+    margin-bottom: 6px;
+    gap: 4px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .accountLine:not(:first-child) {
+    margin-top: 6px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .accountLine > p {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .accountLine > img {
+    height: 16px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .divider {
+    background-color: rgb(95, 95, 95);
+    height: 1px;
+    width: 120%;
+    align-self: center;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketIcon {
+    width: 28px;
+    height: 28px;
+  }
+  header .boxTop .boxContent .right .basketHolder .chevronBasket {
+    width: 12px;
+    height: 12px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent {
+    top: 44px;
+    padding: 14px;
+    max-height: 220px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat {
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat:not(:first-child) {
+    margin-top: 10px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail {
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    width: 200px;
+    overflow: hidden;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail .title {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    color: white;
+    height: 30px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail .beatCover {
+    height: 30px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .price {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    cursor: text;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .removeBasket .ex {
+    height: 18px;
+    transform: rotate(45deg);
+    transition: 0.3s;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .removeBasket .ex:hover {
+    transform: rotate(225deg);
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .divider {
+    height: 1px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout {
+    margin-top: 8px;
+    height: 30px;
+    padding: 8px;
+  }
+  nav {
+    background-color: #252425;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  }
+  nav .boxBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1360px;
+  }
+  nav .boxBottom .bottomBoxContent {
+    padding: 10px 30px;
+    height: 40px;
+    gap: 25px;
+  }
+  nav .boxBottom .bottomBoxContent > a {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    color: white;
+    color: rgb(151, 151, 151);
+  }
+  nav .boxBottom .bottomBoxContent #home {
+    font-size: 22px;
+  }
+  nav .boxBottom .bottomBoxContent #myMedia,
+  nav .boxBottom .bottomBoxContent #tracks {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  header .boxTop {
+    width: 960px;
+  }
+  header .boxTop .boxContent {
+    padding: 8px 0px;
+    height: 52px;
+  }
+  header .boxTop .boxContent .left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+  header .boxTop .boxContent .left .burger {
+    transform: translateX(8px);
+    display: inline-block;
+    transition: 0.3s;
+  }
+  header .boxTop .boxContent .left .burger:hover {
+    border-radius: 10px;
+    background-color: rgba(137, 43, 226, 0.3);
+  }
+  header .boxTop .boxContent .left .logo {
+    width: 98px;
+    z-index: 1;
+    left: calc(50% + 5px);
+    transform: translateX(-50%);
+    top: -2px;
+  }
+  header .boxTop .boxContent .left .mySearchForm {
+    margin-left: 20px;
+    width: 52%;
+  }
+  header .boxTop .boxContent .left .mySearchForm .searchIcon {
+    height: 16px;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+    bottom: 7px;
+    cursor: pointer;
+  }
+  header .boxTop .boxContent .right {
+    gap: 6px;
+  }
+  header .boxTop .boxContent .right .myBtn {
+    width: 70px;
+    height: 28px;
+  }
+  header .boxTop .boxContent .right .accountHolder {
+    gap: 2px;
+  }
+  header .boxTop .boxContent .right .accountHolder .pfp {
+    height: 22px;
+    width: 22px;
+  }
+  header .boxTop .boxContent .right .accountHolder .chevronAcc {
+    width: 8px;
+    height: 8px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent {
+    border: 1px solid #8c01cf;
+    top: 41px;
+    right: 0px;
+    padding: 12px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .accountLine {
+    margin-bottom: 6px;
+    gap: 4px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .accountLine:not(:first-child) {
+    margin-top: 6px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .accountLine > p {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .accountLine > img {
+    height: 16px;
+  }
+  header .boxTop .boxContent .right .accountHolder .accountContent .divider {
+    background-color: rgb(95, 95, 95);
+    height: 1px;
+    width: 120%;
+    align-self: center;
+  }
+  header .boxTop .boxContent .right .basketHolder {
+    gap: 2px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketIcon {
+    width: 20px;
+    height: 20px;
+  }
+  header .boxTop .boxContent .right .basketHolder .chevronBasket {
+    width: 8px;
+    height: 8px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent {
+    border: 1px solid #8c01cf;
+    top: 44px;
+    padding: 14px;
+    max-height: 220px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat {
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat:not(:first-child) {
+    margin-top: 10px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail {
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    width: 200px;
+    overflow: hidden;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail .title {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    color: white;
+    height: 30px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .beatDetail .beatCover {
+    height: 30px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .price {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: white;
+    cursor: text;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .removeBasket .ex {
+    height: 18px;
+    transform: rotate(45deg);
+    transition: 0.3s;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .oneBeat .removeBasket .ex:hover {
+    transform: rotate(225deg);
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .divider {
+    height: 1px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketContent .checkout {
+    margin-top: 8px;
+    height: 30px;
+    padding: 8px;
+  }
+  nav {
+    width: 100px;
+    height: 160px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #8c01cf;
+    border-top: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  nav .boxBottom {
+    margin-bottom: 6px;
+  }
+  nav .boxBottom .bottomBoxContent {
+    width: -moz-max-content;
+    width: max-content;
+    flex-direction: column;
+    padding: 5px 10px;
+    height: 20px;
+    gap: 10px;
+  }
+  nav .boxBottom .bottomBoxContent > a {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    color: white;
+    width: 80px;
+    align-self: center;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    padding-bottom: 5px;
+    font-size: 14px !important;
+    color: rgb(151, 151, 151) !important;
+    transform: translateX(0) !important;
+    transform: translateY(0) !important;
+  }
+  nav .boxBottom .bottomBoxContent > a:hover {
+    transform: translateX(0) !important;
+    transform: translateY(0) !important;
+    box-shadow: none !important;
+  }
+}
 #toastBox {
   display: flex;
   flex-direction: column;
@@ -684,7 +1446,7 @@ nav .boxBottom .bottomBoxContent {
   animation: toastTimer 1.5s linear 0.5s forwards;
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1359px) {
   #toastBox {
     gap: 12px;
     right: 25px;

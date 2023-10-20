@@ -20,7 +20,7 @@
       @content;
     }
   } @else if $type==tablet {
-    @media (max-width: 1360px) {
+    @media (max-width: 1359px) {
       @content;
     }
   } @else if $type==desktop {
@@ -130,9 +130,134 @@
       border-image-slice: 1;
     }
   }
+
+  @include for-type(tablet) {
+    .inputLabel {
+      color: #807e7e;
+      font-family: "Chakra Petch", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      left: 6px;
+      position: absolute;
+      bottom: 8px;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+    .inputField {
+      color: white;
+      width: 100%;
+      padding: 4px 20px 4px 5px;
+      font-family: "Chakra Petch", sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      outline: none;
+      border: 3px solid transparent;
+      border-bottom: 3px solid #807e7e;
+      transition: 0.3s;
+      background-color: transparent;
+      height: 30px;
+
+      &::placeholder {
+        transition: 0.3s;
+        color: transparent;
+      }
+
+      &:focus {
+        border-bottom: 3px solid $purple-color-web;
+      }
+      &:not(:placeholder-shown),
+      &:focus {
+        border-bottom: 3px solid $purple-color-web;
+        ~ .inputLabel {
+          padding: 2px 2px;
+          color: $purple-color-web;
+          font-family: "Chakra Petch", sans-serif;
+          font-weight: 800;
+          font-size: 12px;
+          left: 4px;
+          display: inline-block;
+          position: absolute;
+          bottom: 21px;
+          transition: 0.3s;
+          background-color: $back-color-web;
+        }
+        padding-bottom: 6px;
+        font-weight: 700;
+        border-width: 3px;
+        border-image: linear-gradient(
+          to right,
+          $purple-color-web,
+          $pink-color-web
+        );
+        border-image-slice: 1;
+      }
+    }
+  }
+  @include for-type(mobile) {
+    .inputLabel {
+      color: #807e7e;
+      font-family: "Chakra Petch", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      left: 6px;
+      position: absolute;
+      bottom: 8px;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+    .inputField {
+      color: white;
+      width: 100%;
+      padding: 4px 18px 4px 5px;
+      font-family: "Chakra Petch", sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      outline: none;
+      border: 2px solid transparent;
+      border-bottom: 2px solid #807e7e;
+      transition: 0.3s;
+      background-color: transparent;
+      height: 30px;
+
+      &::placeholder {
+        transition: 0.3s;
+        color: transparent;
+      }
+
+      &:focus {
+        border-bottom: 2px solid $purple-color-web;
+      }
+      &:not(:placeholder-shown),
+      &:focus {
+        border-bottom: 2px solid $purple-color-web;
+        ~ .inputLabel {
+          padding: 2px 2px;
+          color: $purple-color-web;
+          font-family: "Chakra Petch", sans-serif;
+          font-weight: 600;
+          font-size: 12px;
+          left: 4px;
+          display: inline-block;
+          position: absolute;
+          bottom: 21px;
+          transition: 0.3s;
+          background-color: $back-color-web;
+        }
+        padding-bottom: 6px;
+        font-weight: 500;
+        border-width: 2px;
+        border-image: linear-gradient(
+          to right,
+          $purple-color-web,
+          $pink-color-web
+        );
+        border-image-slice: 1;
+      }
+    }
+  }
 }
 
-@mixin buttonMain($width,$height) {
+@mixin buttonMain($width, $height) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,5 +283,62 @@
     box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset,
       rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
     scale: 0.98;
+  }
+
+  @include for-type(tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    background-color: $button-purple-color;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: $border-radius-default;
+    @include text(12px, 800, 140%);
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: $width;
+    height: $height;
+    .btnImg {
+      height: 18px;
+      transform: translateX(-1px);
+    }
+    &:hover {
+      scale: 1.02;
+    }
+    &:active {
+      box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset,
+        rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+      scale: 0.98;
+    }
+  }
+  @include for-type(mobile) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    background-color: $button-purple-color;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: $border-radius-default;
+    @include text(10px, 600, 140%);
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: $width;
+    height: $height;
+    .btnImg {
+      height: 12px;
+      transform: translateX(-1px);
+    }
+    &:hover {
+      scale: 1.02;
+    }
+    &:active {
+      box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset,
+        rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+      scale: 0.98;
+    }
   }
 }

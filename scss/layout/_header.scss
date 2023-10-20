@@ -1,25 +1,24 @@
-::-webkit-scrollbar{
-    width: 6px;
+::-webkit-scrollbar {
+  width: 6px;
 }
-::-webkit-scrollbar-track{
-    border-radius: 20px;
-    margin-block: 5px;
-    background-color: rgba(22, 5, 44, 0.788);
-    
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  margin-block: 5px;
+  background-color: rgba(22, 5, 44, 0.788);
 }
-::-webkit-scrollbar-thumb{
-    border-radius: 20px;
-    background-color: rgba(214, 142, 255, 0.781);
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(214, 142, 255, 0.781);
 }
 
 * {
-
   box-sizing: border-box;
 }
 body {
   background-color: $back-color-web;
 }
 header {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: $top-color-web;
   display: flex;
   justify-content: center;
@@ -38,11 +37,15 @@ header {
         display: flex;
         justify-content: start;
         align-items: center;
+        .burger {
+          display: none;
+        }
         .logo {
           position: absolute;
           height: 100px;
           top: 0px;
           left: -20px;
+          z-index: 1;
         }
         .mySearchForm {
           margin-left: 80px;
@@ -73,7 +76,6 @@ header {
           align-items: center;
           gap: 3px;
           background-color: transparent;
-          border-radius: 20px;
           cursor: pointer;
           padding: 4px;
           transition: 0.2s;
@@ -94,10 +96,12 @@ header {
             .chevronAcc {
               opacity: 1;
             }
+            border-radius: 20px;
             background-color: rgba(137, 43, 226, 0.3);
           }
           .accountContent {
             position: absolute;
+            z-index: 10;
             top: 50px;
             right: 0px;
             padding: 20px;
@@ -147,7 +151,6 @@ header {
           align-items: center;
           gap: 3px;
           background-color: transparent;
-          border-radius: 20px;
           cursor: pointer;
           padding: 4px;
           transition: 0.2s;
@@ -166,10 +169,12 @@ header {
             .chevronBasket {
               opacity: 1;
             }
+            border-radius: 20px;
             background-color: rgba(137, 43, 226, 0.3);
           }
           .basketContent {
             position: absolute;
+            z-index: 10;
             top: 50px;
             right: 0px;
             padding: 20px;
@@ -187,7 +192,9 @@ header {
               display: flex;
             }
             .oneBeat {
-                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+              box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
               &:not(:first-child) {
                 margin-top: 16px;
               }
@@ -215,7 +222,6 @@ header {
                 }
                 overflow: hidden;
                 .beatCover {
-                   
                   height: 40px;
                   border: 1px solid transparent;
                   transition: 0.2s;
@@ -232,9 +238,8 @@ header {
                 .ex {
                   transform: rotate(45deg);
                   transition: 0.3s;
-                  &:hover{
-                  transform: rotate(225deg);
-
+                  &:hover {
+                    transform: rotate(225deg);
                   }
                 }
               }
@@ -261,15 +266,449 @@ header {
 
 nav {
   background-color: $grey-color-web;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   .boxBottom {
     @include container();
     .bottomBoxContent {
       padding: 10px 30px;
-      height: 40px;
+      height: 50px;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      > a {
+        text-decoration: none;
+        @include text(16px, 800, 100%);
+        color: rgb(151, 151, 151);
+        transition: 0.3s;
+        &:hover {
+          color: rgb(216, 216, 216);
+          transform: translateY(-5px);
+          scale: 1.05;
+          box-shadow: rgba(162, 16, 247, 0.4) 0px 5px,
+            rgba(162, 16, 247, 0.3) 0px 10px, rgba(162, 16, 247, 0.2) 0px 15px,
+            rgba(162, 16, 247, 0.1) 0px 20px, rgba(162, 16, 247, 0.05) 0px 25px;
+        }
+      }
+      #home {
+        font-size: 28px;
+        &:hover {
+          box-shadow: rgba(162, 16, 247, 0.4) 0px 5px,
+            rgba(162, 16, 247, 0.3) 0px 10px, rgba(162, 16, 247, 0.2) 0px 15px,
+            rgba(162, 16, 247, 0.1) 0px 20px, rgba(162, 16, 247, 0.05) 0px 25px;
+        }
+      }
+      #myMedia,
+      #tracks {
+        font-size: 20px;
+      }
+      #tracks,
+      #artists {
+        transform: translateY(1px);
+        &:last-child {
+          transform: translateY(2px);
+        }
+
+        &:hover {
+          transform: translateX(-3px);
+          &:first-child {
+            transform: translateX(-5px);
+            transform: translateY(-2px);
+          }
+          box-shadow: rgba(162, 16, 247, 0.4) 5px 5px,
+            rgba(162, 16, 247, 0.3) 10px 10px, rgba(162, 16, 247, 0.2) 15px 15px,
+            rgba(162, 16, 247, 0.1) 20px 20px,
+            rgba(162, 16, 247, 0.05) 25px 25px;
+        }
+      }
+      #myMedia,
+      #feed {
+        transform: translateY(1px);
+        &:first-child {
+          transform: translateY(2px);
+        }
+
+        &:hover {
+          transform: translateX(3px);
+          &:last-child {
+            transform: translateX(5px);
+            transform: translateY(-2px);
+          }
+          box-shadow: rgba(162, 16, 247, 0.4) -5px 5px,
+            rgba(162, 16, 247, 0.3) -10px 10px,
+            rgba(162, 16, 247, 0.2) -15px 15px,
+            rgba(162, 16, 247, 0.1) -20px 20px,
+            rgba(162, 16, 247, 0.05) -25px 25px;
+        }
+      }
+    }
+  }
+}
+
+@include for-type(tablet) {
+  header {
+    .boxTop {
+      width: 768px;
+      .boxContent {
+        padding: 8px 0px;
+        height: 56px;
+        .left {
+          .mySearchForm {
+            margin-left: 70px;
+            width: 300px;
+            .searchIcon {
+              height: 16px;
+              opacity: 0.8;
+              position: absolute;
+              bottom: 1px;
+              right: 5px;
+              bottom: 7px;
+              cursor: pointer;
+            }
+          }
+        }
+        .right {
+          gap: 18px;
+          .myBtn {
+            width: 94px;
+            height: 32px;
+          }
+
+          .accountHolder {
+            .pfp {
+              height: 30px;
+              width: 30px;
+            }
+            .chevronAcc {
+              width: 12px;
+              height: 12px;
+            }
+            .accountContent {
+              top: 44px;
+              right: 0px;
+              padding: 14px;
+              .accountLine {
+                &:not(:first-child) {
+                  margin-top: 6px;
+                }
+
+                margin-bottom: 6px;
+                gap: 4px;
+                > p {
+                  @include text(14px, 400, 100%);
+                }
+                > img {
+                  height: 16px;
+                }
+              }
+
+              .divider {
+                background-color: rgb(95, 95, 95);
+                height: 1px;
+                width: 120%;
+                align-self: center;
+              }
+            }
+          }
+
+          .basketHolder {
+            .basketIcon {
+              width: 28px;
+              height: 28px;
+            }
+            .chevronBasket {
+              width: 12px;
+              height: 12px;
+            }
+            .basketContent {
+              top: 44px;
+              padding: 14px;
+              max-height: 220px;
+              .oneBeat {
+                &:not(:first-child) {
+                  margin-top: 10px;
+                }
+                width: max-content;
+                margin-bottom: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                .beatDetail {
+                  text-decoration: none;
+                  display: flex;
+                  justify-content: start;
+                  align-items: center;
+                  gap: 8px;
+                  width: 200px;
+                  .title {
+                    @include text(16px, 300, 30px);
+                    height: 30px;
+                  }
+                  overflow: hidden;
+                  .beatCover {
+                    height: 30px;
+                  }
+                }
+                .price {
+                  @include text(12px, 400, 30px);
+                  cursor: text;
+                }
+                .removeBasket {
+                  .ex {
+                    height: 18px;
+                    transform: rotate(45deg);
+                    transition: 0.3s;
+                    &:hover {
+                      transform: rotate(225deg);
+                    }
+                  }
+                }
+              }
+
+              .divider {
+                height: 1px;
+              }
+              .checkout {
+                margin-top: 8px;
+                height: 30px;
+                padding: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    background-color: $grey-color-web;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    .boxBottom {
+      @include container();
+      .bottomBoxContent {
+        padding: 10px 30px;
+        height: 40px;
+        gap: 25px;
+        > a {
+          @include text(14px, 800, 100%);
+          color: rgb(151, 151, 151);
+        }
+        #home {
+          font-size: 22px;
+        }
+        #myMedia,
+        #tracks {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@include for-type(mobile) {
+  header {
+    .boxTop {
+      width: 960px;
+      .boxContent {
+        padding: 8px 0px;
+        height: 52px;
+        .left {
+          width: 60%;
+          display: flex;
+          align-items: center;
+          .burger {
+            transform: translateX(8px);
+            display: inline-block;
+            transition: 0.3s;
+            &:hover {
+              border-radius: 10px;
+              background-color: rgba(137, 43, 226, 0.3);
+            }
+          }
+          .logo {
+            width: 98px;
+            z-index: 1;
+            left: calc(50% + 5px);
+            transform: translateX(-50%);
+            top: -2px;
+          }
+          .mySearchForm {
+            margin-left: 20px;
+            width: 52%;
+            .searchIcon {
+              height: 16px;
+              opacity: 0.8;
+              position: absolute;
+              bottom: 1px;
+              right: 5px;
+              bottom: 7px;
+              cursor: pointer;
+            }
+          }
+        }
+        .right {
+          gap: 6px;
+          .myBtn {
+            width: 70px;
+            height: 28px;
+          }
+
+          .accountHolder {
+            gap: 2px;
+            .pfp {
+              height: 22px;
+              width: 22px;
+            }
+            .chevronAcc {
+              width: 8px;
+              height: 8px;
+            }
+            .accountContent {
+              border: 1px solid $purple-color-web;
+              top: 41px;
+              right: 0px;
+              padding: 12px;
+              .accountLine {
+                &:not(:first-child) {
+                  margin-top: 6px;
+                }
+
+                margin-bottom: 6px;
+                gap: 4px;
+                > p {
+                  @include text(14px, 400, 100%);
+                }
+                > img {
+                  height: 16px;
+                }
+              }
+
+              .divider {
+                background-color: rgb(95, 95, 95);
+                height: 1px;
+                width: 120%;
+                align-self: center;
+              }
+            }
+          }
+
+          .basketHolder {
+            gap: 2px;
+            .basketIcon {
+              width: 20px;
+              height: 20px;
+            }
+            .chevronBasket {
+              width: 8px;
+              height: 8px;
+            }
+            .basketContent {
+              border: 1px solid $purple-color-web;
+
+              top: 44px;
+              padding: 14px;
+              max-height: 220px;
+              .oneBeat {
+                &:not(:first-child) {
+                  margin-top: 10px;
+                }
+                width: max-content;
+                margin-bottom: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                .beatDetail {
+                  text-decoration: none;
+                  display: flex;
+                  justify-content: start;
+                  align-items: center;
+                  gap: 8px;
+                  width: 200px;
+                  .title {
+                    @include text(16px, 300, 30px);
+                    height: 30px;
+                  }
+                  overflow: hidden;
+                  .beatCover {
+                    height: 30px;
+                  }
+                }
+                .price {
+                  @include text(12px, 400, 30px);
+                  cursor: text;
+                }
+                .removeBasket {
+                  .ex {
+                    height: 18px;
+                    transform: rotate(45deg);
+                    transition: 0.3s;
+                    &:hover {
+                      transform: rotate(225deg);
+                    }
+                  }
+                }
+              }
+
+              .divider {
+                height: 1px;
+              }
+              .checkout {
+                margin-top: 8px;
+                height: 30px;
+                padding: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    width: 100px;
+    height: 160px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid $purple-color-web;
+    border-top: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    .boxBottom {
+      margin-bottom: 6px;
+      .bottomBoxContent {
+        width: max-content;
+        flex-direction: column;
+        padding: 5px 10px;
+        height: 20px;
+        gap: 10px;
+        > a {
+          @include text(14px, 800, 100%);
+          width: 80px;
+          align-self: center;
+          border-bottom: 1px solid rgb(51, 51, 51);
+          padding-bottom: 5px;
+          font-size: 14px !important;
+          color: rgb(151, 151, 151) !important;
+          transform: translateX(0) !important;
+          transform: translateY(0) !important;
+          &:hover {
+            transform: translateX(0) !important;
+            transform: translateY(0) !important;
+            box-shadow: none !important;
+          }
+        }
+      }
     }
   }
 }
