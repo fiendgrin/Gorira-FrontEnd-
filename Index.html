@@ -6,16 +6,20 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./bootstrap/css/bootstrap.min.css"
+      href="./assets/bootstrap/css/bootstrap.min.css"
     />
-    <link src="./jquerry/jquerry.js" />
+    <link src="./assets/jquerry/jquerry.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./assets/scss/style.css" />
     <title>Gorira</title>
   </head>
   <body>
@@ -25,9 +29,9 @@
       <div class="boxTop">
         <div class="boxContent">
           <div class="left">
-            <img class="burger" src="./images/icons/burger.svg" alt="">
+            <img class="burger" src="./assets/images/icons/burger.svg" alt="" />
             <a href=""
-              ><img class="logo" src="./images/logo/Logo.png" alt=""
+              ><img class="logo" src="./assets/images/logo/Logo.png" alt=""
             /></a>
             <div class="mySearchForm">
               <input
@@ -39,7 +43,11 @@
                 placeholder="Search"
               />
               <label class="inputLabel">Search</label>
-              <img class="searchIcon" src="./images/icons/search.svg" alt="" />
+              <img
+                class="searchIcon"
+                src="./assets/images/icons/search.svg"
+                alt=""
+              />
             </div>
           </div>
 
@@ -47,36 +55,36 @@
             <button class="myBtn">
               <img
                 class="btnImg"
-                src="./images/icons/upload.svg"
+                src="./assets/images/icons/upload.svg"
                 alt=""
               />Upload
             </button>
             <!--Account-->
             <div class="accountHolder">
-              <img class="pfp" src="./images/pfp/1.jpg" alt="" />
+              <img class="pfp" src="./assets/images/pfp/1.jpg" alt="" />
               <img
                 class="chevronAcc"
-                src="./images/icons/chevron-down.svg"
+                src="./assets/images/icons/chevron-down.svg"
                 alt=""
               />
               <div class="accountContent">
                 <!--Single Line start-->
                 <a class="accountLine">
-                  <img src="./images/icons/user.svg" alt="" />
+                  <img src="./assets/images/icons/user.svg" alt="" />
                   <p href="#">Sign In</p>
                 </a>
                 <div class="divider"></div>
                 <!--Single Line End-->
                 <!--Single Line start-->
                 <a class="accountLine">
-                  <img src="./images/icons/squareAndPencil.svg" alt="" />
+                  <img src="./assets/images/icons/squareAndPencil.svg" alt="" />
                   <p href="#">Sign Up</p>
                 </a>
                 <div class="divider"></div>
                 <!--Single Line end-->
                 <!--Single Line start-->
                 <a class="accountLine">
-                  <img src="./images/icons/power.svg" alt="" />
+                  <img src="./assets/images/icons/power.svg" alt="" />
                   <p href="#">Sign Out</p>
                 </a>
                 <div class="divider"></div>
@@ -87,12 +95,12 @@
             <div class="basketHolder">
               <img
                 class="basketIcon"
-                src="./images/icons/shopping-cart.svg"
+                src="./assets/images/icons/shopping-cart.svg"
                 alt=""
               />
               <img
                 class="chevronBasket"
-                src="./images/icons/chevron-down.svg"
+                src="./assets/images/icons/chevron-down.svg"
                 alt=""
               />
               <div class="basketContent">
@@ -102,14 +110,17 @@
                   <a class="beatDetail" href=""
                     ><img
                       class="beatCover"
-                      src="./images/covers/youngThug.jpg"
+                      src="./assets/images/covers/youngThug.jpg"
                       alt=""
                     />
                     <p class="title">my Beat Title 2023</p>
                   </a>
                   <p class="price">$20.99</p>
                   <a class="removeBasket" href=""
-                    ><img class="ex" src="./images/icons/plus.svg" alt=""
+                    ><img
+                      class="ex"
+                      src="./assets/images/icons/plus.svg"
+                      alt=""
                   /></a>
                 </div>
                 <div class="divider"></div>
@@ -119,38 +130,44 @@
                   <a class="beatDetail" href=""
                     ><img
                       class="beatCover"
-                      src="./images/covers/kevinGates.jpg"
+                      src="./assets/images/covers/kevinGates.jpg"
                       alt=""
                     />
                     <p class="title">my Beat Title 2023</p>
                   </a>
                   <p class="price">$20.99</p>
                   <a class="removeBasket" href=""
-                    ><img class="ex" src="./images/icons/plus.svg" alt=""
+                    ><img
+                      class="ex"
+                      src="./assets/images/icons/plus.svg"
+                      alt=""
                   /></a>
                 </div>
                 <div class="divider"></div>
                 <!--One Beat End-->
-                  <!--One Beat Start-->
-                  <div class="oneBeat">
-                    <a class="beatDetail" href=""
-                      ><img
-                        class="beatCover"
-                        src="./images/covers/kevinGates.jpg"
-                        alt=""
-                      />
-                      <p class="title">my Beat Title 2023</p>
-                    </a>
-                    <p class="price">$20.99</p>
-                    <a class="removeBasket" href=""
-                      ><img class="ex" src="./images/icons/plus.svg" alt=""
-                    /></a>
-                  </div>
-                  <div class="divider"></div>
-                  <!--One Beat End-->
+                <!--One Beat Start-->
+                <div class="oneBeat">
+                  <a class="beatDetail" href=""
+                    ><img
+                      class="beatCover"
+                      src="./assets/images/covers/kevinGates.jpg"
+                      alt=""
+                    />
+                    <p class="title">my Beat Title 2023</p>
+                  </a>
+                  <p class="price">$20.99</p>
+                  <a class="removeBasket" href=""
+                    ><img
+                      class="ex"
+                      src="./assets/images/icons/plus.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="divider"></div>
+                <!--One Beat End-->
                 <a class="checkout" href=""
                   ><img
-                    src="./images/icons/credit-card.svg"
+                    src="./assets/images/icons/credit-card.svg"
                     alt=""
                   />Checkout</a
                 >
@@ -167,16 +184,57 @@
           <a id="myMedia" href="">My Media</a>
           <a id="home" href="">Home</a>
           <a id="tracks" href="">Tracks</a>
-          <a id="artists" href="">Artists</a> 
+          <a id="artists" href="">Artists</a>
         </div>
       </div>
     </nav>
     <!--Header End-->
 
+    <!--Main Start-->
+    <main id="homeMain">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="gradient"></div>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="gradient"></div>
+            <div class="slide1 slidetext">
+              <p>Easy Access To Your Favorite Beats</p>
+            </div>
+            <img src="./assets/images/slider/easy-access.png" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <div class="gradient"></div>
+
+            <div class="slide2 slidetext">
+              <p>Make Money From Home</p>
+            </div>
+
+            <img src="./assets/images/slider/work-from-home.jpg" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <div class="gradient"></div>
+
+            <div class="slide3 slidetext">
+              <p>Become One Of The Greatest</p>
+            </div>
+            <img src="./assets/images/slider/producers.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!--Script For Bootstrap-->
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--Script for Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--Script Custom Header-->
+    <script src="./assets/javascript/header.js"></script>
+    <!--Script Custom Swiper-->
+    <script src="./assets/javascript/swiper.js"></script>
     <!--End-->
-    <!--Script Js Header-->
-    <script src="./javascript/header.js"></script>
   </body>
 </html>

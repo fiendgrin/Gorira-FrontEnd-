@@ -210,7 +210,7 @@ header .boxTop .boxContent .left .logo {
   height: 100px;
   top: 0px;
   left: -20px;
-  z-index: 1;
+  z-index: 3;
 }
 header .boxTop .boxContent .left .mySearchForm {
   margin-left: 80px;
@@ -885,9 +885,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  top: 66px;
+  left: 0px;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.986) inset;
 }
 nav .boxBottom {
   display: flex;
@@ -1110,6 +1113,7 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    top: 56px;
   }
   nav .boxBottom {
     display: flex;
@@ -1163,7 +1167,7 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   }
   header .boxTop .boxContent .left .logo {
     width: 98px;
-    z-index: 1;
+    z-index: 3;
     left: calc(50% + 5px);
     transform: translateX(-50%);
     top: -2px;
@@ -1305,6 +1309,9 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
     padding: 8px;
   }
   nav {
+    top: 52px;
+    left: 0;
+    z-index: 3;
     width: 100px;
     height: 160px;
     border-bottom-left-radius: 10px;
@@ -1312,6 +1319,7 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
     border: 1px solid #8c01cf;
     border-top: none;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: absolute;
   }
   nav .boxBottom {
     margin-bottom: 6px;
@@ -1513,4 +1521,51 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   #toastBox .success::after {
     height: 2px;
   }
+}
+#homeMain {
+  position: relative;
+  background-color: #0e0e10;
+}
+#homeMain .swiper {
+  width: 100%;
+  height: 700px;
+  color: aliceblue;
+}
+#homeMain .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+#homeMain .swiper .swiper-wrapper .swiper-slide .gradient {
+  box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.986) inset;
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #0e0e10 100%);
+  z-index: 2;
+  height: 700px;
+  width: 100%;
+  position: absolute;
+}
+#homeMain .swiper .swiper-wrapper .swiper-slide .slidetext {
+  top: 20%;
+  left: 10%;
+  position: absolute;
+  z-index: 3;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  font-size: 80px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 100%;
+  color: white;
+}
+#homeMain .swiper .swiper-wrapper .swiper-slide .slidetext p {
+  background-clip: border-box;
+  background: -webkit-linear-gradient(white, #8e8eb4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#homeMain .swiper .swiper-wrapper .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 700px;
+  width: 100%;
 }
