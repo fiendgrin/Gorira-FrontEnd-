@@ -15,17 +15,17 @@
             180deg,
             rgba(162, 89, 255, 0) 0%,
             $back-color-web 100%
-            );
-            z-index: 2;
-            height: 700px;
-            width: 100%;
-            position: absolute;
-            box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.986) inset;
-          }
-          .slidebtn {
-            @include buttonMain(200px, 50px);
-            display: flex;
-            position: absolute;
+          );
+          z-index: 2;
+          height: 700px;
+          width: 100%;
+          position: absolute;
+          box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.986) inset;
+        }
+        .slidebtn {
+          @include buttonMain(200px, 50px);
+          display: flex;
+          position: absolute;
           top: 70%;
           right: 10%;
           z-index: 3;
@@ -55,11 +55,10 @@
     }
   }
 
-
-  @include for-type(tablet){
+  @include for-type(tablet) {
     .swiper {
       height: 650px;
-  
+
       .swiper-wrapper {
         .swiper-slide {
           .gradient {
@@ -83,10 +82,10 @@
     }
   }
 
-  @include for-type(mobile){
+  @include for-type(mobile) {
     .swiper {
       height: 500px;
-  
+
       .swiper-wrapper {
         .swiper-slide {
           .gradient {
@@ -110,6 +109,152 @@
     }
   }
 
+  //Trending Tracks
+  #trending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $back-color-web;
+    .trendingContainer {
+      @include container();
+      flex-direction: column;
+      padding: 80px 30px 40px 30px;
+      .topText {
+        width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        h3 {
+          @include text(40px, 600, 100%);
+        }
+        a {
+          text-decoration: none;
+          p {
+            @include text(18px, 600, 100%);
+            transition: 0.3s;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 100%;
+        margin-top: 20px;
+        gap: 44px;
+        .myCard {
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+          border-radius: $border-radius-default;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 21px;
+          transition: 0.3s;
+          position: relative;
+
+          .play,
+          .pause {
+            position: absolute;
+            z-index: 1;
+            cursor: pointer;
+            top: 116.5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.404);
+            border-radius: 50%;
+            opacity: 0;
+            transition: 0.2s;
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.747);
+            }
+          }
+          .pause {
+            display: none;
+          }
+          a {
+            .cover {
+              object-fit: cover;
+              object-position: center;
+              height: 250px;
+              width: 250px;
+              margin-bottom: 20px;
+              border-radius: $border-radius-default;
+              box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+                rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+                rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            }
+          }
+          .bottomText {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            .top {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 6px;
+              .price {
+                @include text(18px, 600, 100%);
+                color: $blue-color-web;
+              }
+              .tempo {
+                display: flex;
+                @include text(18px, 600, 100%);
+                align-items: center;
+                justify-content: center;
+                color: #b4b3b3;
+              }
+            }
+            a {
+              text-decoration: none;
+              .title {
+                margin-top: 4px;
+                width: 250px;
+                @include text(20px, 800, 28px);
+                height: 28px;
+                overflow: hidden;
+              }
+            }
+            a {
+              text-decoration: none;
+              .artist {
+                margin-top: 4px;
+                @include text(16px, 300, 24px);
+                color: #b4b3b3;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          &:hover {
+            background-color: $lightGrey-color-web;
+            .play,
+            .pause {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
+//aplayer
+#aplayer{
+  position: fixed;
+  z-index: 10;
+  width: 80%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
 }

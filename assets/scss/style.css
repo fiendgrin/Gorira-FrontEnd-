@@ -1729,3 +1729,179 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
     height: 650px;
   }
 }
+#homeMain #trending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e0e10;
+}
+#homeMain #trending .trendingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  flex-direction: column;
+  padding: 80px 30px 40px 30px;
+}
+#homeMain #trending .trendingContainer .topText {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#homeMain #trending .trendingContainer .topText h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#homeMain #trending .trendingContainer .topText a {
+  text-decoration: none;
+}
+#homeMain #trending .trendingContainer .topText a p {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.3s;
+}
+#homeMain #trending .trendingContainer .topText a p:hover {
+  text-decoration: underline;
+}
+#homeMain #trending .trendingContainer .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+  gap: 44px;
+}
+#homeMain #trending .trendingContainer .box .myCard {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 21px;
+  transition: 0.3s;
+  position: relative;
+}
+#homeMain #trending .trendingContainer .box .myCard .play,
+#homeMain #trending .trendingContainer .box .myCard .pause {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  top: 116.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.2s;
+}
+#homeMain #trending .trendingContainer .box .myCard .play:hover,
+#homeMain #trending .trendingContainer .box .myCard .pause:hover {
+  background-color: rgba(0, 0, 0, 0.747);
+}
+#homeMain #trending .trendingContainer .box .myCard .pause {
+  display: none;
+}
+#homeMain #trending .trendingContainer .box .myCard a .cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#homeMain #trending .trendingContainer .box .myCard .bottomText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+#homeMain #trending .trendingContainer .box .myCard .bottomText .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+#homeMain #trending .trendingContainer .box .myCard .bottomText .top .price {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  color: #406cfd;
+}
+#homeMain #trending .trendingContainer .box .myCard .bottomText .top .tempo {
+  display: flex;
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  color: #b4b3b3;
+}
+#homeMain #trending .trendingContainer .box .myCard .bottomText a {
+  text-decoration: none;
+}
+#homeMain #trending .trendingContainer .box .myCard .bottomText a .title {
+  margin-top: 4px;
+  width: 250px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 28px;
+  color: white;
+  height: 28px;
+  overflow: hidden;
+}
+#homeMain #trending .trendingContainer .box .myCard .bottomText a {
+  text-decoration: none;
+}
+#homeMain #trending .trendingContainer .box .myCard .bottomText a .artist {
+  margin-top: 4px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  color: white;
+  color: #b4b3b3;
+}
+#homeMain #trending .trendingContainer .box .myCard .bottomText a .artist:hover {
+  text-decoration: underline;
+}
+#homeMain #trending .trendingContainer .box .myCard:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#homeMain #trending .trendingContainer .box .myCard:hover .play,
+#homeMain #trending .trendingContainer .box .myCard:hover .pause {
+  opacity: 1;
+}
+
+#aplayer {
+  position: fixed;
+  z-index: 10;
+  width: 80%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}

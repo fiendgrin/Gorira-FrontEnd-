@@ -19,6 +19,20 @@
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"
+      integrity="sha512-RWosNnDNw8FxHibJqdFRySIswOUgYhFxnmYO3fp+BgCU7gfo4z0oS7mYFBvaa8qu+axY39BmQOrhW3Tp70XbaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"
+      integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="APlayer.min.css" />
     <link rel="stylesheet" href="./assets/scss/style.css" />
     <title>Gorira</title>
   </head>
@@ -192,7 +206,8 @@
 
     <!--Main Start-->
     <main id="homeMain">
-      <div class="swiper">
+      <!--Swiper Start-->
+      <div class="swiper topSlider">
         <!-- Additional required wrapper -->
         <div class="gradient"></div>
         <div class="swiper-wrapper">
@@ -236,6 +251,130 @@
           </div>
         </div>
       </div>
+      <!--Swiper End-->
+      <!--Trending Start-->
+      <div id="trending">
+        <div class="trendingContainer">
+          <div class="topText">
+            <h3>Trending Tracks</h3>
+            <a href=""><p>See more</p></a>
+          </div>
+          <div class="box">
+            <!--Single Card Start-->
+            <div class="myCard">
+              <img class="play" src="./assets/images/icons/play.svg" alt="" />
+              <img class="pause" src="./assets/images/icons/pause.svg" alt="" />
+              <a href=""
+                ><img
+                  class="cover"
+                  src="./assets/images/covers/youngThug2.jpg"
+                  alt=""
+              /></a>
+              <div class="bottomText">
+                <div class="top">
+                  <p class="price">23.99$</p>
+                  <p class="tempo">
+                    <img src="./assets/images/icons/dot.svg" alt="" /> 148 BPM
+                  </p>
+                </div>
+                <a href=""><h6 class="title">Young Thug Type Beat 2023</h6></a>
+                <a href=""><p class="artist">Wheezy</p></a>
+              </div>
+              <audio class="audio">
+                <source
+                  src="./assets/audio/trendingInstrumentals/Young Thug - Check (Instrumental).mp3"
+                  type="audio/mp3"
+                />
+              </audio>
+            </div>
+            <!--Single Card End-->
+            <!--Single Card Start-->
+            <div class="myCard">
+              <img class="play" src="./assets/images/icons/play.svg" alt="" />
+              <img class="pause" src="./assets/images/icons/pause.svg" alt="" />
+              <a href=""
+                ><img class="cover" src="./assets/images/covers/21.jpg" alt=""
+              /></a>
+              <div class="bottomText">
+                <div class="top">
+                  <p class="price">30.99$</p>
+                  <p class="tempo">
+                    <img src="./assets/images/icons/dot.svg" alt="" /> 120 BPM
+                  </p>
+                </div>
+                <a href=""><h6 class="title">21 Savage Type Beat 2023</h6></a>
+                <a href=""><p class="artist">Metro Boomin</p></a>
+              </div>
+              <audio class="audio">
+                <source
+                  src="./assets/audio/trendingInstrumentals/21 Savage - No Heart Instrumental.mp3"
+                  type="audio/mp3"
+                />
+              </audio>
+            </div>
+            <!--Single Card End-->
+            <!--Single Card Start-->
+            <div class="myCard">
+              <img class="play" src="./assets/images/icons/play.svg" alt="" />
+              <img class="pause" src="./assets/images/icons/pause.svg" alt="" />
+              <a href=""
+                ><img
+                  class="cover"
+                  src="./assets/images/covers/gunna.png"
+                  alt=""
+              /></a>
+              <div class="bottomText">
+                <div class="top">
+                  <p class="price">20.99$</p>
+                  <p class="tempo">
+                    <img src="./assets/images/icons/dot.svg" alt="" /> 160 BPM
+                  </p>
+                </div>
+                <a href=""><h6 class="title">Gunna Type Beat 2023</h6></a>
+                <a href=""><p class="artist">Wheezy</p></a>
+              </div>
+              <audio class="audio">
+                <source
+                  src="./assets/audio/trendingInstrumentals/Young Thug Hot Instrumental Ft. Gunna BEST QUALITY.mp3"
+                  type="audio/mp3"
+                />
+              </audio>
+            </div>
+            <!--Single Card End-->
+            <!--Single Card Start-->
+            <div class="myCard">
+              <img class="play" src="./assets/images/icons/play.svg" alt="" />
+              <img class="pause" src="./assets/images/icons/pause.svg" alt="" />
+              <a href=""
+                ><img
+                  class="cover"
+                  src="./assets/images/covers/travisScott.jpg"
+                  alt=""
+              /></a>
+              <div class="bottomText">
+                <div class="top">
+                  <p class="price">25$</p>
+                  <p class="tempo">
+                    <img src="./assets/images/icons/dot.svg" alt="" /> 148 BPM
+                  </p>
+                </div>
+                <a href=""
+                  ><h6 class="title">Travis Scott Type Beat 2023 eqrr</h6></a
+                >
+                <a href=""><p class="artist">Metro Boomin</p></a>
+              </div>
+              <audio class="audio">
+                <source
+                  src="./assets/audio/trendingInstrumentals/Travis Scott - Goosebumps (Official Instrumental).mp3"
+                  type="audio/mp3"
+                />
+              </audio>
+            </div>
+            <!--Single Card End-->
+          </div>
+        </div>
+      </div>
+      <!--Trending End-->
     </main>
 
     <!--Script For Bootstrap-->
@@ -246,6 +385,10 @@
     <script src="./assets/javascript/header.js"></script>
     <!--Script Custom Swiper-->
     <script src="./assets/javascript/swiper.js"></script>
+    <!--Script Custom Music on play-->
+    <script src="./assets/javascript/play.js"></script>
+    <!--Script  Aplay-->
+    <script src="APlayer.min.js"></script>
     <!--End-->
   </body>
 </html>
