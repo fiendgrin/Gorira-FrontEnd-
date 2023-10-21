@@ -1896,7 +1896,214 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
 #homeMain #trending .trendingContainer .box .myCard:hover .pause {
   opacity: 1;
 }
-
-#aplayer {
-  color: #0e0e10;
+@media (max-width: 1359px) {
+  #homeMain #trending .trendingContainer {
+    padding: 40px 10px 20px 10px;
+    width: 768px;
+  }
+  #homeMain #trending .trendingContainer .topText {
+    width: 748px;
+  }
+  #homeMain #trending .trendingContainer .topText h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain #trending .trendingContainer .topText a p {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain #trending .trendingContainer .box {
+    height: 320px;
+    margin-top: 15px;
+    gap: 53px;
+    flex-wrap: wrap;
+  }
+  #homeMain #trending .trendingContainer .box .myCard {
+    box-shadow: rgba(38, 57, 77, 0.904) 0px 13px 26px -10px;
+    padding: 17px;
+  }
+  #homeMain #trending .trendingContainer .box .myCard:last-child {
+    display: none;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .play,
+  #homeMain #trending .trendingContainer .box .myCard .pause {
+    top: 85px;
+    width: 44px;
+    padding: 8px;
+    opacity: 1;
+  }
+  #homeMain #trending .trendingContainer .box .myCard a .cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 180px;
+    width: 180px;
+    margin-bottom: 15px;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText .top {
+    gap: 3px;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText .top .price {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    color: #406cfd;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText .top .tempo {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    color: #b4b3b3;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText a .title {
+    margin-top: 2px;
+    width: 180px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 24px;
+    color: white;
+    height: 24px;
+    overflow: hidden;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText a .artist {
+    margin-top: 0px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    color: white;
+    color: #b4b3b3;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText a .artist:hover {
+    text-decoration: underline;
+  }
+  #homeMain #trending .trendingContainer .box .myCard:hover {
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #homeMain #trending .trendingContainer .box .myCard:hover .play,
+  #homeMain #trending .trendingContainer .box .myCard:hover .pause {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  #homeMain #trending .trendingContainer {
+    padding: 40px 10px 20px 10px;
+    width: 400px;
+  }
+  #homeMain #trending .trendingContainer .topText {
+    align-items: center;
+    width: 380px;
+  }
+  #homeMain #trending .trendingContainer .topText h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain #trending .trendingContainer .topText a p {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain #trending .trendingContainer .box {
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  #homeMain #trending .trendingContainer .box .myCard {
+    box-shadow: rgba(38, 57, 77, 0.904) 0px 13px 26px -10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 22px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .play,
+  #homeMain #trending .trendingContainer .box .myCard .pause {
+    top: 116.5px;
+    width: 60px;
+    padding: 10px;
+  }
+  #homeMain #trending .trendingContainer .box .myCard a .cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 250px;
+    width: 336px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText .top {
+    gap: 3px;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText .top .price {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    color: #406cfd;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText .top .tempo {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    color: #b4b3b3;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText a .title {
+    margin-top: 2px;
+    width: 250px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 24px;
+    color: white;
+    height: 24px;
+    overflow: hidden;
+  }
+  #homeMain #trending .trendingContainer .box .myCard .bottomText a .artist {
+    margin-top: 0px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    color: white;
+    color: #b4b3b3;
+  }
 }
