@@ -251,10 +251,5 @@
 
 //aplayer
 #aplayer{
-  position: fixed;
-  z-index: 10;
-  width: 80%;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
+color: $back-color-web;
 }
