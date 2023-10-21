@@ -1741,7 +1741,7 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   align-items: center;
   width: 1360px;
   flex-direction: column;
-  padding: 80px 30px 40px 30px;
+  padding: 80px 30px 60px 30px;
 }
 #homeMain #trending .trendingContainer .topText {
   width: 1300px;
@@ -2106,4 +2106,204 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
     color: white;
     color: #b4b3b3;
   }
+}
+#homeMain #aboutUs {
+  background: linear-gradient(180deg, rgba(111, 0, 255, 0) 0%, rgba(138, 1, 207, 0.6862745098) 150%);
+  padding: 80px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#homeMain #aboutUs .aboutUsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+#homeMain #aboutUs .aboutUsContainer .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+}
+#homeMain #aboutUs .aboutUsContainer .left h4 {
+  font-size: 28px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 100%;
+  color: white;
+  margin-bottom: 10px;
+}
+#homeMain #aboutUs .aboutUsContainer .left .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 18px;
+  width: 634px;
+}
+#homeMain #aboutUs .aboutUsContainer .left .line img {
+  height: 28px;
+  align-self: flex-start;
+  transform: translateY(-3px);
+}
+#homeMain #aboutUs .aboutUsContainer .left .line .text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#homeMain #aboutUs .aboutUsContainer .left .line .text h5 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 100%;
+  color: white;
+  margin-bottom: 8px;
+}
+#homeMain #aboutUs .aboutUsContainer .left .line .text p {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  color: #949494;
+}
+#homeMain #aboutUs .aboutUsContainer .left .getStarted {
+  margin-left: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#homeMain #aboutUs .aboutUsContainer .left .getStarted .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#homeMain #aboutUs .aboutUsContainer .left .getStarted:hover {
+  scale: 1.02;
+}
+#homeMain #aboutUs .aboutUsContainer .left .getStarted:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #homeMain #aboutUs .aboutUsContainer .left .getStarted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 150px;
+    height: 50px;
+  }
+  #homeMain #aboutUs .aboutUsContainer .left .getStarted .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #homeMain #aboutUs .aboutUsContainer .left .getStarted:hover {
+    scale: 1.02;
+  }
+  #homeMain #aboutUs .aboutUsContainer .left .getStarted:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #homeMain #aboutUs .aboutUsContainer .left .getStarted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 150px;
+    height: 50px;
+  }
+  #homeMain #aboutUs .aboutUsContainer .left .getStarted .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #homeMain #aboutUs .aboutUsContainer .left .getStarted:hover {
+    scale: 1.02;
+  }
+  #homeMain #aboutUs .aboutUsContainer .left .getStarted:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#homeMain #aboutUs .aboutUsContainer .left .getStarted:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#homeMain #aboutUs .aboutUsContainer .left .getStarted:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+#homeMain #aboutUs .aboutUsContainer .right {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 634px;
+  border-radius: 10px;
+  border: 1px solid #8c01cf;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
