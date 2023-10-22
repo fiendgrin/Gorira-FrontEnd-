@@ -2930,24 +2930,9 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   }
 }
 #homeMain .bottomSlider {
-  margin-top: 10px;
   width: 100%;
-  height: 900px;
+  height: 700px;
   color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-#homeMain .bottomSlider .title {
-  font-size: 48px;
-  font-style: normal;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 800;
-  line-height: 70px;
-  color: white;
-  width: 1300px;
-  margin-bottom: 10px;
 }
 #homeMain .bottomSlider .swiper-wrapper .swiper-slide {
   position: relative;
@@ -2955,63 +2940,25 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
 #homeMain .bottomSlider .swiper-wrapper .swiper-slide .gradient {
   background: linear-gradient(180deg, rgb(14, 14, 16) 0%, rgba(14, 14, 16, 0) 100%);
   z-index: 2;
-  height: 900px;
+  height: 700px;
   width: 100%;
   position: absolute;
 }
 #homeMain .bottomSlider .swiper-wrapper .swiper-slide .mainImg {
-  width: 100%;
   display: flex;
   position: absolute;
   z-index: 3;
-}
-#homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetext {
-  top: 10%;
-  left: 16.2%;
-  position: absolute;
-  z-index: 3;
-  width: 800px;
-  height: 600px;
-  overflow: hidden;
-  font-size: 42px;
-  font-style: normal;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 800;
-  line-height: 140%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 30px;
-}
-#homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetext .name {
-  font-size: 58px;
-  font-style: normal;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 800;
-  line-height: 70px;
-  color: white;
-  background-clip: border-box;
-  background: -webkit-linear-gradient(#93a3ff, #90559c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetext p {
-  background-clip: border-box;
-  background: -webkit-linear-gradient(#ffffff, #fdf3ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  align-self: center;
 }
 #homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetextRight {
   top: 10%;
   right: 10%;
   position: absolute;
   z-index: 3;
-  width: 800px;
-  height: 600px;
+  width: 500px;
+  height: 400px;
   overflow: hidden;
-  font-size: 42px;
+  font-size: 32px;
   font-style: normal;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 800;
@@ -3024,7 +2971,7 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   gap: 30px;
 }
 #homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetextRight .name {
-  font-size: 58px;
+  font-size: 48px;
   font-style: normal;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 800;
@@ -3045,6 +2992,123 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   background-color: #e4b3ee;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 900px;
+  height: 700px;
   width: 100%;
+}
+@media (max-width: 1500px) {
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .mainImg {
+    transform: translateX(-4%);
+    transition: 0.5s;
+  }
+}
+@media (max-width: 1359px) {
+  #homeMain .bottomSlider {
+    height: 600px;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .gradient {
+    height: 600px;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .mainImg {
+    transform: translateX(0%);
+    transition: 0.5s;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetextRight {
+    width: 38%;
+    height: 400px;
+    font-size: 25px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 120%;
+    color: white;
+    right: 4%;
+    gap: 20px;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetextRight .name {
+    font-size: 38px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 70px;
+    color: white;
+    background-clip: border-box;
+    background: -webkit-linear-gradient(#93a3ff, #90559c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetextRight p {
+    background-clip: border-box;
+    background: -webkit-linear-gradient(#ffffff, #fdf3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .bckg {
+    background-color: #e4b3ee;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 600px;
+    width: 100%;
+  }
+}
+@media (max-width: 960px) {
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .mainImg {
+    transform: translateX(-4%);
+    transition: 0.5s;
+  }
+}
+@media (max-width: 768px) {
+  #homeMain .bottomSlider {
+    height: 700px;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .gradient {
+    height: 700px;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .mainImg {
+    top: 40%;
+    transform: translateX(-6%);
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetextRight {
+    top: 2%;
+    right: 10px;
+    width: 380px;
+    height: 300px;
+    font-size: 28px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 120%;
+    color: white;
+    gap: 2px;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetextRight .name {
+    font-size: 40px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 70px;
+    color: white;
+    background-clip: border-box;
+    background: -webkit-linear-gradient(#93a3ff, #90559c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetextRight p {
+    background-clip: border-box;
+    background: -webkit-linear-gradient(#ffffff, #fdf3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .bckg {
+    background-color: #e4b3ee;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 700px;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #homeMain .bottomSlider .swiper-wrapper .swiper-slide .mainImg {
+    transform: translateX(-9%);
+    transition: 0.5s;
+  }
 }
