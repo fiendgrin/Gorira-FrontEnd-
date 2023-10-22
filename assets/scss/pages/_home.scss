@@ -346,11 +346,11 @@
           align-items: center;
           width: 380px;
           h3 {
-            @include text(30px, 400, 100%);
+            @include text(30px, 600, 100%);
           }
           a {
             p {
-              @include text(16px, 400, 100%);
+              @include text(16px, 600, 100%);
             }
           }
         }
@@ -656,6 +656,8 @@
     }
   }
 
+  //Popular Genres
+
   #popularGenres {
     display: flex;
     justify-content: center;
@@ -669,7 +671,7 @@
     .genresContainer {
       @include container();
       flex-direction: column;
-      padding: 40px 30px 60px 30px;
+      padding: 60px 30px 60px 30px;
       .topText {
         width: 1300px;
         display: flex;
@@ -714,12 +716,9 @@
             top: 129px;
             left: 50%;
             transform: translateX(-50%);
-            width: fit-content;
+            width: max-content;
             transition: 0.2s;
             @include text(34px, 800, 30px);
-          }
-          .pause {
-            display: none;
           }
           a {
             .genreImage {
@@ -739,13 +738,116 @@
             text-decoration: none;
             align-self: flex-start;
             .title {
-              width: fit-content;
+              width: max-content;
               @include text(24px, 800, 30px);
               overflow: hidden;
             }
           }
           &:hover {
             background-color: $lightGrey-color-web;
+          }
+        }
+      }
+    }
+  }
+
+  @include for-type(tablet) {
+    #popularGenres {
+      .genresContainer {
+        width: 768px;
+        padding: 40px 10px 40px 10px;
+        .topText {
+          width: 748px;
+          h3 {
+            @include text(32px, 600, 100%);
+          }
+          a {
+            p {
+              @include text(16px, 600, 100%);
+            }
+          }
+        }
+        .box {
+          width: 100%;
+          height: 320px;
+          margin-top: 15px;
+          gap: 53px;
+          flex-wrap: wrap;
+          .myGenreCard {
+            padding: 17px;
+            box-shadow: rgba(38, 57, 77, 0.904) 0px 13px 26px -10px;
+            &:last-child {
+              display: none;
+            }
+            .genreName {
+              top: 96px;
+              width: max-content;
+              @include text(22px, 600, 28px);
+            }
+            a {
+              .genreImage {
+                height: 180px;
+                width: 180px;
+                margin-bottom: 8px;
+              }
+            }
+
+            a {
+              .title {
+                @include text(22px, 600, 30px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include for-type(mobile) {
+    #popularGenres {
+      .genresContainer {
+        width: 400px;
+        padding: 30px 10px 30px 10px;
+        .topText {
+          width: 380px;
+          h3 {
+            @include text(30px, 600, 100%);
+          }
+          a {
+            p {
+              @include text(16px, 600, 100%);
+            }
+          }
+        }
+        .box {
+          height: fit-content;
+          margin-top: 30px;
+          gap: 40px;
+          flex-wrap: wrap;
+          .myGenreCard {
+            padding: 17px;
+            box-shadow: rgba(38, 57, 77, 0.904) 0px 13px 26px -10px;
+            &:last-child {
+              display: none;
+            }
+            .genreName {
+              top: 129px;
+              width: max-content;
+              @include text(34px, 800, 30px);
+            }
+            a {
+              .genreImage {
+                height: 250px;
+                width: 336px;
+                margin-bottom: 6px;
+              }
+            }
+
+            a {
+              .title {
+                @include text(22px, 600, 30px);
+              }
+            }
           }
         }
       }

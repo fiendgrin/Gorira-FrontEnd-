@@ -2016,7 +2016,7 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
     font-size: 30px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 100%;
     color: white;
   }
@@ -2024,7 +2024,7 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
     font-size: 16px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 100%;
     color: white;
   }
@@ -2707,7 +2707,7 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   align-items: center;
   width: 1360px;
   flex-direction: column;
-  padding: 40px 30px 60px 30px;
+  padding: 60px 30px 60px 30px;
 }
 #homeMain #popularGenres .genresContainer .topText {
   width: 1300px;
@@ -2764,8 +2764,8 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   top: 129px;
   left: 50%;
   transform: translateX(-50%);
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -moz-max-content;
+  width: max-content;
   transition: 0.2s;
   font-size: 34px;
   font-style: normal;
@@ -2773,9 +2773,6 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   font-weight: 800;
   line-height: 30px;
   color: white;
-}
-#homeMain #popularGenres .genresContainer .box .myGenreCard .pause {
-  display: none;
 }
 #homeMain #popularGenres .genresContainer .box .myGenreCard a .genreImage {
   -o-object-fit: cover;
@@ -2793,8 +2790,8 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   align-self: flex-start;
 }
 #homeMain #popularGenres .genresContainer .box .myGenreCard a .title {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -moz-max-content;
+  width: max-content;
   font-size: 24px;
   font-style: normal;
   font-family: "Chakra Petch", sans-serif;
@@ -2805,4 +2802,130 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
 }
 #homeMain #popularGenres .genresContainer .box .myGenreCard:hover {
   background-color: rgba(56, 54, 56, 0.7333333333);
+}
+@media (max-width: 1359px) {
+  #homeMain #popularGenres .genresContainer {
+    width: 768px;
+    padding: 40px 10px 40px 10px;
+  }
+  #homeMain #popularGenres .genresContainer .topText {
+    width: 748px;
+  }
+  #homeMain #popularGenres .genresContainer .topText h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain #popularGenres .genresContainer .topText a p {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain #popularGenres .genresContainer .box {
+    width: 100%;
+    height: 320px;
+    margin-top: 15px;
+    gap: 53px;
+    flex-wrap: wrap;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard {
+    padding: 17px;
+    box-shadow: rgba(38, 57, 77, 0.904) 0px 13px 26px -10px;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard:last-child {
+    display: none;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard .genreName {
+    top: 96px;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 22px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 28px;
+    color: white;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard a .genreImage {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 8px;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard a .title {
+    font-size: 22px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+  }
+}
+@media (max-width: 768px) {
+  #homeMain #popularGenres .genresContainer {
+    width: 400px;
+    padding: 30px 10px 30px 10px;
+  }
+  #homeMain #popularGenres .genresContainer .topText {
+    width: 380px;
+  }
+  #homeMain #popularGenres .genresContainer .topText h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain #popularGenres .genresContainer .topText a p {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #homeMain #popularGenres .genresContainer .box {
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard {
+    padding: 17px;
+    box-shadow: rgba(38, 57, 77, 0.904) 0px 13px 26px -10px;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard:last-child {
+    display: none;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard .genreName {
+    top: 129px;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 34px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 30px;
+    color: white;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard a .genreImage {
+    height: 250px;
+    width: 336px;
+    margin-bottom: 6px;
+  }
+  #homeMain #popularGenres .genresContainer .box .myGenreCard a .title {
+    font-size: 22px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+  }
 }
