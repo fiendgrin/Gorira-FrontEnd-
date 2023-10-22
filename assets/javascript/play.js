@@ -1,6 +1,6 @@
-let playBtns = document.querySelectorAll(".myCard .play");
-let pauseBtns = document.querySelectorAll(".myCard .pause");
-let audios = document.querySelectorAll(".myCard .audio");
+let playBtns = document.querySelectorAll("#trending .myCard .play");
+let pauseBtns = document.querySelectorAll("#trending .myCard .pause");
+let audios = document.querySelectorAll("#trending .myCard .audio");
 let ap;
 let playingAudio;
 // playBtns.forEach((pb) => {
