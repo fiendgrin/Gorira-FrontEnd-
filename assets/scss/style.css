@@ -1354,6 +1354,104 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
     box-shadow: none !important;
   }
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 14, 16);
+  box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+  border-top: 2px solid rgba(87, 87, 87, 0.3019607843);
+}
+footer .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  padding: 40px 30px 20px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .box .top {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+footer .box .top .footerLogo {
+  width: 98px;
+  top: -12px;
+  left: -20px;
+  position: absolute;
+}
+footer .box .top .infoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .box .top .infoCard:last-child {
+  height: 74px;
+  gap: 14px;
+}
+footer .box .top .infoCard:last-child h5 {
+  width: 200px;
+}
+footer .box .top .infoCard h5 {
+  font-size: 24px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+footer .box .top .infoCard .inside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  font-size: 15px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  line-height: 100%;
+  color: white;
+  color: rgb(141, 141, 141);
+}
+footer .box .top .infoCard .inside .text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .box .top .infoCard .inside .sMlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+footer .box .top .infoCard .inside .sMlinks .sMLogo {
+  height: 36px;
+}
+footer .box .line {
+  height: 1px;
+  width: 1360px;
+  background-color: rgba(87, 87, 87, 0.3019607843);
+}
+footer .box .bottom {
+  font-size: 15px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  line-height: 100%;
+  color: white;
+  color: rgb(141, 141, 141);
+  margin-top: 20px;
+}
+
 #toastBox {
   display: flex;
   flex-direction: column;
