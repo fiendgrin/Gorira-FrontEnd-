@@ -1367,7 +1367,7 @@ footer .box {
   justify-content: center;
   align-items: center;
   width: 1360px;
-  padding: 40px 30px 20px 30px;
+  padding: 60px 30px 20px 30px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1378,7 +1378,7 @@ footer .box .top {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 footer .box .top .footerLogo {
   width: 98px;
@@ -1452,6 +1452,219 @@ footer .box .bottom {
   margin-top: 20px;
 }
 
+@media (max-width: 1359px) {
+  footer .box {
+    width: 768px;
+    padding: 40px 10px 15px 10px;
+  }
+  footer .box .top {
+    margin-bottom: 30px;
+  }
+  footer .box .top .footerLogo {
+    width: 98px;
+    top: -12px;
+    left: -20px;
+  }
+  footer .box .top .infoCard {
+    align-self: flex-start;
+    gap: 10px;
+    width: 160px;
+  }
+  footer .box .top .infoCard:last-child {
+    height: 66px;
+    gap: 14px;
+  }
+  footer .box .top .infoCard:last-child h5 {
+    width: 160px;
+  }
+  footer .box .top .infoCard h5 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    align-self: flex-start;
+  }
+  footer .box .top .infoCard .inside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    color: white;
+    color: rgb(141, 141, 141);
+  }
+  footer .box .top .infoCard .inside .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  footer .box .top .right {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  footer .box .top .right .links {
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: flex-end;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 0;
+    height: 30.4px;
+  }
+  footer .box .top .right .links .sMlinks {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 0;
+    -moz-column-gap: 2px;
+         column-gap: 2px;
+    height: -moz-fit-content;
+    height: fit-content;
+    height: 30.4px;
+  }
+  footer .box .top .right .links .sMlinks .sMLogo {
+    align-self: flex-end;
+    height: -moz-fit-content;
+    height: fit-content;
+    height: 30.4px;
+    transform: translateY(3px);
+  }
+  footer .box .top .mid .inside {
+    gap: 6px;
+  }
+  footer .box .top .mid .inside .text {
+    flex-direction: column;
+    gap: 2px;
+  }
+  footer .box .line {
+    height: 1px;
+    width: 768px;
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  footer .box .bottom {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    color: white;
+    color: rgb(141, 141, 141);
+    margin-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  footer .box {
+    width: 400px;
+    padding: 40px 10px 15px 10px;
+  }
+  footer .box .top {
+    margin-bottom: 30px;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  footer .box .top .footerLogo {
+    width: 98px;
+    top: -12px;
+    left: -20px;
+  }
+  footer .box .top .infoCard {
+    align-self: flex-end;
+    gap: 10px;
+    width: 285px;
+  }
+  footer .box .top .infoCard:last-child {
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 10px;
+  }
+  footer .box .top .infoCard:last-child h5 {
+    width: 285px;
+  }
+  footer .box .top .infoCard h5 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    align-self: flex-start;
+  }
+  footer .box .top .infoCard .inside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    color: white;
+    color: rgb(141, 141, 141);
+  }
+  footer .box .top .infoCard .inside .text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  footer .box .top .right {
+    align-items: flex-start;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: space-between;
+  }
+  footer .box .top .right .links {
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: flex-start;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 0;
+  }
+  footer .box .top .right .links .sMlinks {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 0;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  footer .box .top .right .links .sMlinks .sMLogo {
+    align-self: center;
+    height: 38px;
+  }
+  footer .box .top .mid .inside .text {
+    flex-direction: column;
+    gap: 5px;
+  }
+  footer .box .line {
+    height: 1px;
+    width: 400px;
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  footer .box .bottom {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    color: white;
+    color: rgb(141, 141, 141);
+    margin-top: 15px;
+  }
+}
 #toastBox {
   display: flex;
   flex-direction: column;
