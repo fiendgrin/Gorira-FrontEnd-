@@ -628,6 +628,15 @@ header .boxTop .boxContent .right .myBtn {
   transition: 0.3s;
   width: 104px;
   height: 37px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
 }
 header .boxTop .boxContent .right .myBtn .btnImg {
   height: 22px;
@@ -708,6 +717,51 @@ header .boxTop .boxContent .right .myBtn:active {
   header .boxTop .boxContent .right .myBtn:active {
     box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
     scale: 0.98;
+  }
+}
+header .boxTop .boxContent .right .myBtn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+header .boxTop .boxContent .right .myBtn:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  header .boxTop .boxContent .right .myBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  header .boxTop .boxContent .right .myBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  header .boxTop .boxContent .right .myBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  header .boxTop .boxContent .right .myBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  header .boxTop .boxContent .right .myBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  header .boxTop .boxContent .right .myBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   }
 }
 header .boxTop .boxContent .right .accountHolder {
@@ -931,6 +985,7 @@ header .boxTop .boxContent .right .basketHolder .basketContent .checkout {
   transition: 0.3s;
   width: 100%;
   height: 37px;
+  cursor: pointer;
   padding: 10px;
   text-decoration: none;
 }
@@ -2027,6 +2082,15 @@ footer .box .bottom {
   transition: 0.3s;
   width: 200px;
   height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
   display: flex;
   position: absolute;
   top: 70%;
@@ -2112,6 +2176,51 @@ footer .box .bottom {
   #homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn:active {
     box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
     scale: 0.98;
+  }
+}
+#homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   }
 }
 #homeMain .topSlider .swiper-wrapper .swiper-slide .slidetext {
@@ -2665,6 +2774,7 @@ footer .box .bottom {
   transition: 0.3s;
   width: 150px;
   height: 50px;
+  cursor: pointer;
   font-size: 16px;
   font-style: normal;
   font-family: "Chakra Petch", sans-serif;
@@ -2854,6 +2964,7 @@ footer .box .bottom {
     transition: 0.3s;
     width: 120px;
     height: 40px;
+    cursor: pointer;
     font-size: 16px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
@@ -3048,6 +3159,7 @@ footer .box .bottom {
     transition: 0.3s;
     width: 100%;
     height: 40px;
+    cursor: pointer;
     font-size: 16px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
@@ -3577,6 +3689,769 @@ footer .box .bottom {
   }
 }
 
+#loginMain {
+  background-color: rgb(14, 14, 16);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#loginMain .box {
+  position: relative;
+  background-color: rgb(8, 8, 8);
+  width: 30%;
+  border: 2px solid rgb(140, 1, 207);
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(162, 16, 247, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px 10px;
+}
+#loginMain .box .top {
+  width: 360px;
+  display: flex;
+  align-items: flex-start;
+}
+#loginMain .box .top .title {
+  margin-top: 24px;
+  font-size: 32px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 100%;
+  color: white;
+}
+#loginMain .box img {
+  position: absolute;
+  height: 120px;
+  top: -60px;
+}
+#loginMain .box .myForm {
+  margin-top: 20px;
+}
+#loginMain .box .myForm .checkInput {
+  color: #807e7e;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 1359px) {
+  #loginMain .box .myForm .checkInput {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  #loginMain .box .myForm .checkInput {
+    font-size: 16px;
+  }
+}
+#loginMain .box .myForm .checkInput .myCheckBox {
+  cursor: pointer;
+  border-color: #807e7e;
+  outline: none;
+}
+#loginMain .box .myForm .checkInput .myCheckBox:checked {
+  background-color: rgb(162, 16, 247) !important;
+  animation: checkAnimation 0.5s ease;
+}
+#loginMain .box .myForm .loginInput {
+  width: 360px;
+  position: relative;
+  height: 37px;
+  margin-bottom: 30px;
+}
+#loginMain .box .myForm .loginInput .inputLabel {
+  color: #807e7e;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  left: 6px;
+  position: absolute;
+  bottom: 8px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+#loginMain .box .myForm .loginInput .inputField {
+  color: white;
+  width: 100%;
+  padding: 4px 5px 4px 5px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  outline: none;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #807e7e;
+  transition: 0.3s;
+  background-color: transparent;
+}
+#loginMain .box .myForm .loginInput .inputField::-moz-placeholder {
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  color: transparent;
+}
+#loginMain .box .myForm .loginInput .inputField::placeholder {
+  transition: 0.3s;
+  color: transparent;
+}
+#loginMain .box .myForm .loginInput .inputField:focus {
+  border-bottom: 3px solid rgb(140, 1, 207);
+}
+#loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
+  border-bottom: 3px solid rgb(140, 1, 207);
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+}
+#loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #loginMain .box .myForm .loginInput .inputField:focus {
+  border-bottom: 3px solid rgb(140, 1, 207);
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+}
+#loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) ~ .inputLabel {
+  padding: 2px 2px;
+  color: rgb(140, 1, 207);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  left: 4px;
+  display: inline-block;
+  position: absolute;
+  bottom: 30px;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  background-color: rgb(8, 8, 8);
+}
+#loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown) ~ .inputLabel, #loginMain .box .myForm .loginInput .inputField:focus ~ .inputLabel {
+  padding: 2px 2px;
+  color: rgb(140, 1, 207);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  left: 4px;
+  display: inline-block;
+  position: absolute;
+  bottom: 30px;
+  transition: 0.3s;
+  background-color: rgb(8, 8, 8);
+}
+@media (max-width: 1359px) {
+  #loginMain .box .myForm .loginInput {
+    height: 30px;
+  }
+  #loginMain .box .myForm .loginInput .inputLabel {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    left: 6px;
+    position: absolute;
+    bottom: 7px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  #loginMain .box .myForm .loginInput .inputField {
+    color: white;
+    width: 100%;
+    padding: 4px 5px 4px 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    outline: none;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #807e7e;
+    transition: 0.3s;
+    background-color: transparent;
+    height: 30px;
+  }
+  #loginMain .box .myForm .loginInput .inputField::-moz-placeholder {
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField::placeholder {
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 3px solid rgb(140, 1, 207);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
+    border-bottom: 3px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 3px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 26px;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown) ~ .inputLabel, #loginMain .box .myForm .loginInput .inputField:focus ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 26px;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+}
+@media (max-width: 768px) {
+  #loginMain .box .myForm .loginInput {
+    height: 28px;
+  }
+  #loginMain .box .myForm .loginInput .inputLabel {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    left: 6px;
+    position: absolute;
+    bottom: 6px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  #loginMain .box .myForm .loginInput .inputField {
+    color: white;
+    width: 100%;
+    padding: 4px 5px 4px 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    outline: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #807e7e;
+    transition: 0.3s;
+    background-color: transparent;
+    height: 28px;
+  }
+  #loginMain .box .myForm .loginInput .inputField::-moz-placeholder {
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField::placeholder {
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 2px solid rgb(140, 1, 207);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
+    border-bottom: 2px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 500;
+    border-width: 2px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 2px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 500;
+    border-width: 2px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 21px;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown) ~ .inputLabel, #loginMain .box .myForm .loginInput .inputField:focus ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 21px;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+}
+#loginMain .box .myForm .registerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#loginMain .box .myForm .registerButton .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#loginMain .box .myForm .registerButton:hover {
+  scale: 1.02;
+}
+#loginMain .box .myForm .registerButton:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #loginMain .box .myForm .registerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 48px;
+  }
+  #loginMain .box .myForm .registerButton .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #loginMain .box .myForm .registerButton:hover {
+    scale: 1.02;
+  }
+  #loginMain .box .myForm .registerButton:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #loginMain .box .myForm .registerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 48px;
+  }
+  #loginMain .box .myForm .registerButton .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #loginMain .box .myForm .registerButton:hover {
+    scale: 1.02;
+  }
+  #loginMain .box .myForm .registerButton:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#loginMain .box .myForm .registerButton:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#loginMain .box .myForm .registerButton:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #loginMain .box .myForm .registerButton {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #loginMain .box .myForm .registerButton:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #loginMain .box .myForm .registerButton:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #loginMain .box .myForm .registerButton {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #loginMain .box .myForm .registerButton:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #loginMain .box .myForm .registerButton:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) {
+  #loginMain .box .myForm .registerButton {
+    height: 44px;
+  }
+}
+@media (max-width: 768px) {
+  #loginMain .box .myForm .registerButton {
+    height: 40px;
+  }
+}
+#loginMain .box .forgotPassword {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #406cfd;
+}
+#loginMain .box .forgotPassword:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  #loginMain .box .forgotPassword {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  #loginMain .box {
+    width: 380px;
+  }
+  #loginMain .box .top {
+    width: 340px;
+  }
+  #loginMain .box .top .title {
+    margin-top: 24px;
+    font-size: 30px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #loginMain .box .myForm {
+    margin-top: 20px;
+  }
+  #loginMain .box .myForm .loginInput {
+    width: 340px;
+    position: relative;
+    height: 37px;
+    margin-bottom: 30px;
+  }
+  #loginMain .box .myForm .loginInput .inputLabel {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    left: 6px;
+    position: absolute;
+    bottom: 8px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  #loginMain .box .myForm .loginInput .inputField {
+    color: white;
+    width: 100%;
+    padding: 4px 5px 4px 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    outline: none;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #807e7e;
+    transition: 0.3s;
+    background-color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField::-moz-placeholder {
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField::placeholder {
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 3px solid rgb(140, 1, 207);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
+    border-bottom: 3px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 3px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown) ~ .inputLabel, #loginMain .box .myForm .loginInput .inputField:focus ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #loginMain .box .myForm .loginInput {
+    height: 30px;
+  }
+  #loginMain .box .myForm .loginInput .inputLabel {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    left: 6px;
+    position: absolute;
+    bottom: 7px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  #loginMain .box .myForm .loginInput .inputField {
+    color: white;
+    width: 100%;
+    padding: 4px 5px 4px 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    outline: none;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #807e7e;
+    transition: 0.3s;
+    background-color: transparent;
+    height: 30px;
+  }
+  #loginMain .box .myForm .loginInput .inputField::-moz-placeholder {
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField::placeholder {
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 3px solid rgb(140, 1, 207);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
+    border-bottom: 3px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 3px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 26px;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown) ~ .inputLabel, #loginMain .box .myForm .loginInput .inputField:focus ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 26px;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #loginMain .box .myForm .loginInput {
+    height: 28px;
+  }
+  #loginMain .box .myForm .loginInput .inputLabel {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    left: 6px;
+    position: absolute;
+    bottom: 6px;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  #loginMain .box .myForm .loginInput .inputField {
+    color: white;
+    width: 100%;
+    padding: 4px 5px 4px 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    outline: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #807e7e;
+    transition: 0.3s;
+    background-color: transparent;
+    height: 28px;
+  }
+  #loginMain .box .myForm .loginInput .inputField::-moz-placeholder {
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField::placeholder {
+    transition: 0.3s;
+    color: transparent;
+  }
+  #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 2px solid rgb(140, 1, 207);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
+    border-bottom: 2px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 500;
+    border-width: 2px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #loginMain .box .myForm .loginInput .inputField:focus {
+    border-bottom: 2px solid rgb(140, 1, 207);
+    padding-bottom: 6px;
+    font-weight: 500;
+    border-width: 2px;
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 21px;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+  #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown) ~ .inputLabel, #loginMain .box .myForm .loginInput .inputField:focus ~ .inputLabel {
+    padding: 2px 2px;
+    color: rgb(140, 1, 207);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    left: 4px;
+    display: inline-block;
+    position: absolute;
+    bottom: 21px;
+    transition: 0.3s;
+    background-color: rgb(8, 8, 8);
+  }
+}
+
 #registerMain {
   background-color: rgb(14, 14, 16);
   height: 100vh;
@@ -3917,6 +4792,7 @@ footer .box .bottom {
   transition: 0.3s;
   width: 100%;
   height: 48px;
+  cursor: pointer;
   font-size: 16px;
   font-style: normal;
   font-family: "Chakra Petch", sans-serif;

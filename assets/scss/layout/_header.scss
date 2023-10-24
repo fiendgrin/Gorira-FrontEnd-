@@ -184,7 +184,7 @@ header {
         align-items: center;
         gap: 20px;
         .myBtn {
-          @include buttonMain(104px, 37px);
+          @include niceButton(104px, 37px);
         }
 
         .accountHolder {
