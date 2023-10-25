@@ -138,3 +138,16 @@ fileButtons.forEach((filebtn) => {
     }
   });
 });
+
+let numberInputs = document.querySelectorAll(".numberInput");
+numberInputs.forEach((numberInput) => {
+  numberInput.addEventListener("input", function () {
+    let inputValue = numberInput.value.replace(/\D/g, "");
+    if (inputValue > 9999) {
+      numberInput.value = inputValue.substring(0, 4);
+    } else {
+      numberInput.value = inputValue;
+    }
+  });
+});
+
