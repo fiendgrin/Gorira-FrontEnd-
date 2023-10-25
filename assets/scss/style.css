@@ -747,7 +747,7 @@ header .boxTop .boxContent .right .myBtn:active {
 }
 @media (max-width: 768px) {
   header .boxTop .boxContent .right .myBtn {
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 600;
@@ -2206,7 +2206,7 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   #homeMain .topSlider .swiper-wrapper .swiper-slide .slidebtn {
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 600;
@@ -4148,7 +4148,7 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   #registerMain .box .myForm .registerButton {
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 600;
@@ -4898,7 +4898,7 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   #loginMain .box .myForm .registerButton {
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 600;
@@ -5463,7 +5463,7 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 600;
@@ -5913,7 +5913,1417 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   #uploadMain .submitHolder button {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .submitHolder button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 1359px) {
+  #uploadMain {
+    position: relative;
+  }
+  #uploadMain .box {
+    width: 768px;
+    padding: 80px 10px 40px 10px;
+  }
+  #uploadMain .box .title {
+    font-size: 40px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms section .theForm {
+    padding: 30px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular {
+    width: 100%;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular:not(:first-child) {
+    margin-top: 20px;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputLabel {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputField {
+    background-color: rgb(14, 14, 16);
+    outline: none;
+    border: 2px solid rgb(80, 80, 80);
+    border-radius: 6px;
+    padding: 10px 10px;
     font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputField:hover {
+    border: 2px solid rgb(163, 163, 163);
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputField:focus {
+    border: 2px solid rgba(162, 16, 247, 0.8);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    scale: 1.02;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 200px;
+    height: 45px;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    scale: 1.02;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 200px;
+    height: 45px;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    scale: 1.02;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagHolder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagHolder .theTag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    background-color: rgb(51, 51, 51);
+    border: 1px solid rgba(199, 199, 199, 0.7803921569);
+    border-radius: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 12px;
+    color: white;
+    color: rgb(182, 182, 182);
+    padding: 6px;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagHolder .theTag img {
+    transform: rotate(45deg) translateX(1px);
+    height: 16px;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .general {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #uploadMain .box .uploadForms .general .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #uploadMain .box .uploadForms .general .right {
+    width: 600px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons {
+    transform: translateX(-22px);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: flex-start;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn {
+    transform: translateY(10px);
+    position: relative;
+    width: 100%;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn .uploadIcon {
+    position: absolute;
+    z-index: 2;
+    left: 14px;
+    top: 24px;
+    text-align: start;
+    pointer-events: none;
+    height: 32px;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn .desc {
+    width: 100%;
+    position: absolute;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    color: white;
+    z-index: 2;
+    left: 58px;
+    top: 32px;
+    text-align: start;
+    pointer-events: none;
+    color: rgb(160, 160, 160);
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn .fileUpload {
+    height: 60px;
+    margin-top: 40px;
+    color: transparent;
+    color: transparent;
+    width: 200px;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn .fileUpload:after {
+    content: "                                   ";
+    border-radius: 10px;
+    background-color: rgb(14, 14, 16);
+    position: absolute;
+    opacity: 1;
+    border: 1px solid grey;
+    color: rgba(199, 199, 199, 0.7803921569);
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload {
+    padding: 20px;
+    width: 280px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .coverImage {
+    height: 200px;
+    width: 200px;
+    transform: translateY(-20px);
+    border: 1px solid grey;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .coverImage img {
+    width: 198px;
+    height: 198px;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn {
+    transform: translateY(28px);
+    position: relative;
+    width: 100%;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn .uploadIcon {
+    position: absolute;
+    z-index: 2;
+    left: 14px;
+    top: 24px;
+    text-align: start;
+    pointer-events: none;
+    height: 32px;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn .desc {
+    width: 100%;
+    position: absolute;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    color: white;
+    z-index: 2;
+    left: 58px;
+    top: 32px;
+    text-align: start;
+    pointer-events: none;
+    color: rgb(160, 160, 160);
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn .fileUpload {
+    height: 60px;
+    margin-top: 40px;
+    color: transparent;
+    color: transparent;
+    width: 200px;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn .fileUpload:after {
+    content: "                                   ";
+    border-radius: 10px;
+    background-color: rgb(14, 14, 16);
+    position: absolute;
+    opacity: 1;
+    border: 1px solid grey;
+    color: rgba(199, 199, 199, 0.7803921569);
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms .selling .theForm {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #uploadMain .box .uploadForms .selling .theForm .licenses {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 20px;
+  }
+  #uploadMain .box .uploadForms .selling .theForm .regular {
+    margin-top: 0px !important;
+  }
+  #uploadMain .box .uploadForms .details .theForm {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  #uploadMain .box .uploadForms .details .theForm .left {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #uploadMain .box .uploadForms .details .theForm .left .regular .selectList {
+    width: 100%;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .details .theForm .left .regular .selectList option {
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .details .theForm .left .regular textarea {
+    max-height: 136px;
+    resize: none;
+  }
+  #uploadMain .box .uploadForms .details .theForm .right {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #uploadMain .box .uploadForms .details .theForm .right .regular .selectList {
+    width: 100%;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .details .theForm .right .regular .selectList option {
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .checkInput {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #uploadMain .box .uploadForms .checkInput {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #uploadMain .box .uploadForms .checkInput {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1359px) {
+  #uploadMain .box .uploadForms .checkInput .myCheckBox {
+    cursor: pointer;
+    border-color: #807e7e;
+    outline: none;
+  }
+  #uploadMain .box .uploadForms .checkInput .myCheckBox:checked {
+    background-color: rgb(162, 16, 247) !important;
+    animation: checkAnimation 0.5s ease;
+  }
+  #uploadMain .submitHolder {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+    border-top-left-radius: 10px;
+    padding: 20px 40px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  }
+  #uploadMain .submitHolder button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .submitHolder button .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .submitHolder button:hover {
+    scale: 1.02;
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #uploadMain .submitHolder button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100px;
+    height: 40px;
+  }
+  #uploadMain .submitHolder button .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .submitHolder button:hover {
+    scale: 1.02;
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #uploadMain .submitHolder button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100px;
+    height: 40px;
+  }
+  #uploadMain .submitHolder button .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .submitHolder button:hover {
+    scale: 1.02;
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) {
+  #uploadMain .submitHolder button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #uploadMain .submitHolder button {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .submitHolder button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #uploadMain .submitHolder button {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .submitHolder button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #uploadMain {
+    position: relative;
+  }
+  #uploadMain .box {
+    width: 400px;
+    padding: 60px 10px 40px 10px;
+    gap: 20px;
+  }
+  #uploadMain .box .title {
+    font-size: 30px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms section .sectionName {
+    align-self: flex-start;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    margin-bottom: 20px;
+  }
+  #uploadMain .box .uploadForms section .theForm {
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular {
+    width: 100%;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular:not(:first-child) {
+    margin-top: 20px;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputLabel {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 400;
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputField {
+    background-color: rgb(14, 14, 16);
+    outline: none;
+    border: 2px solid rgb(80, 80, 80);
+    border-radius: 6px;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputField:hover {
+    border: 2px solid rgb(163, 163, 163);
+  }
+  #uploadMain .box .uploadForms section .theForm .regular .inputField:focus {
+    border: 2px solid rgba(162, 16, 247, 0.8);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 140px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    scale: 1.02;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 140px;
+    height: 42px;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    scale: 1.02;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 140px;
+    height: 42px;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    scale: 1.02;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagsAndBtn .addBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagHolder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagHolder .theTag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    background-color: rgb(51, 51, 51);
+    border: 1px solid rgba(199, 199, 199, 0.7803921569);
+    border-radius: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 10px;
+    color: white;
+    color: rgb(182, 182, 182);
+    padding: 2px;
+  }
+  #uploadMain .box .uploadForms section .theForm .trackTags .tagHolder .theTag img {
+    transform: rotate(45deg) translateX(1px);
+    height: 16px;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .general {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #uploadMain .box .uploadForms .general .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #uploadMain .box .uploadForms .general .right {
+    width: 380px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons {
+    transform: translateX(-22px);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: flex-start;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn {
+    transform: translateY(10px);
+    position: relative;
+    width: 100%;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn .uploadIcon {
+    position: absolute;
+    z-index: 2;
+    left: 14px;
+    top: 24px;
+    text-align: start;
+    pointer-events: none;
+    height: 32px;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn .desc {
+    width: 100%;
+    position: absolute;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    color: white;
+    z-index: 2;
+    left: 58px;
+    top: 32px;
+    text-align: start;
+    pointer-events: none;
+    color: rgb(160, 160, 160);
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn .fileUpload {
+    height: 60px;
+    margin-top: 40px;
+    color: transparent;
+    color: transparent;
+    width: 200px;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns .wrapper-btn .fileUpload:after {
+    content: "                                   ";
+    border-radius: 10px;
+    background-color: rgb(14, 14, 16);
+    position: absolute;
+    opacity: 1;
+    border: 1px solid grey;
+    color: rgba(199, 199, 199, 0.7803921569);
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms .general .right .audioButtons .dwnbtns h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload {
+    padding: 20px;
+    width: 280px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .coverImage {
+    height: 200px;
+    width: 200px;
+    transform: translateY(-20px);
+    border: 1px solid grey;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .coverImage img {
+    width: 198px;
+    height: 198px;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn {
+    transform: translateY(28px);
+    position: relative;
+    width: 100%;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn .uploadIcon {
+    position: absolute;
+    z-index: 2;
+    left: 14px;
+    top: 24px;
+    text-align: start;
+    pointer-events: none;
+    height: 32px;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn .desc {
+    width: 100%;
+    position: absolute;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    color: white;
+    z-index: 2;
+    left: 58px;
+    top: 32px;
+    text-align: start;
+    pointer-events: none;
+    color: rgb(160, 160, 160);
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn .fileUpload {
+    height: 60px;
+    margin-top: 40px;
+    color: transparent;
+    color: transparent;
+    width: 200px;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .general .right .pfpUpload .wrapper-btn .fileUpload:after {
+    content: "                                   ";
+    border-radius: 10px;
+    background-color: rgb(14, 14, 16);
+    position: absolute;
+    opacity: 1;
+    border: 1px solid grey;
+    color: rgba(199, 199, 199, 0.7803921569);
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #uploadMain .box .uploadForms .selling .theForm {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #uploadMain .box .uploadForms .selling .theForm .licenses {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  #uploadMain .box .uploadForms .selling .theForm .regular {
+    margin-top: 0px !important;
+  }
+  #uploadMain .box .uploadForms .details .theForm {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #uploadMain .box .uploadForms .details .theForm .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #uploadMain .box .uploadForms .details .theForm .left .regular .selectList {
+    width: 100%;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .details .theForm .left .regular .selectList option {
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .details .theForm .left .regular textarea {
+    max-height: 136px;
+    resize: none;
+  }
+  #uploadMain .box .uploadForms .details .theForm .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #uploadMain .box .uploadForms .details .theForm .right .regular .selectList {
+    width: 100%;
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .details .theForm .right .regular .selectList option {
+    cursor: pointer;
+  }
+  #uploadMain .box .uploadForms .checkInput {
+    color: #807e7e;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #uploadMain .box .uploadForms .checkInput {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #uploadMain .box .uploadForms .checkInput {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  #uploadMain .box .uploadForms .checkInput .myCheckBox {
+    cursor: pointer;
+    border-color: #807e7e;
+    outline: none;
+  }
+  #uploadMain .box .uploadForms .checkInput .myCheckBox:checked {
+    background-color: rgb(162, 16, 247) !important;
+    animation: checkAnimation 0.5s ease;
+  }
+  #uploadMain .submitHolder {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+    border-top-left-radius: 10px;
+    padding: 10px 20px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  }
+  #uploadMain .submitHolder button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .submitHolder button .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .submitHolder button:hover {
+    scale: 1.02;
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #uploadMain .submitHolder button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 80px;
+    height: 30px;
+  }
+  #uploadMain .submitHolder button .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .submitHolder button:hover {
+    scale: 1.02;
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #uploadMain .submitHolder button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 80px;
+    height: 30px;
+  }
+  #uploadMain .submitHolder button .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #uploadMain .submitHolder button:hover {
+    scale: 1.02;
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #uploadMain .submitHolder button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #uploadMain .submitHolder button {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #uploadMain .submitHolder button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #uploadMain .submitHolder button:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #uploadMain .submitHolder button {
+    font-size: 12px;
     font-style: normal;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 600;
