@@ -774,6 +774,7 @@ header .boxTop .boxContent .right .accountHolder {
   padding: 4px;
   transition: 0.2s;
   position: relative;
+  border-radius: 20px;
 }
 header .boxTop .boxContent .right .accountHolder .loginIcon {
   height: 28px;
@@ -792,7 +793,6 @@ header .boxTop .boxContent .right .accountHolder .chevronAcc {
   transition: 0.1s;
 }
 header .boxTop .boxContent .right .accountHolder:hover {
-  border-radius: 20px;
   background-color: rgba(137, 43, 226, 0.3);
 }
 header .boxTop .boxContent .right .accountHolder:hover .chevronAcc {
@@ -859,6 +859,7 @@ header .boxTop .boxContent .right .basketHolder {
   padding: 4px;
   transition: 0.2s;
   position: relative;
+  border-radius: 20px;
 }
 header .boxTop .boxContent .right .basketHolder .basketIcon {
   width: 30px;
@@ -871,7 +872,6 @@ header .boxTop .boxContent .right .basketHolder .chevronBasket {
   transition: 0.1s;
 }
 header .boxTop .boxContent .right .basketHolder:hover {
-  border-radius: 20px;
   background-color: rgba(137, 43, 226, 0.3);
 }
 header .boxTop .boxContent .right .basketHolder:hover .chevronBasket {
@@ -7339,4 +7339,694 @@ footer .box .bottom {
   #uploadMain .submitHolder button:active {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   }
+}
+#profileMain {
+  background-color: rgb(14, 14, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profileMain .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.144);
+}
+#profileMain .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  padding: 80px 30px 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#profileMain .box .left {
+  padding: 20px;
+  border: 2px solid rgb(80, 80, 80);
+  border-radius: 6px;
+  background-color: rgb(8, 8, 8);
+  width: 300px;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+}
+#profileMain .box .left .reportHolder {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+#profileMain .box .left .reportHolder img {
+  height: 40px;
+  padding: 6px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#profileMain .box .left .reportHolder img:hover {
+  background-color: rgba(255, 255, 255, 0.144);
+}
+#profileMain .box .left .reportContent {
+  position: absolute;
+  right: 20px;
+  top: 51px;
+  padding: 10px 0px;
+  width: 80px;
+  background-color: rgb(14, 14, 16);
+  border: 1px solid grey;
+  display: none;
+}
+#profileMain .box .left .reportContent .report {
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  color: white;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+#profileMain .box .left .reportContent .report:hover {
+  background-color: rgba(255, 255, 255, 0.288);
+}
+#profileMain .box .left .account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  gap: 20px;
+}
+#profileMain .box .left .account .pfp {
+  width: 206px;
+  height: 206px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 1px solid grey;
+}
+#profileMain .box .left .account .profileName {
+  font-size: 22px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+#profileMain .box .left .account .accountButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+#profileMain .box .left .account .accountButtons .follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 100%;
+  height: 42px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#profileMain .box .left .account .accountButtons .follow .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#profileMain .box .left .account .accountButtons .follow:hover {
+  scale: 1.02;
+}
+#profileMain .box .left .account .accountButtons .follow:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #profileMain .box .left .account .accountButtons .follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 42px;
+  }
+  #profileMain .box .left .account .accountButtons .follow .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #profileMain .box .left .account .accountButtons .follow:hover {
+    scale: 1.02;
+  }
+  #profileMain .box .left .account .accountButtons .follow:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #profileMain .box .left .account .accountButtons .follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 42px;
+  }
+  #profileMain .box .left .account .accountButtons .follow .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #profileMain .box .left .account .accountButtons .follow:hover {
+    scale: 1.02;
+  }
+  #profileMain .box .left .account .accountButtons .follow:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#profileMain .box .left .account .accountButtons .follow:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#profileMain .box .left .account .accountButtons .follow:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #profileMain .box .left .account .accountButtons .follow {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #profileMain .box .left .account .accountButtons .follow:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #profileMain .box .left .account .accountButtons .follow:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #profileMain .box .left .account .accountButtons .follow {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #profileMain .box .left .account .accountButtons .follow:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #profileMain .box .left .account .accountButtons .follow:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+#profileMain .box .left .account .accountButtons .follow .check {
+  display: none;
+}
+#profileMain .box .left .account .accountButtons .follow .plus {
+  display: inline-block;
+}
+#profileMain .box .left .account .accountButtons .followActive {
+  background-color: rgba(87, 87, 87, 0.3019607843);
+}
+#profileMain .box .left .account .accountButtons .followActive:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#profileMain .box .left .account .accountButtons .followActive .check {
+  display: inline-block;
+}
+#profileMain .box .left .account .accountButtons .followActive .plus {
+  display: none;
+}
+#profileMain .box .left .account .accountButtons .message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 100%;
+  height: 42px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  background-color: rgba(87, 87, 87, 0.3019607843);
+}
+#profileMain .box .left .account .accountButtons .message .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#profileMain .box .left .account .accountButtons .message:hover {
+  scale: 1.02;
+}
+#profileMain .box .left .account .accountButtons .message:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #profileMain .box .left .account .accountButtons .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 42px;
+  }
+  #profileMain .box .left .account .accountButtons .message .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #profileMain .box .left .account .accountButtons .message:hover {
+    scale: 1.02;
+  }
+  #profileMain .box .left .account .accountButtons .message:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #profileMain .box .left .account .accountButtons .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 42px;
+  }
+  #profileMain .box .left .account .accountButtons .message .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #profileMain .box .left .account .accountButtons .message:hover {
+    scale: 1.02;
+  }
+  #profileMain .box .left .account .accountButtons .message:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#profileMain .box .left .account .accountButtons .message:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#profileMain .box .left .account .accountButtons .message:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #profileMain .box .left .account .accountButtons .message {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #profileMain .box .left .account .accountButtons .message:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #profileMain .box .left .account .accountButtons .message:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #profileMain .box .left .account .accountButtons .message {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #profileMain .box .left .account .accountButtons .message:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #profileMain .box .left .account .accountButtons .message:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+#profileMain .box .left .account .accountButtons .message:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#profileMain .box .left .sectionDefault {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 14px;
+}
+#profileMain .box .left .sectionDefault h6 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  color: rgb(136, 136, 136);
+}
+#profileMain .box .left .stats .statLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#profileMain .box .left .stats .statLine h5 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  line-height: 100%;
+  color: white;
+  color: rgb(224, 224, 224);
+}
+#profileMain .box .left .stats .statLine .numberElement {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  color: white;
+  color: rgb(224, 224, 224);
+}
+#profileMain .box .left .aboutMe .aboutMeLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#profileMain .box .left .aboutMe .aboutMeLine .text {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+  color: white;
+  color: rgb(224, 224, 224);
+  max-height: 200px;
+  overflow: auto;
+}
+#profileMain .box .left .findMeOn .link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+#profileMain .box .left .findMeOn .link h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+  color: white;
+}
+#profileMain .box .left .findMeOn .link img {
+  height: 26px;
+}
+#profileMain .box .left .findMeOn .link:hover {
+  opacity: 1;
+}
+#profileMain .box .right {
+  display: flex;
+  flex-direction: column;
+  width: 964px;
+}
+#profileMain .box .right .topText {
+  width: 964px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#profileMain .box .right .topText h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#profileMain .box .right .topText a {
+  text-decoration: none;
+}
+#profileMain .box .right .topText a p {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.3s;
+}
+#profileMain .box .right .topText a p:hover {
+  text-decoration: underline;
+}
+#profileMain .box .right .theTracks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  gap: 44px;
+}
+#profileMain .box .right .theTracks .myCard {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 21px;
+  transition: 0.3s;
+  position: relative;
+  height: 398px;
+  width: 292px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#profileMain .box .right .theTracks .myCard .play,
+#profileMain .box .right .theTracks .myCard .pause {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  top: 116.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.2s;
+}
+#profileMain .box .right .theTracks .myCard .play:hover,
+#profileMain .box .right .theTracks .myCard .pause:hover {
+  background-color: rgba(0, 0, 0, 0.747);
+}
+#profileMain .box .right .theTracks .myCard .pause {
+  display: none;
+}
+#profileMain .box .right .theTracks .myCard a .cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#profileMain .box .right .theTracks .myCard .bottomText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+#profileMain .box .right .theTracks .myCard .bottomText .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+#profileMain .box .right .theTracks .myCard .bottomText .top .price {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  color: #406cfd;
+}
+#profileMain .box .right .theTracks .myCard .bottomText .top .tempo {
+  display: flex;
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  color: #b4b3b3;
+}
+#profileMain .box .right .theTracks .myCard .bottomText a {
+  text-decoration: none;
+}
+#profileMain .box .right .theTracks .myCard .bottomText a .title {
+  margin-top: 4px;
+  width: 250px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 28px;
+  color: white;
+  height: 28px;
+  overflow: hidden;
+}
+#profileMain .box .right .theTracks .myCard .bottomText a {
+  text-decoration: none;
+}
+#profileMain .box .right .theTracks .myCard .bottomText a .artist {
+  margin-top: 4px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  color: white;
+  color: #b4b3b3;
+}
+#profileMain .box .right .theTracks .myCard .bottomText a .artist:hover {
+  text-decoration: underline;
+}
+#profileMain .box .right .theTracks .myCard:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#profileMain .box .right .theTracks .myCard:hover .play,
+#profileMain .box .right .theTracks .myCard:hover .pause {
+  opacity: 1;
 }

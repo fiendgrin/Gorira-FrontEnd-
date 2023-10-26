@@ -197,6 +197,7 @@ header {
           padding: 4px;
           transition: 0.2s;
           position: relative;
+          border-radius: 20px;
           .loginIcon {
             height: 28px;
             width: 28px;
@@ -217,7 +218,6 @@ header {
             .chevronAcc {
               opacity: 1;
             }
-            border-radius: 20px;
             background-color: rgba(137, 43, 226, 0.3);
           }
           .accountContent {
@@ -280,6 +280,7 @@ header {
           padding: 4px;
           transition: 0.2s;
           position: relative;
+          border-radius: 20px;
           .basketIcon {
             width: 30px;
             height: 30px;
@@ -294,7 +295,6 @@ header {
             .chevronBasket {
               opacity: 1;
             }
-            border-radius: 20px;
             background-color: rgba(137, 43, 226, 0.3);
           }
           .basketContent {

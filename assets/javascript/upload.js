@@ -1,5 +1,5 @@
 let addBtn = document.querySelector("#uploadMain .addBtn");
-let inputField = document.querySelector("#uploadMain .tagsInputField");
+let tagsinputField = document.querySelector("#uploadMain .tagsInputField");
 let tagHolder = document.querySelector("#uploadMain .tagHolder");
 let tagsAndBtn = document.querySelector("#uploadMain .tagsAndBtn");
 let inputTags = document.querySelectorAll("#uploadMain .singleTag");
@@ -25,8 +25,8 @@ function tagCreator(tagToPass) {
   </div>`;
 }
 
-inputField.addEventListener("input", () => {
-  inputIcon.textContent = `${inputField.value.length}/25`;
+tagsinputField.addEventListener("input", () => {
+  inputIcon.textContent = `${tagsinputField.value.length}/25`;
 });
 
 addBtn.addEventListener("click", (e) => {
