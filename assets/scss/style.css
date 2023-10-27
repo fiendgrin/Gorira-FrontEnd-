@@ -10343,3 +10343,866 @@ footer .box .bottom {
     color: #b4b3b3;
   }
 }
+#editProfileMain {
+  background-color: rgb(14, 14, 16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#editProfileMain .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 30px 40px 30px;
+  flex-direction: column;
+  gap: 40px;
+}
+#editProfileMain .box .title {
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  align-self: flex-start;
+}
+#editProfileMain .box .tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#editProfileMain .box .tabs .tab {
+  font-size: 30px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  color: rgba(255, 255, 255, 0.144);
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.144);
+  transition: 0.3s;
+  cursor: pointer;
+}
+#editProfileMain .box .tabs .activeTab {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+#editProfileMain .box .background {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid rgb(80, 80, 80);
+  border-radius: 10px;
+  background-color: rgb(8, 8, 8);
+}
+#editProfileMain .box .background .profileHolder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+#editProfileMain .box .background .profileHolder .pfpUpload {
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-self: flex-start;
+  gap: 40px;
+}
+#editProfileMain .box .background .profileHolder .pfpUpload .coverImage {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+#editProfileMain .box .background .profileHolder .pfpUpload .coverImage img {
+  width: 198px;
+  height: 198px;
+  border-radius: 50%;
+}
+#editProfileMain .box .background .profileHolder .pfpUpload .wrapper-btn {
+  transform: translateY(8px);
+  position: relative;
+  width: 247px;
+}
+#editProfileMain .box .background .profileHolder .pfpUpload .wrapper-btn .uploadIcon {
+  position: absolute;
+  z-index: 2;
+  left: 14px;
+  top: 24px;
+  text-align: start;
+  pointer-events: none;
+  height: 32px;
+}
+#editProfileMain .box .background .profileHolder .pfpUpload .wrapper-btn .desc {
+  width: 100%;
+  position: absolute;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 100%;
+  color: white;
+  z-index: 2;
+  left: 58px;
+  top: 32px;
+  text-align: start;
+  pointer-events: none;
+  color: rgb(160, 160, 160);
+}
+#editProfileMain .box .background .profileHolder .pfpUpload .wrapper-btn .fileUpload {
+  height: 60px;
+  margin-top: 40px;
+  color: transparent;
+  color: transparent;
+  width: 200px;
+  cursor: pointer;
+}
+#editProfileMain .box .background .profileHolder .pfpUpload .wrapper-btn .fileUpload:after {
+  content: "                                   ";
+  border-radius: 10px;
+  background-color: rgb(14, 14, 16);
+  position: absolute;
+  opacity: 1;
+  border: 1px solid grey;
+  color: rgba(199, 199, 199, 0.7803921569);
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#editProfileMain .box .background .profileHolder .regular {
+  width: 100%;
+  gap: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#editProfileMain .box .background .profileHolder .regular:not(:first-child) {
+  margin-top: 20px;
+}
+#editProfileMain .box .background .profileHolder .regular .inputLabel {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+#editProfileMain .box .background .profileHolder .regular .inputIcon {
+  height: 16px;
+  opacity: 0.8;
+  bottom: 1px;
+  align-self: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(219, 219, 219);
+}
+#editProfileMain .box .background .profileHolder .regular .inputField {
+  background-color: rgb(14, 14, 16);
+  outline: none;
+  border: 2px solid rgb(80, 80, 80);
+  border-radius: 6px;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.2s;
+  width: 100%;
+}
+#editProfileMain .box .background .profileHolder .regular .inputField:hover {
+  border: 2px solid rgb(163, 163, 163);
+}
+#editProfileMain .box .background .profileHolder .regular .inputField:focus {
+  border: 2px solid rgba(162, 16, 247, 0.8);
+}
+#editProfileMain .box .background .profileHolder .regular textarea {
+  max-height: 136px;
+  resize: none;
+}
+#editProfileMain .box .background .profileHolder .profileBtn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: -moz-max-content;
+  width: max-content;
+  height: 48px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#editProfileMain .box .background .profileHolder .profileBtn .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#editProfileMain .box .background .profileHolder .profileBtn:hover {
+  scale: 1.02;
+}
+#editProfileMain .box .background .profileHolder .profileBtn:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #editProfileMain .box .background .profileHolder .profileBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 48px;
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn:hover {
+    scale: 1.02;
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #editProfileMain .box .background .profileHolder .profileBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 48px;
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn:hover {
+    scale: 1.02;
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#editProfileMain .box .background .profileHolder .profileBtn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#editProfileMain .box .background .profileHolder .profileBtn:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #editProfileMain .box .background .profileHolder .profileBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #editProfileMain .box .background .profileHolder .profileBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #editProfileMain .box .background .profileHolder .profileBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+#editProfileMain .box .background .credentialsHolder {
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+#editProfileMain .box .background .credentialsHolder .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.144);
+}
+#editProfileMain .box .background .credentialsHolder .line {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#editProfileMain .box .background .credentialsHolder .line .lineLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+#editProfileMain .box .background .credentialsHolder .line .lineLeft .lineName {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  color: rgba(255, 255, 255, 0.6);
+}
+#editProfileMain .box .background .credentialsHolder .line .lineLeft .lineText {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#editProfileMain .box .background .credentialsHolder .line .lineRight {
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+#editProfileMain .box .background .changeForm {
+  width: 100%;
+}
+#editProfileMain .box .background .changeForm .goBack {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+}
+#editProfileMain .box .background .changeForm .goBack img {
+  width: 16px;
+}
+#editProfileMain .box .background .changeForm .regular {
+  width: 100%;
+  gap: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#editProfileMain .box .background .changeForm .regular:not(:first-child) {
+  margin-top: 20px;
+}
+#editProfileMain .box .background .changeForm .regular .inputLabel {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+#editProfileMain .box .background .changeForm .regular .inputIcon {
+  height: 16px;
+  opacity: 0.8;
+  bottom: 1px;
+  align-self: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(219, 219, 219);
+}
+#editProfileMain .box .background .changeForm .regular .inputField {
+  background-color: rgb(14, 14, 16);
+  outline: none;
+  border: 2px solid rgb(80, 80, 80);
+  border-radius: 6px;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.2s;
+  width: 100%;
+}
+#editProfileMain .box .background .changeForm .regular .inputField:hover {
+  border: 2px solid rgb(163, 163, 163);
+}
+#editProfileMain .box .background .changeForm .regular .inputField:focus {
+  border: 2px solid rgba(162, 16, 247, 0.8);
+}
+#editProfileMain .box .background .changeForm .regular textarea {
+  max-height: 136px;
+  resize: none;
+}
+#editProfileMain .box .background .changeForm .formBtn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: -moz-max-content;
+  width: max-content;
+  height: 48px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#editProfileMain .box .background .changeForm .formBtn .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#editProfileMain .box .background .changeForm .formBtn:hover {
+  scale: 1.02;
+}
+#editProfileMain .box .background .changeForm .formBtn:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #editProfileMain .box .background .changeForm .formBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 48px;
+  }
+  #editProfileMain .box .background .changeForm .formBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #editProfileMain .box .background .changeForm .formBtn:hover {
+    scale: 1.02;
+  }
+  #editProfileMain .box .background .changeForm .formBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #editProfileMain .box .background .changeForm .formBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 48px;
+  }
+  #editProfileMain .box .background .changeForm .formBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #editProfileMain .box .background .changeForm .formBtn:hover {
+    scale: 1.02;
+  }
+  #editProfileMain .box .background .changeForm .formBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#editProfileMain .box .background .changeForm .formBtn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#editProfileMain .box .background .changeForm .formBtn:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #editProfileMain .box .background .changeForm .formBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #editProfileMain .box .background .changeForm .formBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #editProfileMain .box .background .changeForm .formBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #editProfileMain .box .background .changeForm .formBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #editProfileMain .box .background .changeForm .formBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #editProfileMain .box .background .changeForm .formBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+#editProfileMain .box .background .socialMediaHolder {
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+#editProfileMain .box .background .socialMediaHolder .regular {
+  width: 100%;
+  gap: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#editProfileMain .box .background .socialMediaHolder .regular:not(:first-child) {
+  margin-top: 20px;
+}
+#editProfileMain .box .background .socialMediaHolder .regular .inputLabel {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+#editProfileMain .box .background .socialMediaHolder .regular .inputIcon {
+  height: 16px;
+  opacity: 0.8;
+  bottom: 1px;
+  align-self: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(219, 219, 219);
+}
+#editProfileMain .box .background .socialMediaHolder .regular .inputField {
+  background-color: rgb(14, 14, 16);
+  outline: none;
+  border: 2px solid rgb(80, 80, 80);
+  border-radius: 6px;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.2s;
+  width: 100%;
+}
+#editProfileMain .box .background .socialMediaHolder .regular .inputField:hover {
+  border: 2px solid rgb(163, 163, 163);
+}
+#editProfileMain .box .background .socialMediaHolder .regular .inputField:focus {
+  border: 2px solid rgba(162, 16, 247, 0.8);
+}
+#editProfileMain .box .background .socialMediaHolder .regular textarea {
+  max-height: 136px;
+  resize: none;
+}
+#editProfileMain .box .background .socialMediaHolder .socialMediaBtn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: rgb(162, 16, 247);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: -moz-max-content;
+  width: max-content;
+  height: 48px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#editProfileMain .box .background .socialMediaHolder .socialMediaBtn .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#editProfileMain .box .background .socialMediaHolder .socialMediaBtn:hover {
+  scale: 1.02;
+}
+#editProfileMain .box .background .socialMediaHolder .socialMediaBtn:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 48px;
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn:hover {
+    scale: 1.02;
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 48px;
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn:hover {
+    scale: 1.02;
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#editProfileMain .box .background .socialMediaHolder .socialMediaBtn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#editProfileMain .box .background .socialMediaHolder .socialMediaBtn:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #editProfileMain .box .background .socialMediaHolder .socialMediaBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+#editProfileMain .box .background .emailChangeForm {
+  display: none;
+}
+#editProfileMain .box .background .usernameChangeForm {
+  display: none;
+}
+#editProfileMain .box .background .passwordChangeForm {
+  display: none;
+}
+#editProfileMain .box .background .phoneChangeForm {
+  display: none;
+}

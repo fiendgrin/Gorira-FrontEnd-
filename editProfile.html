@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link src="./assets/jquerry/jquerry.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"
+      integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <title>Edit Profile</title>
+  </head>
+  <body>
+    <!--Start-->
+    <!--Header start-->
+    <header>
+      <div class="boxTop">
+        <div class="boxContent">
+          <div class="left">
+            <img class="burger" src="./assets/images/icons/burger.svg" alt="" />
+            <a href=""
+              ><img class="logo" src="./assets/images/logo/Logo.png" alt=""
+            /></a>
+            <div class="mySearchForm">
+              <input
+                type="input"
+                autocomplete="off"
+                class="inputField"
+                name="search"
+                id="search"
+                placeholder="Search"
+              />
+              <label class="inputLabel">Search</label>
+              <img
+                class="searchIcon"
+                src="./assets/images/icons/search.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="right">
+            <a href="upload.html" class="myBtn">
+              <img
+                class="btnImg"
+                src="./assets/images/icons/upload.svg"
+                alt=""
+              />Upload
+            </a>
+            <!--Account-->
+            <div class="accountHolder">
+              <img class="pfp" src="./assets/images/pfp/1.jpg" alt="" />
+              <!-- <img class="loginIcon" src="./assets/images/icons/user.svg" alt=""> -->
+              <img
+                class="chevronAcc"
+                src="./assets/images/icons/chevron-down.svg"
+                alt=""
+              />
+              <div class="accountContent">
+                <!--Single Line start-->
+                <a href="profile.html" class="accountLine">
+                  <img src="./assets/images/icons/user.svg" alt="" />
+                  <p>My Profile</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line End-->
+                <!--Single Line start-->
+                <a href="profile.html" class="accountLine">
+                  <img src="./assets/images/icons/music.svg" alt="" />
+                  <p>My Tracks</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line End-->
+                <!--Single Line start-->
+                <a href="login.html" class="accountLine">
+                  <img src="./assets/images/icons/lock-open.svg" alt="" />
+                  <p>Sign In</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line End-->
+                <!--Single Line start-->
+                <a href="register.html" class="accountLine">
+                  <img src="./assets/images/icons/squareAndPencil.svg" alt="" />
+                  <p>Sign Up</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line end-->
+                <!--Single Line start-->
+                <a href="logOut" class="accountLine">
+                  <img src="./assets/images/icons/power.svg" alt="" />
+                  <p>Sign Out</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line End-->
+              </div>
+            </div>
+            <!--Basket-->
+            <div class="basketHolder">
+              <img
+                class="basketIcon"
+                src="./assets/images/icons/shopping-cart.svg"
+                alt=""
+              />
+              <img
+                class="chevronBasket"
+                src="./assets/images/icons/chevron-down.svg"
+                alt=""
+              />
+              <div class="basketContent">
+                <div class="cartCount"></div>
+                <!--One Beat Start-->
+                <div class="oneBeat">
+                  <a class="beatDetail" href=""
+                    ><img
+                      class="beatCover"
+                      src="./assets/images/covers/youngThug.jpg"
+                      alt=""
+                    />
+                    <p class="title">my Beat Title 2023</p>
+                  </a>
+                  <p class="price">$20.99</p>
+                  <a class="removeBasket" href=""
+                    ><img
+                      class="ex"
+                      src="./assets/images/icons/plus.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="divider"></div>
+                <!--One Beat End-->
+                <!--One Beat Start-->
+                <div class="oneBeat">
+                  <a class="beatDetail" href=""
+                    ><img
+                      class="beatCover"
+                      src="./assets/images/covers/kevinGates.jpg"
+                      alt=""
+                    />
+                    <p class="title">my Beat Title 2023</p>
+                  </a>
+                  <p class="price">$20.99</p>
+                  <a class="removeBasket" href=""
+                    ><img
+                      class="ex"
+                      src="./assets/images/icons/plus.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="divider"></div>
+                <!--One Beat End-->
+                <!--One Beat Start-->
+                <div class="oneBeat">
+                  <a class="beatDetail" href=""
+                    ><img
+                      class="beatCover"
+                      src="./assets/images/covers/kevinGates.jpg"
+                      alt=""
+                    />
+                    <p class="title">my Beat Title 2023</p>
+                  </a>
+                  <p class="price">$20.99</p>
+                  <a class="removeBasket" href=""
+                    ><img
+                      class="ex"
+                      src="./assets/images/icons/plus.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="divider"></div>
+                <!--One Beat End-->
+                <a class="checkout" href=""
+                  ><img
+                    src="./assets/images/icons/credit-card.svg"
+                    alt=""
+                  />Checkout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navBar">
+      <div class="boxBottom">
+        <div class="bottomBoxContent">
+          <a id="feed" href="">Feed</a>
+          <a id="myMedia" href="">My Media</a>
+          <a id="home" href="">Home</a>
+          <a id="tracks" href="">Tracks</a>
+          <a id="artists" href="">Artists</a>
+        </div>
+      </div>
+    </nav>
+    <!--Header End-->
+
+    <!--Main Start-->
+    <main id="editProfileMain">
+      <div class="box">
+        <h2 class="title">Account Settings</h2>
+        <!--Tabs Start-->
+        <div class="tabs">
+          <h3 class="tab activeTab profileTab">Profile</h3>
+          <h3 class="tab credentialsTab">Credentials</h3>
+          <h3 class="tab socialMediaTab">Social Media</h3>
+        </div>
+        <!--Tabs End-->
+
+        <div class="background">
+            
+        <!--Profile Start-->
+        <form class="profileHolder">
+            <div class="pfpUpload">
+              <div class="coverImage"></div>
+              <div class="wrapper-btn">
+                <img
+                  class="uploadIcon"
+                  src="./assets/images/icons/edit-image-photo.svg"
+                  alt=""
+                />
+                <p class="desc">Profile img (jpg or png)</p>
+                <input
+                  class="fileUpload"
+                  type="file"
+                  accept=".jpg, .png, .jpeg"
+                />
+              </div>
+            </div>
+            <div class="regular firstName">
+              <label class="inputLabel">First Name</label>
+              <input class="inputField" type="text" />
+            </div>
+            <div class="regular lastName">
+              <label class="inputLabel">Last Name</label>
+              <input class="inputField" type="text" />
+            </div>
+            <div class="regular displayName">
+              <label class="inputLabel">Display Name</label>
+              <input class="inputField" type="text" />
+            </div>
+            <div class="regular location">
+              <label class="inputLabel">Location</label>
+              <input class="inputField" type="text" />
+            </div>
+            <div class="regular aboutMe">
+              <label class="inputLabel">About Me</label>
+              <textarea
+                class="inputField"
+                name="aboutMe"
+                id="aboutMe"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button type="submit" class="profileBtn">
+              <img src="./assets/images/icons/save-cute.svg" alt="" />Save Changes
+            </button>
+          </form>
+          <!--Profile End-->
+  
+          <!--Credentials Start-->
+          <div class="credentialsHolder">
+            <div class="divider"></div>
+            <div class="line email">
+              <div class="lineLeft">
+                <h4 class="lineName">E-Mail</h4>
+                <p class="lineText">YourMail@gmail.com</p>
+              </div>
+              <a class="lineRight emailBtn">change e-mail address</a>
+            </div>
+            <div class="divider"></div>
+            <div class="line username">
+              <div class="lineLeft">
+                <h4 class="lineName">Username</h4>
+                <p class="lineText">FiendGrin</p>
+              </div>
+              <a class="lineRight usernameBtn">change username</a>
+            </div>
+            <div class="divider"></div>
+            <div class="line password">
+              <div class="lineLeft">
+                <h4 class="lineName">Password</h4>
+                <p class="lineText">***********</p>
+              </div>
+              <a class="lineRight passwordBtn">change password</a>
+            </div>
+            <div class="divider"></div>
+            <div class="line phone">
+              <div class="lineLeft">
+                <h4 class="lineName">Phone</h4>
+                <p class="lineText">+7-999-99-99</p>
+              </div>
+              <a class="lineRight phoneBtn">change phone number</a>
+            </div>
+            <div class="divider"></div>
+          </div>
+          <!--Credentials End-->
+  
+          <!--Email Change(Credentials) Form Start-->
+          <form class="emailChangeForm changeForm" action="">
+            <div class="goBack">
+              <img
+                src="./assets/images/icons/chevron-lefticonImage24px.svg"
+                alt=""
+              />
+              Go back
+            </div>
+            <div class="regular email">
+              <label class="inputLabel">E-mail</label>
+              <input class="inputField" type="text" placeholder="" />
+            </div>
+            <div class="regular currentPassword">
+              <label class="inputLabel">Current Password</label>
+              <input
+                class="inputField"
+                type="text"
+                placeholder="Type current password"
+              />
+            </div>
+            <button type="submit" class="emailFormBtn formBtn">
+              <img src="./assets/images/icons/save-cute.svg" alt="" />Save Changes
+            </button>
+          </form>
+          <!--Email Change(Credentials) Form End-->
+  
+          <!--Username Change(Credentials) Form Start-->
+          <form class="usernameChangeForm changeForm" action="">
+            <div class="goBack">
+              <img
+                src="./assets/images/icons/chevron-lefticonImage24px.svg"
+                alt=""
+              />
+              Go back
+            </div>
+            <div class="regular username">
+              <label class="inputLabel">Username</label>
+              <input class="inputField" type="text" placeholder="" />
+            </div>
+            <div class="regular currentPassword">
+              <label class="inputLabel">Current Password</label>
+              <input
+                class="inputField"
+                type="text"
+                placeholder="Type current password"
+              />
+            </div>
+            <button type="submit" class="usernameFormBtn formBtn">
+              <img src="./assets/images/icons/save-cute.svg" alt="" />Save Changes
+            </button>
+          </form>
+          <!--Username Change(Credentials) Form End-->
+  
+          <!--Password Change(Credentials) Form Start-->
+          <form class="passwordChangeForm changeForm" action="">
+            <div class="goBack">
+              <img
+                src="./assets/images/icons/chevron-lefticonImage24px.svg"
+                alt=""
+              />
+              Go back
+            </div>
+            <div class="regular currentPassword">
+              <label class="inputLabel">Current Password</label>
+              <input
+                class="inputField"
+                type="password"
+                placeholder="Type current password"
+              />
+            </div>
+            <div class="regular password">
+              <label class="inputLabel">New Password</label>
+              <input
+                type="password"
+                class="inputField"
+                type="text"
+                placeholder="Type new password"
+              />
+            </div>
+            <div class="regular confirmPassword">
+              <label class="inputLabel">Confirm Password</label>
+              <input
+                type="password"
+                class="inputField"
+                type="text"
+                placeholder="Confirm password"
+              />
+            </div>
+            <button type="submit" class="confirmPasswordFormBtn formBtn">
+              <img src="./assets/images/icons/save-cute.svg" alt="" />Save Changes
+            </button>
+          </form>
+          <!--Password Change(Credentials) Form End-->
+  
+          <!--Phone Change(Credentials) Form Start-->
+          <form class="phoneChangeForm changeForm" action="">
+            <div class="goBack">
+              <img
+                src="./assets/images/icons/chevron-lefticonImage24px.svg"
+                alt=""
+              />
+              Go back
+            </div>
+            <div class="regular phone">
+              <label class="inputLabel">Phone</label>
+              <input class="inputField" type="text" placeholder="" />
+            </div>
+            <div class="regular currentPassword">
+              <label class="inputLabel">Current Password</label>
+              <input
+                class="inputField"
+                type="text"
+                placeholder="Type current password"
+              />
+            </div>
+            <button type="submit" class="phoneFormBtn formBtn">
+              <img src="./assets/images/icons/save-cute.svg" alt="" />Save Changes
+            </button>
+          </form>
+          <!--Phone Change(Credentials) Form End-->
+  
+          <!--Social Media Start-->
+          <form class="socialMediaHolder">
+            <div class="regular youtube">
+              <label class="inputLabel">YouTube</label>
+              <input
+                class="inputField"
+                type="text"
+                placeholder="youtube.com/..."
+              />
+            </div>
+            <div class="regular instagram">
+              <label class="inputLabel">Instagram</label>
+              <input
+                class="inputField"
+                type="text"
+                placeholder="instagram.com/..."
+              />
+            </div>
+            <div class="regular soundcloud">
+              <label class="inputLabel">SoundCloud</label>
+              <input
+                class="inputField"
+                type="text"
+                placeholder="soundcloud.com/..."
+              />
+            </div>
+            <div class="regular twitter">
+              <label class="inputLabel">Twitter</label>
+              <input
+                class="inputField"
+                type="text"
+                placeholder="twitter.com/..."
+              />
+            </div>
+            <div class="regular facebook">
+              <label class="inputLabel">Facebook</label>
+              <input
+                class="inputField"
+                type="text"
+                placeholder="facebook.com/..."
+              />
+            </div>
+            <div class="regular vk">
+              <label class="inputLabel">VK</label>
+              <input class="inputField" type="text" placeholder="vk.com/..." />
+            </div>
+            <button type="submit" class="socialMediaBtn">
+              <img src="./assets/images/icons/save-cute.svg" alt="" />Save Changes
+            </button>
+          </form>
+          <!--Social Media End-->
+        </div>
+      </div>
+    </main>
+    <!--Main End-->
+
+    <!--Footer start-->
+    <footer>
+      <div class="box">
+        <div class="top">
+          <a href=""
+            ><img class="footerLogo" src="./assets/images/logo/Logo.png" alt=""
+          /></a>
+          <!--Contact Start-->
+          <div class="left infoCard">
+            <h5>Contact Information</h5>
+            <div class="info inside">
+              <div class="emailGorira text">
+                <h6>Email:</h6>
+                <p>Gorira@gmail.com</p>
+              </div>
+              <div class="phoneGorira text">
+                <h6>Phone:</h6>
+                <p>+7-(999)-99-99</p>
+              </div>
+            </div>
+          </div>
+          <!--Contact End-->
+
+          <!--location Start-->
+          <div class="mid infoCard">
+            <h5>Where we located</h5>
+            <div class="location inside">
+              <div class="locationGorira text">
+                <h6>Location:</h6>
+                <p>Mountain View, California, United States</p>
+              </div>
+              <div class="addressGorira text">
+                <h6>Address:</h6>
+                <p>1600 Amphitheatre Parkway Mountain View, CA 94043</p>
+              </div>
+            </div>
+          </div>
+          <!--location End-->
+
+          <!--Social Media Links Start-->
+          <div class="right infoCard">
+            <h5>Social Media Links</h5>
+            <div class="links inside">
+              <div class="sMlinks">
+                <a href="https://soundcloud.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/soundcloud-logo.svg"
+                    alt=""
+                /></a>
+                <a href="https://www.youtube.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/youtube-clip-logo.svg"
+                    alt=""
+                /></a>
+                <a href="https://www.instagram.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/instagram-logo-2.svg"
+                    alt=""
+                /></a>
+                <a href="https://www.twitter.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/twitter-logo-1.svg"
+                    alt=""
+                /></a>
+                <a href="https://www.vk.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/v-kontakte-logo.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!--Social Media Links End-->
+        </div>
+        <div class="line"></div>
+        <p class="bottom">© 2024 Gorira, Inc. • Version: 1</p>
+      </div>
+    </footer>
+    <!--Footer End-->
+
+    <!--Player Start-->
+    <div id="aplayer"></div>
+    <!--Player End-->
+
+    <!--Script For Bootstrap-->
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--Script for Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--APlayer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+    <!--Script Custom Header-->
+    <script src="./assets/javascript/header.js"></script>
+    <!--Script Custom Swiper-->
+    <script src="./assets/javascript/swiper.js"></script>
+    <!--Script Custom Music on play-->
+    <script src="./assets/javascript/play.js"></script>
+    <!--Edit Profile-->
+    <script src="./assets/javascript/editProfile.js"></script>
+    <!--End-->
+  </body>
+</html>
