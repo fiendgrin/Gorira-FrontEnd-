@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
     <link src="./assets/jquerry/jquerry.js" />
     <link
       rel="stylesheet"
@@ -27,7 +45,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/scss/style.css" />
-    <title>Edit Profile</title>
+    <title>Artists</title>
   </head>
   <body>
     <!--Start-->
@@ -217,6 +235,13 @@
       <div class="box">
         <div class="topText">
           <h3>Artists</h3>
+          <div class="filter">
+            <img class="filterBtn" src="./assets/images/icons/filtersiconImage24px.svg" alt="" />
+            <div class="filterHolder">
+              <a href="">Popular</a>
+              <a href="">New</a>
+            </div>
+          </div>
         </div>
         <div class="musicians">
           <!--Single Card Start-->
@@ -410,6 +435,8 @@
     <!--Script Custom Music on play-->
     <script src="./assets/javascript/play.js"></script>
     <!--Musicians-->
+    <script src="./assets/javascript/arrtists.js"></script>
+
     <!--End-->
   </body>
 </html>
