@@ -13405,7 +13405,7 @@ label {
 #tracksMain .box .left .filtersTitle a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 300;
@@ -13695,13 +13695,16 @@ label {
   align-items: center;
   text-decoration: none;
 }
-#tracksMain .box .right .topText h3 {
+#tracksMain .box .right .topText .leftName {
   font-size: 34px;
   font-style: normal;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   line-height: 100%;
   color: white;
+}
+#tracksMain .box .right .topText .leftName img {
+  display: none;
 }
 #tracksMain .box .right .topText .sort {
   font-size: 16px;
@@ -13880,4 +13883,1067 @@ label {
 #tracksMain .box .right .theTracks .myCard:hover .play,
 #tracksMain .box .right .theTracks .myCard:hover .pause {
   opacity: 1;
+}
+
+@media (max-width: 1359px) {
+  #tracksMain .box {
+    width: 768px;
+    padding: 60px 10px 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    position: relative;
+  }
+  #tracksMain .box .left {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(8, 8, 8);
+    width: 200px;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s;
+  }
+  #tracksMain .box .left .filtersTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 100%;
+  }
+  #tracksMain .box .left .filtersTitle a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    color: white;
+  }
+  #tracksMain .box .left .filtersTitle a:hover {
+    text-decoration: underline;
+  }
+  #tracksMain .box .left .filtersTitle h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    color: white;
+  }
+  #tracksMain .box .left .filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+  #tracksMain .box .left .filter .top {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  #tracksMain .box .left .filter .top:hover {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  #tracksMain .box .left .filter .top .filterName {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #tracksMain .box .left .filter .top .filterName .filterIcon {
+    height: 26px;
+  }
+  #tracksMain .box .left .filter .top .chevron {
+    height: 22px;
+    width: 22px;
+    opacity: 0.6;
+    transition: 0.2s;
+  }
+  #tracksMain .box .left .filter .top .chevron.active {
+    transform: rotate(-180deg);
+    opacity: 1;
+  }
+  #tracksMain .box .left .filter .bottom {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4px;
+    transition: 0.3s;
+    max-width: 0px;
+  }
+  #tracksMain .box .left .filter .bottom.active {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: flex;
+  }
+  #tracksMain .box .left .filter .bottom .inputs {
+    display: flex;
+    gap: 4px;
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular {
+    width: 100%;
+    gap: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular .inputLabel {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular .inputField {
+    background-color: rgb(14, 14, 16);
+    outline: none;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 6px;
+    padding: 6px 6px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular .inputField:hover {
+    border: 1px solid rgb(163, 163, 163);
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular .inputField:focus {
+    border: 1px solid rgba(162, 16, 247, 0.8);
+  }
+  #tracksMain .box .left .filterSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #tracksMain .box .left .filterSubmit .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    scale: 1.02;
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #tracksMain .box .left .filterSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 40px;
+  }
+  #tracksMain .box .left .filterSubmit .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    scale: 1.02;
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #tracksMain .box .left .filterSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 40px;
+  }
+  #tracksMain .box .left .filterSubmit .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    scale: 1.02;
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) {
+  #tracksMain .box .left .filterSubmit:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #tracksMain .box .left .filterSubmit {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #tracksMain .box .left .filterSubmit {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) {
+  #tracksMain .box .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 528px;
+  }
+  #tracksMain .box .right .topText {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  #tracksMain .box .right .topText .leftName {
+    font-size: 28px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #tracksMain .box .right .topText .leftName img {
+    display: none;
+  }
+  #tracksMain .box .right .topText .sort {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 20px;
+  }
+  #tracksMain .box .right .topText .sort img {
+    height: 18px;
+  }
+  #tracksMain .box .right .topText .sort:hover {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  #tracksMain .box .right .topText .sortHolder {
+    z-index: 2;
+    position: absolute;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: none;
+    flex-direction: column;
+    padding: 4px 2px;
+    gap: 6px;
+    right: 0;
+    top: 37px;
+    width: 120px;
+    background-color: rgb(8, 8, 8);
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+  #tracksMain .box .right .topText .sortHolder.active {
+    display: flex;
+  }
+  #tracksMain .box .right .topText .sortHolder a {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+  }
+  #tracksMain .box .right .topText .sortHolder a:hover {
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #tracksMain .box .right .theTracks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    row-gap: 20px;
+  }
+  #tracksMain .box .right .theTracks .myCard {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    position: relative;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #tracksMain .box .right .theTracks .myCard .play,
+  #tracksMain .box .right .theTracks .myCard .pause {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    top: 42px;
+    left: 42px;
+    transform: translateX(0%);
+    width: 36px;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.2s;
+  }
+  #tracksMain .box .right .theTracks .myCard .play:hover,
+  #tracksMain .box .right .theTracks .myCard .pause:hover {
+    background-color: rgba(0, 0, 0, 0.747);
+  }
+  #tracksMain .box .right .theTracks .myCard .pause {
+    display: none;
+  }
+  #tracksMain .box .right .theTracks .myCard a .cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText .top .price {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    color: #406cfd;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText .top .tempo {
+    display: flex;
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    color: #b4b3b3;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a {
+    text-decoration: none;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a .title {
+    margin-top: 4px;
+    width: 250px;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 28px;
+    color: white;
+    height: 28px;
+    overflow: hidden;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a {
+    text-decoration: none;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a .artist {
+    margin-top: 4px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    color: white;
+    color: #b4b3b3;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a .artist:hover {
+    text-decoration: underline;
+  }
+  #tracksMain .box .right .theTracks .myCard:hover {
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #tracksMain .box .right .theTracks .myCard:hover .play,
+  #tracksMain .box .right .theTracks .myCard:hover .pause {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  #tracksMain .box {
+    width: 400px;
+    padding: 60px 10px 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    position: relative;
+  }
+  #tracksMain .box .left {
+    position: absolute;
+    top: 98px;
+    z-index: 10;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(8, 8, 8);
+    width: 190px;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+    transition: 0.3s;
+  }
+  #tracksMain .box .left.active {
+    display: flex;
+  }
+  #tracksMain .box .left .filtersTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 100%;
+  }
+  #tracksMain .box .left .filtersTitle a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 100%;
+    color: white;
+  }
+  #tracksMain .box .left .filtersTitle a:hover {
+    text-decoration: underline;
+  }
+  #tracksMain .box .left .filtersTitle h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    color: white;
+  }
+  #tracksMain .box .left .filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+  #tracksMain .box .left .filter .top {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  #tracksMain .box .left .filter .top:hover {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  #tracksMain .box .left .filter .top .filterName {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #tracksMain .box .left .filter .top .filterName .filterIcon {
+    height: 26px;
+  }
+  #tracksMain .box .left .filter .top .chevron {
+    height: 22px;
+    width: 22px;
+    opacity: 0.6;
+    transition: 0.2s;
+  }
+  #tracksMain .box .left .filter .top .chevron.active {
+    transform: rotate(-180deg);
+    opacity: 1;
+  }
+  #tracksMain .box .left .filter .bottom {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4px;
+    transition: 0.3s;
+    max-width: 0px;
+  }
+  #tracksMain .box .left .filter .bottom.active {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: flex;
+  }
+  #tracksMain .box .left .filter .bottom .inputs {
+    display: flex;
+    gap: 4px;
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular {
+    width: 100%;
+    gap: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular .inputLabel {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular .inputField {
+    background-color: rgb(14, 14, 16);
+    outline: none;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 6px;
+    padding: 6px 6px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular .inputField:hover {
+    border: 1px solid rgb(163, 163, 163);
+  }
+  #tracksMain .box .left .filter .bottom .inputs .regular .inputField:focus {
+    border: 1px solid rgba(162, 16, 247, 0.8);
+  }
+  #tracksMain .box .left .filterSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #tracksMain .box .left .filterSubmit .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    scale: 1.02;
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #tracksMain .box .left .filterSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 30px;
+  }
+  #tracksMain .box .left .filterSubmit .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    scale: 1.02;
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #tracksMain .box .left .filterSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: rgb(162, 16, 247);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 30px;
+  }
+  #tracksMain .box .left .filterSubmit .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    scale: 1.02;
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #tracksMain .box .left .filterSubmit:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #tracksMain .box .left .filterSubmit {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #tracksMain .box .left .filterSubmit {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #tracksMain .box .left .filterSubmit:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #tracksMain .box .left .filterSubmit:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #tracksMain .box .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 528px;
+  }
+  #tracksMain .box .right .topText {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  #tracksMain .box .right .topText .leftName {
+    font-size: 28px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  #tracksMain .box .right .topText .leftName img {
+    display: inline-block;
+    padding: 6px;
+    height: 36px;
+    border-radius: 20px;
+  }
+  #tracksMain .box .right .topText .leftName img:hover {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  #tracksMain .box .right .topText .sort {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 20px;
+  }
+  #tracksMain .box .right .topText .sort img {
+    height: 18px;
+  }
+  #tracksMain .box .right .topText .sort:hover {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  #tracksMain .box .right .topText .sortHolder {
+    z-index: 2;
+    position: absolute;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: none;
+    flex-direction: column;
+    padding: 4px 2px;
+    gap: 6px;
+    right: 0;
+    top: 37px;
+    width: 120px;
+    background-color: rgb(8, 8, 8);
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+  #tracksMain .box .right .topText .sortHolder.active {
+    display: flex;
+  }
+  #tracksMain .box .right .topText .sortHolder a {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+  }
+  #tracksMain .box .right .topText .sortHolder a:hover {
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #tracksMain .box .right .theTracks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    row-gap: 20px;
+  }
+  #tracksMain .box .right .theTracks .myCard {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    position: relative;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #tracksMain .box .right .theTracks .myCard .play,
+  #tracksMain .box .right .theTracks .myCard .pause {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    top: 42px;
+    left: 42px;
+    transform: translateX(0%);
+    width: 36px;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.2s;
+  }
+  #tracksMain .box .right .theTracks .myCard .play:hover,
+  #tracksMain .box .right .theTracks .myCard .pause:hover {
+    background-color: rgba(0, 0, 0, 0.747);
+  }
+  #tracksMain .box .right .theTracks .myCard .pause {
+    display: none;
+  }
+  #tracksMain .box .right .theTracks .myCard a .cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText .top .price {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    color: #406cfd;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText .top .tempo {
+    display: flex;
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    color: #b4b3b3;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a {
+    text-decoration: none;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a .title {
+    margin-top: 4px;
+    width: 250px;
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 28px;
+    color: white;
+    height: 28px;
+    overflow: hidden;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a {
+    text-decoration: none;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a .artist {
+    margin-top: 4px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    color: white;
+    color: #b4b3b3;
+  }
+  #tracksMain .box .right .theTracks .myCard .bottomText a .artist:hover {
+    text-decoration: underline;
+  }
+  #tracksMain .box .right .theTracks .myCard:hover {
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #tracksMain .box .right .theTracks .myCard:hover .play,
+  #tracksMain .box .right .theTracks .myCard:hover .pause {
+    opacity: 1;
+  }
 }
