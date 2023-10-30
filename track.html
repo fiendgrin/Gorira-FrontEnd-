@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <link src="./assets/jquerry/jquerry.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"
+      integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <title>Track</title>
+  </head>
+  <body>
+    <!--Start-->
+    <!--Header start-->
+    <header>
+      <div class="boxTop">
+        <div class="boxContent">
+          <div class="left">
+            <img class="burger" src="./assets/images/icons/burger.svg" alt="" />
+            <a href=""
+              ><img class="logo" src="./assets/images/logo/Logo.png" alt=""
+            /></a>
+            <div class="mySearchForm">
+              <input
+                type="input"
+                autocomplete="off"
+                class="inputField"
+                name="search"
+                id="search"
+                placeholder="Search"
+              />
+              <label class="inputLabel">Search</label>
+              <img
+                class="searchIcon"
+                src="./assets/images/icons/search.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="right">
+            <a href="upload.html" class="myBtn">
+              <img
+                class="btnImg"
+                src="./assets/images/icons/upload.svg"
+                alt=""
+              />Upload
+            </a>
+            <!--Account-->
+            <div class="accountHolder">
+              <img class="pfp" src="./assets/images/pfp/1.jpg" alt="" />
+              <!-- <img class="loginIcon" src="./assets/images/icons/user.svg" alt=""> -->
+              <img
+                class="chevronAcc"
+                src="./assets/images/icons/chevron-down.svg"
+                alt=""
+              />
+              <div class="accountContent">
+                <!--Single Line start-->
+                <a href="profile.html" class="accountLine">
+                  <img src="./assets/images/icons/user.svg" alt="" />
+                  <p>My Profile</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line End-->
+                <!--Single Line start-->
+                <a href="profile.html" class="accountLine">
+                  <img src="./assets/images/icons/music.svg" alt="" />
+                  <p>My Tracks</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line End-->
+                <!--Single Line start-->
+                <a href="login.html" class="accountLine">
+                  <img src="./assets/images/icons/lock-open.svg" alt="" />
+                  <p>Sign In</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line End-->
+                <!--Single Line start-->
+                <a href="register.html" class="accountLine">
+                  <img src="./assets/images/icons/squareAndPencil.svg" alt="" />
+                  <p>Sign Up</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line end-->
+                <!--Single Line start-->
+                <a href="logOut" class="accountLine">
+                  <img src="./assets/images/icons/power.svg" alt="" />
+                  <p>Sign Out</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line End-->
+              </div>
+            </div>
+            <!--Basket-->
+            <div class="basketHolder">
+              <img
+                class="basketIcon"
+                src="./assets/images/icons/shopping-cart.svg"
+                alt=""
+              />
+              <img
+                class="chevronBasket"
+                src="./assets/images/icons/chevron-down.svg"
+                alt=""
+              />
+              <div class="basketContent">
+                <div class="cartCount"></div>
+                <!--One Beat Start-->
+                <div class="oneBeat">
+                  <a class="beatDetail" href=""
+                    ><img
+                      class="beatCover"
+                      src="./assets/images/covers/youngThug.jpg"
+                      alt=""
+                    />
+                    <p class="title">my Beat Title 2023</p>
+                  </a>
+                  <p class="price">$20.99</p>
+                  <a class="removeBasket" href=""
+                    ><img
+                      class="ex"
+                      src="./assets/images/icons/plus.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="divider"></div>
+                <!--One Beat End-->
+                <!--One Beat Start-->
+                <div class="oneBeat">
+                  <a class="beatDetail" href=""
+                    ><img
+                      class="beatCover"
+                      src="./assets/images/covers/kevinGates.jpg"
+                      alt=""
+                    />
+                    <p class="title">my Beat Title 2023</p>
+                  </a>
+                  <p class="price">$20.99</p>
+                  <a class="removeBasket" href=""
+                    ><img
+                      class="ex"
+                      src="./assets/images/icons/plus.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="divider"></div>
+                <!--One Beat End-->
+                <!--One Beat Start-->
+                <div class="oneBeat">
+                  <a class="beatDetail" href=""
+                    ><img
+                      class="beatCover"
+                      src="./assets/images/covers/kevinGates.jpg"
+                      alt=""
+                    />
+                    <p class="title">my Beat Title 2023</p>
+                  </a>
+                  <p class="price">$20.99</p>
+                  <a class="removeBasket" href=""
+                    ><img
+                      class="ex"
+                      src="./assets/images/icons/plus.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="divider"></div>
+                <!--One Beat End-->
+                <a class="checkout" href=""
+                  ><img
+                    src="./assets/images/icons/credit-card.svg"
+                    alt=""
+                  />Checkout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navBar">
+      <div class="boxBottom">
+        <div class="bottomBoxContent">
+          <a id="feed" href="">Feed</a>
+          <a id="myMedia" href="">My Media</a>
+          <a id="home" href="">Home</a>
+          <a id="tracks" href="">Tracks</a>
+          <a id="artists" href="">Artists</a>
+        </div>
+      </div>
+    </nav>
+    <!--Header End-->
+
+    <main id="trackMain">
+      <div class="box">
+        <div class="tabs">
+          <div class="info tab tabActive">Info</div>
+          <div class="tracks tab">Tracks</div>
+        </div>
+        <div class="left">
+          <div class="theTrack">
+            <img class="cover" src="./assets/images/covers/future.jpg" alt="" />
+            <h3 class="trackName">Track Title</h3>
+            <p class="beatMaker">Name</p>
+            <div class="trackButtons">
+              <a href="" class="edit">
+                <img src="./assets/images/icons/download.svg" alt="" />
+                Free download
+              </a>
+            </div>
+          </div>
+          <div class="stats sectionDefault">
+            <h6>stats</h6>
+            <div class="statLine">
+              <h5>Published:</h5>
+              <p class="numberElement">Aug 12, 2023</p>
+            </div>
+            <div class="statLine">
+              <h5>BPM:</h5>
+              <p class="numberElement">150</p>
+            </div>
+            <div class="statLine">
+              <h5>Plays:</h5>
+              <p class="numberElement">2989098</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="aboutTrack sectionDefault">
+            <h6>about</h6>
+            <div class="aboutTrackLine">
+              <p class="text">
+                Music producer 33k+ subscribers, 11mil+ views on YouTube •
+                Contact: dreammakersprod@gmail.com Music producer 33k+
+                subscribers, 11mil+ views on YouTube • Contact:
+                dreammakersprod@gmail.com Music producer 33k+ subscribers,
+                11mil+ views on YouTube • Contact:
+                dreammakersprod@gmail.com1mil+ views on YouTube • Contact:
+                dreammakersprod@gmail.com1mil+ views on YouTube • Contact:
+                dreammakersprod@gmail.com dreammakersprod@gmail.com Music
+                producer 33k+ subscribers, 11mil+ views on YouTube • Contact:
+                dreammakersprod@gmail.com1mil+ views on YouTube • Contact:
+                dreammakersprod@gmail.com1mil+ views on YouTube • Contact:
+                dreammakersprod@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="tags sectionDefault">
+            <h6>tags</h6>
+            <div class="tag">#future</div>
+            <div class="tag">#young thug</div>
+            <div class="tag">#808</div>
+          </div>
+        </div>
+        <div class="right">
+          <!--Player Start-->
+          <div
+            id="aplayer"
+            mp3="./assets/audio/tracks/Future - WAIT FOR U (Instrumental) ft. Drake, Tems.mp3"
+            name="Future"
+            cover="./assets/images/covers/future.jpg"
+            title="WAIT FOR U (Instrumental)"
+          ></div>
+          <!--Player End-->
+          <!--Licensing Start-->
+          <div class="licensing">
+            <div class="licensingTop">
+              <h3>Licensing</h3>
+              <div class="addToCartHolder">
+                <div class="addCartText">
+                  <p class="price">Price:</p>
+                  <h6 class="thePrice">$100.00</h6>
+                </div>
+                <button class="addToCart">
+                  <img src="./assets/images/icons/cart-full.svg" alt="" /> Add
+                  To Cart
+                </button>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="licenses">
+              <label price="100$" class="radio nonExclusive">
+                <input name="radio" type="radio" checked />
+                <span
+                  >NON-EXCLUSIVE <br />
+                  <p>mp3</p>
+                  <br />
+                  <ul>
+                    <li>
+                      <img
+                        src="./assets/images/icons/voice-mail-2.svg"
+                        alt=""
+                      />
+                      <p>USED FOR MUSIC RECORDING</p>
+                    </li>
+                    <li>
+                      <img src="./assets/images/icons/layers-1.svg" alt="" />
+                      <p>DISTRIBUTE UP TO 3,000 COPIES</p>
+                    </li>
+                    <li>
+                      <img src="./assets/images/icons/ear-hearing.svg" alt="" />
+                      <p>500,000 ONLINE AUDIO STREAMS</p>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/icons/camera-video-cute.svg"
+                        alt=""
+                      />
+                      <p>1 MUSIC VIDEO</p>
+                    </li>
+                    <li>
+                      <img src="./assets/images/icons/radio.svg" alt="" />
+                      <p>RADIO BROADCASTING RIGHTS (2 STATIONS)</p>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/icons/theater-mask.svg"
+                        alt=""
+                      />
+                      <p>FOR PROFIT LIVE PERFORMANCES</p>
+                    </li>
+                  </ul></span
+                >
+              </label>
+              <label price="300$" class="radio unlimited">
+                <input name="radio" type="radio" />
+                <span
+                  >UNLIMITED <br />
+                  <p>mp3, wav, stems</p>
+                  <br />
+                  <ul>
+                    <li>
+                      <img
+                        src="./assets/images/icons/voice-mail-2.svg"
+                        alt=""
+                      />
+                      <p>USED FOR MUSIC RECORDING</p>
+                    </li>
+                    <li>
+                      <img src="./assets/images/icons/layers-1.svg" alt="" />
+                      <p>DISTRIBUTE UP TO UNLIMITED COPIES</p>
+                    </li>
+                    <li>
+                      <img src="./assets/images/icons/ear-hearing.svg" alt="" />
+                      <p>UNLIMITED ONLINE AUDIO STREAMS</p>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/icons/camera-video-cute.svg"
+                        alt=""
+                      />
+                      <p>UNLIMITED MUSIC VIDEOS</p>
+                    </li>
+                    <li>
+                      <img src="./assets/images/icons/radio.svg" alt="" />
+                      <p>RADIO BROADCASTING RIGHTS (UNLIMITED STATIONS)</p>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/icons/theater-mask.svg"
+                        alt=""
+                      />
+                      <p>FOR PROFIT LIVE PERFORMANCES</p>
+                    </li>
+                  </ul></span
+                >
+              </label>
+            </div>
+          </div>
+          <!--Licensing End-->
+          <!--Comment Section Start-->
+          <div class="commentSection">
+            <div class="commentTop">
+              <h3>Comments</h3>
+              <img
+                src="./assets/images/icons/chat-bubble-text-square.svg"
+                alt=""
+              />
+            </div>
+            <form class="regular commentField">
+              <input
+                maxlength="60"
+                class="inputField"
+                type="text"
+                placeholder="Share your thoughts..."
+              />
+              <button>
+                <img
+                  class="btnImg"
+                  src="./assets/images/icons/send.svg"
+                  alt=""
+                />
+              </button>
+            </form>
+            <div class="theComments">
+              <!--Single Comment Start-->
+              <div class="singleComment">
+                <img
+                  class="commentatorPfp"
+                  src="./assets/images/pfp/default.jpg"
+                />
+                <div class="nameAndComment">
+                  <h5 class="commentatorName">Joney Ancient</h5>
+                  <p class="commentatorText">
+                    i fell in love with this beat, im gonna buy it and work a
+                    good song on it🔥🔥🔥
+                  </p>
+                </div>
+              </div>
+              <!--Single Comment End-->
+              <!--Single Comment Start-->
+              <div class="singleComment">
+                <img class="commentatorPfp" src="./assets/images/pfp/1.jpg" />
+                <div class="nameAndComment">
+                  <h5 class="commentatorName">UKNOWME.wav</h5>
+                  <p class="commentatorText">
+                    Good job🔥 Purchase my beat and get MIXING & MASTERING 4
+                    FREE⚡️
+                  </p>
+                </div>
+              </div>
+              <!--Single Comment End-->
+              <!--Single Comment Start-->
+              <div class="singleComment">
+                <img class="commentatorPfp" src="./assets/images/pfp/2.jpg" />
+                <div class="nameAndComment">
+                  <h5 class="commentatorName">Morini Beats</h5>
+                  <p class="commentatorText">🔥🔥🔥</p>
+                </div>
+              </div>
+              <!--Single Comment End-->
+            </div>
+            <div class="seeAll">See all (128)</div>
+          </div>
+          <!--Comment Section End-->
+        </div>
+      </div>
+    </main>
+
+    <!--Footer start-->
+    <footer>
+      <div class="box">
+        <div class="top">
+          <a href=""
+            ><img class="footerLogo" src="./assets/images/logo/Logo.png" alt=""
+          /></a>
+          <!--Contact Start-->
+          <div class="left infoCard">
+            <h5>Contact Information</h5>
+            <div class="info inside">
+              <div class="emailGorira text">
+                <h6>Email:</h6>
+                <p>Gorira@gmail.com</p>
+              </div>
+              <div class="phoneGorira text">
+                <h6>Phone:</h6>
+                <p>+7-(999)-99-99</p>
+              </div>
+            </div>
+          </div>
+          <!--Contact End-->
+
+          <!--location Start-->
+          <div class="mid infoCard">
+            <h5>Where we located</h5>
+            <div class="location inside">
+              <div class="locationGorira text">
+                <h6>Location:</h6>
+                <p>Mountain View, California, United States</p>
+              </div>
+              <div class="addressGorira text">
+                <h6>Address:</h6>
+                <p>1600 Amphitheatre Parkway Mountain View, CA 94043</p>
+              </div>
+            </div>
+          </div>
+          <!--location End-->
+
+          <!--Social Media Links Start-->
+          <div class="right infoCard">
+            <h5>Social Media Links</h5>
+            <div class="links inside">
+              <div class="sMlinks">
+                <a href="https://soundcloud.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/soundcloud-logo.svg"
+                    alt=""
+                /></a>
+                <a href="https://www.youtube.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/youtube-clip-logo.svg"
+                    alt=""
+                /></a>
+                <a href="https://www.instagram.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/instagram-logo-2.svg"
+                    alt=""
+                /></a>
+                <a href="https://www.twitter.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/twitter-logo-1.svg"
+                    alt=""
+                /></a>
+                <a href="https://www.vk.com/"
+                  ><img
+                    class="sMLogo"
+                    src="./assets/images/socialMedia/v-kontakte-logo.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!--Social Media Links End-->
+        </div>
+        <div class="line"></div>
+        <p class="bottom">© 2024 Gorira, Inc. • Version: 1</p>
+      </div>
+    </footer>
+    <!--Footer End-->
+
+    <!--Script For Bootstrap-->
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--Script for Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--APlayer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+    <!--Header-->
+    <script src="./assets/javascript/header.js"></script>
+    <!--Swiper-->
+    <script src="./assets/javascript/swiper.js"></script>
+    <!--profile-->
+    <script src="./assets/javascript/track.js"></script>
+
+    <!--End-->
+  </body>
+</html>
