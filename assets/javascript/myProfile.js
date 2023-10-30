@@ -32,6 +32,19 @@ window.addEventListener("resize", () => {
   }
 });
 
+
+if (window.innerWidth >= 1360) {
+  myProfile.style.display = "flex";
+  myProfileTracks.style.display = "flex";
+} else if (
+  window.innerWidth < 1360 
+) {
+  myInfoTab.classList.add("tabActive");
+  myTracksTab.classList.remove("tabActive");
+  myProfile.style.display = "flex";
+  myProfileTracks.style.display = "none";
+}
+
 let myNumberElements = document.querySelectorAll("#myProfileMain .numberElement");
 
 myNumberElements.forEach((numberElement) => {
