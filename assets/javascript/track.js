@@ -72,3 +72,13 @@ myNumberElements.forEach((numberElement) => {
 
   numberElement.textContent = formattedNumber;
 });
+
+if (window.innerWidth >= 1360) {
+  myProfile.style.display = "flex";
+  myProfileTracks.style.display = "flex";
+} else if (window.innerWidth < 1360) {
+  myInfoTab.classList.add("tabActive");
+  myTracksTab.classList.remove("tabActive");
+  myProfile.style.display = "flex";
+  myProfileTracks.style.display = "none";
+}

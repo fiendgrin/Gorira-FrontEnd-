@@ -3,24 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
     <link src="./assets/jquerry/jquerry.js" />
     <link
       rel="stylesheet"
@@ -44,8 +26,14 @@
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="./assets/images/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="./assets/scss/style.css" />
-    <title>Track</title>
+    <title>Feed</title>
   </head>
   <body>
     <!--Start-->
@@ -230,252 +218,276 @@
     </nav>
     <!--Header End-->
 
-    <main id="trackMain">
+    <main id="feedMain">
       <div class="box">
-        <div class="tabs">
-          <div class="info tab tabActive">Info</div>
-          <div class="tracks tab">Media</div>
+        <div class="topText">
+          <h3>Your Feed</h3>
         </div>
-        <div class="left">
-          <div class="theTrack">
-            <img class="cover" src="./assets/images/covers/future.jpg" alt="" />
-            <h3 class="trackName">Track Title</h3>
-            <p class="beatMaker">Name</p>
-            <div class="trackButtons">
-              <a href="" class="edit">
-                <img src="./assets/images/icons/download.svg" alt="" />
-                Free download
-              </a>
+        <div class="posts">
+          <div class="singlePost">
+            <div class="top">
+              <img class="pfp" src="./assets/images/pfp/default.jpg" alt="" />
+              <div class="artistName">Wheezy</div>
+              <div class="releaseDate">• - 12,october 2023</div>
             </div>
-          </div>
-          <div class="stats sectionDefault">
-            <h6>Information</h6>
-            <div class="statLine">
-              <h5>Published:</h5>
-              <p class="number">Aug 12, 2023</p>
-            </div>
-            <div class="statLine">
-              <h5>BPM:</h5>
-              <p class="number">150</p>
-            </div>
-            <div class="statLine">
-              <h5>Key:</h5>
-              <p class="number">Em</p>
-            </div>
-            <div class="statLine">
-              <h5>Plays:</h5>
-              <p class="numberElement number">2989098</p>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="aboutTrack sectionDefault">
-            <h6>about</h6>
-            <div class="aboutTrackLine">
-              <p class="text">
-                Music producer 33k+ subscribers, 11mil+ views on YouTube •
-                Contact: dreammakersprod@gmail.com Music producer 33k+
-                subscribers, 11mil+ views on YouTube • Contact:
-                dreammakersprod@gmail.com Music producer 33k+ subscribers,
-                11mil+ views on YouTube • Contact:
-                dreammakersprod@gmail.com1mil+ views on YouTube • Contact:
-                dreammakersprod@gmail.com1mil+ views on YouTube • Contact:
-                dreammakersprod@gmail.com dreammakersprod@gmail.com Music
-                producer 33k+ subscribers, 11mil+ views on YouTube • Contact:
-                dreammakersprod@gmail.com1mil+ views on YouTube • Contact:
-                dreammakersprod@gmail.com1mil+ views on YouTube • Contact:
-                dreammakersprod@gmail.com
-              </p>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="tags sectionDefault">
-            <h6>tags</h6>
-            <div class="tag">#future</div>
-            <div class="tag">#young thug</div>
-            <div class="tag">#808</div>
-          </div>
-        </div>
-        <div class="right">
-          <!--Player Start-->
-          <div
-            id="aplayer"
-            mp3="./assets/audio/tracks/Future - WAIT FOR U (Instrumental) ft. Drake, Tems.mp3"
-            name="Future"
-            cover="./assets/images/covers/future.jpg"
-            title="WAIT FOR U (Instrumental)"
-          ></div>
-          <!--Player End-->
-          <!--Licensing Start-->
-          <div class="licensing">
-            <div class="licensingTop">
-              <h3>Licensing</h3>
-              <div class="addToCartHolder">
-                <div class="addCartText">
-                  <p class="price">Price:</p>
-                  <h6 class="thePrice">$100.00</h6>
+            <div class="bottom">
+              <img
+                class="cover"
+                src="./assets/images/covers/drake.png"
+                alt=""
+              />
+              <div class="right">
+                <div class="title">
+                  <img
+                    class="trackBtn"
+                    src="./assets/images/icons/play.svg"
+                    alt=""
+                  />
+                  <h3 class="theTitle">NEVER STOP</h3>
                 </div>
-                <button class="addToCart">
-                  <img src="./assets/images/icons/cart-full.svg" alt="" /> Add
-                  To Cart
+                <div class="about">❗️30$ UNLIMITED, EXPIRING SOON!</div>
+                <button class="addToBasket">
+                  <img
+                    class="btnImg"
+                    src="./assets/images/icons/shopping-cart.svg"
+                    alt=""
+                  />
+                  $30.99
                 </button>
               </div>
             </div>
-            <div class="divider"></div>
-            <div class="licenses">
-              <label price="100$" class="radio nonExclusive">
-                <input name="radio" type="radio" checked />
-                <span
-                  >NON-EXCLUSIVE <br />
-                  <p>mp3</p>
-                  <br />
-                  <ul>
-                    <li>
-                      <img
-                        src="./assets/images/icons/voice-mail-2.svg"
-                        alt=""
-                      />
-                      <p>USED FOR MUSIC RECORDING</p>
-                    </li>
-                    <li>
-                      <img src="./assets/images/icons/layers-1.svg" alt="" />
-                      <p>DISTRIBUTE UP TO 3,000 COPIES</p>
-                    </li>
-                    <li>
-                      <img src="./assets/images/icons/ear-hearing.svg" alt="" />
-                      <p>500,000 ONLINE AUDIO STREAMS</p>
-                    </li>
-                    <li>
-                      <img
-                        src="./assets/images/icons/camera-video-cute.svg"
-                        alt=""
-                      />
-                      <p>1 MUSIC VIDEO</p>
-                    </li>
-                    <li>
-                      <img src="./assets/images/icons/radio.svg" alt="" />
-                      <p>RADIO BROADCASTING RIGHTS (2 STATIONS)</p>
-                    </li>
-                    <li>
-                      <img
-                        src="./assets/images/icons/theater-mask.svg"
-                        alt=""
-                      />
-                      <p>FOR PROFIT LIVE PERFORMANCES</p>
-                    </li>
-                  </ul></span
-                >
-              </label>
-              <label price="300$" class="radio unlimited">
-                <input name="radio" type="radio" />
-                <span
-                  >UNLIMITED <br />
-                  <p>mp3, wav, stems</p>
-                  <br />
-                  <ul>
-                    <li>
-                      <img
-                        src="./assets/images/icons/voice-mail-2.svg"
-                        alt=""
-                      />
-                      <p>USED FOR MUSIC RECORDING</p>
-                    </li>
-                    <li>
-                      <img src="./assets/images/icons/layers-1.svg" alt="" />
-                      <p>DISTRIBUTE UP TO UNLIMITED COPIES</p>
-                    </li>
-                    <li>
-                      <img src="./assets/images/icons/ear-hearing.svg" alt="" />
-                      <p>UNLIMITED ONLINE AUDIO STREAMS</p>
-                    </li>
-                    <li>
-                      <img
-                        src="./assets/images/icons/camera-video-cute.svg"
-                        alt=""
-                      />
-                      <p>UNLIMITED MUSIC VIDEOS</p>
-                    </li>
-                    <li>
-                      <img src="./assets/images/icons/radio.svg" alt="" />
-                      <p>RADIO BROADCASTING RIGHTS (UNLIMITED STATIONS)</p>
-                    </li>
-                    <li>
-                      <img
-                        src="./assets/images/icons/theater-mask.svg"
-                        alt=""
-                      />
-                      <p>FOR PROFIT LIVE PERFORMANCES</p>
-                    </li>
-                  </ul></span
-                >
-              </label>
-            </div>
           </div>
-          <!--Licensing End-->
-          <!--Comment Section Start-->
-          <div class="commentSection">
-            <div class="commentTop">
-              <h3>Comments</h3>
+          <div class="singlePost">
+            <div class="top">
+              <img class="pfp" src="./assets/images/pfp/default.jpg" alt="" />
+              <div class="artistName">Wheezy</div>
+              <div class="releaseDate">• - 12,october 2023</div>
+            </div>
+            <div class="bottom">
               <img
-                src="./assets/images/icons/chat-bubble-text-square.svg"
+                class="cover"
+                src="./assets/images/covers/drake.png"
                 alt=""
               />
+              <div class="right">
+                <div class="title">
+                  <img
+                    class="trackBtn"
+                    src="./assets/images/icons/play.svg"
+                    alt=""
+                  />
+                  <h3 class="theTitle">NEVER STOP</h3>
+                </div>
+                <div class="about">❗️30$ UNLIMITED, EXPIRING SOON!</div>
+                <button class="addToBasket">
+                  <img
+                    class="btnImg"
+                    src="./assets/images/icons/shopping-cart.svg"
+                    alt=""
+                  />
+                  $30.99
+                </button>
+              </div>
             </div>
-            <form class="regular commentField">
-              <input
-                maxlength="60"
-                class="inputField"
-                type="text"
-                placeholder="Share your thoughts..."
-              />
-              <button>
-                <img
-                  class="btnImg"
-                  src="./assets/images/icons/send.svg"
-                  alt=""
-                />
-              </button>
-            </form>
-            <div class="theComments">
-              <!--Single Comment Start-->
-              <div class="singleComment">
-                <img
-                  class="commentatorPfp"
-                  src="./assets/images/pfp/default.jpg"
-                />
-                <div class="nameAndComment">
-                  <h5 class="commentatorName">Joney Ancient</h5>
-                  <p class="commentatorText">
-                    i fell in love with this beat, im gonna buy it and work a
-                    good song on it🔥🔥🔥
-                  </p>
-                </div>
-              </div>
-              <!--Single Comment End-->
-              <!--Single Comment Start-->
-              <div class="singleComment">
-                <img class="commentatorPfp" src="./assets/images/pfp/1.jpg" />
-                <div class="nameAndComment">
-                  <h5 class="commentatorName">UKNOWME.wav</h5>
-                  <p class="commentatorText">
-                    Good job🔥 Purchase my beat and get MIXING & MASTERING 4
-                    FREE⚡️
-                  </p>
-                </div>
-              </div>
-              <!--Single Comment End-->
-              <!--Single Comment Start-->
-              <div class="singleComment">
-                <img class="commentatorPfp" src="./assets/images/pfp/2.jpg" />
-                <div class="nameAndComment">
-                  <h5 class="commentatorName">Morini Beats</h5>
-                  <p class="commentatorText">wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</p>
-                </div>
-              </div>
-              <!--Single Comment End-->
-            </div>
-            <div class="seeAll">See more(325)</div>
           </div>
-          <!--Comment Section End-->
+          <div class="singlePost">
+            <div class="top">
+              <img class="pfp" src="./assets/images/pfp/default.jpg" alt="" />
+              <div class="artistName">Wheezy</div>
+              <div class="releaseDate">• - 12,october 2023</div>
+            </div>
+            <div class="bottom">
+              <img
+                class="cover"
+                src="./assets/images/covers/drake.png"
+                alt=""
+              />
+              <div class="right">
+                <div class="title">
+                  <img
+                    class="trackBtn"
+                    src="./assets/images/icons/play.svg"
+                    alt=""
+                  />
+                  <h3 class="theTitle">NEVER STOP</h3>
+                </div>
+                <div class="about">❗️30$ UNLIMITED, EXPIRING SOON!</div>
+                <button class="addToBasket">
+                  <img
+                    class="btnImg"
+                    src="./assets/images/icons/shopping-cart.svg"
+                    alt=""
+                  />
+                  $30.99
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="singlePost">
+            <div class="top">
+              <img class="pfp" src="./assets/images/pfp/default.jpg" alt="" />
+              <div class="artistName">Wheezy</div>
+              <div class="releaseDate">• - 12,october 2023</div>
+            </div>
+            <div class="bottom">
+              <img
+                class="cover"
+                src="./assets/images/covers/drake.png"
+                alt=""
+              />
+              <div class="right">
+                <div class="title">
+                  <img
+                    class="trackBtn"
+                    src="./assets/images/icons/play.svg"
+                    alt=""
+                  />
+                  <h3 class="theTitle">NEVER STOP</h3>
+                </div>
+                <div class="about">❗️30$ UNLIMITED, EXPIRING SOON!</div>
+                <button class="addToBasket">
+                  <img
+                    class="btnImg"
+                    src="./assets/images/icons/shopping-cart.svg"
+                    alt=""
+                  />
+                  $30.99
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="singlePost">
+            <div class="top">
+              <img class="pfp" src="./assets/images/pfp/default.jpg" alt="" />
+              <div class="artistName">Wheezy</div>
+              <div class="releaseDate">• - 12,october 2023</div>
+            </div>
+            <div class="bottom">
+              <img
+                class="cover"
+                src="./assets/images/covers/drake.png"
+                alt=""
+              />
+              <div class="right">
+                <div class="title">
+                  <img
+                    class="trackBtn"
+                    src="./assets/images/icons/play.svg"
+                    alt=""
+                  />
+                  <h3 class="theTitle">NEVER STOP</h3>
+                </div>
+                <div class="about">❗️30$ UNLIMITED, EXPIRING SOON!</div>
+                <button class="addToBasket">
+                  <img
+                    class="btnImg"
+                    src="./assets/images/icons/shopping-cart.svg"
+                    alt=""
+                  />
+                  $30.99
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="singlePost">
+            <div class="top">
+              <img class="pfp" src="./assets/images/pfp/default.jpg" alt="" />
+              <div class="artistName">Wheezy</div>
+              <div class="releaseDate">• - 12,october 2023</div>
+            </div>
+            <div class="bottom">
+              <img
+                class="cover"
+                src="./assets/images/covers/drake.png"
+                alt=""
+              />
+              <div class="right">
+                <div class="title">
+                  <img
+                    class="trackBtn"
+                    src="./assets/images/icons/play.svg"
+                    alt=""
+                  />
+                  <h3 class="theTitle">NEVER STOP</h3>
+                </div>
+                <div class="about">❗️30$ UNLIMITED, EXPIRING SOON!</div>
+                <button class="addToBasket">
+                  <img
+                    class="btnImg"
+                    src="./assets/images/icons/shopping-cart.svg"
+                    alt=""
+                  />
+                  $30.99
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="singlePost">
+            <div class="top">
+              <img class="pfp" src="./assets/images/pfp/default.jpg" alt="" />
+              <div class="artistName">Wheezy</div>
+              <div class="releaseDate">• - 12,october 2023</div>
+            </div>
+            <div class="bottom">
+              <img
+                class="cover"
+                src="./assets/images/covers/drake.png"
+                alt=""
+              />
+              <div class="right">
+                <div class="title">
+                  <img
+                    class="trackBtn"
+                    src="./assets/images/icons/play.svg"
+                    alt=""
+                  />
+                  <h3 class="theTitle">NEVER STOP</h3>
+                </div>
+                <div class="about">❗️30$ UNLIMITED, EXPIRING SOON!</div>
+                <button class="addToBasket">
+                  <img
+                    class="btnImg"
+                    src="./assets/images/icons/shopping-cart.svg"
+                    alt=""
+                  />
+                  $30.99
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="singlePost">
+            <div class="top">
+              <img class="pfp" src="./assets/images/pfp/default.jpg" alt="" />
+              <div class="artistName">Wheezy</div>
+              <div class="releaseDate">• - 12,october 2023</div>
+            </div>
+            <div class="bottom">
+              <img
+                class="cover"
+                src="./assets/images/covers/drake.png"
+                alt=""
+              />
+              <div class="right">
+                <div class="title">
+                  <img
+                    class="trackBtn"
+                    src="./assets/images/icons/play.svg"
+                    alt=""
+                  />
+                  <h3 class="theTitle">NEVER STOP</h3>
+                </div>
+                <div class="about">❗️30$ UNLIMITED, EXPIRING SOON!</div>
+                <button class="addToBasket">
+                  <img
+                    class="btnImg"
+                    src="./assets/images/icons/shopping-cart.svg"
+                    alt=""
+                  />
+                  $30.99
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -575,8 +587,6 @@
     <script src="./assets/javascript/header.js"></script>
     <!--Swiper-->
     <script src="./assets/javascript/swiper.js"></script>
-    <!--profile-->
-    <script src="./assets/javascript/track.js"></script>
 
     <!--End-->
   </body>

@@ -17110,6 +17110,7 @@ label {
     height: 50px !important;
   }
   #trackMain .box .right .theComments .singleComment .nameAndComment .commentatorText {
+    height: 32px !important;
     max-width: 290px !important;
     overflow-y: hidden !important;
   }
@@ -17154,4 +17155,326 @@ label {
 }
 #trackMain #aplayer .aplayer-icon-loop:hover {
   color: #fff; /* Replace #00ff00 with your desired hover color */
+}
+
+#feedMain {
+  background-color: rgb(14, 14, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#feedMain .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.144);
+}
+#feedMain .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  padding: 80px 30px 40px 30px;
+  flex-direction: column;
+  gap: 40px;
+}
+#feedMain .box .topText {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#feedMain .box .topText h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#feedMain .box .topText a {
+  text-decoration: none;
+}
+#feedMain .box .topText a p {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.3s;
+}
+#feedMain .box .topText a p:hover {
+  text-decoration: underline;
+}
+#feedMain .box .posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+#feedMain .box .posts .singlePost {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: rgb(14, 14, 16);
+  width: 100%;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 640px;
+  border: 1px solid rgba(87, 87, 87, 0.3019607843);
+}
+#feedMain .box .posts .singlePost .top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+#feedMain .box .posts .singlePost .top .pfp {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(199, 199, 199, 0.7803921569);
+}
+#feedMain .box .posts .singlePost .top .artistName {
+  font-size: 22px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#feedMain .box .posts .singlePost .top .releaseDate {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  color: rgb(124, 124, 124);
+}
+#feedMain .box .posts .singlePost .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+#feedMain .box .posts .singlePost .bottom .cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 176px;
+  width: 176px;
+  border: 1px solid rgba(199, 199, 199, 0.7803921569);
+}
+#feedMain .box .posts .singlePost .bottom .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 314px;
+}
+#feedMain .box .posts .singlePost .bottom .right .title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+#feedMain .box .posts .singlePost .bottom .right .title .trackBtn {
+  border-radius: 50%;
+  padding: 4px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+#feedMain .box .posts .singlePost .bottom .right .title .theTitle {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#feedMain .box .posts .singlePost .bottom .right .about {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  color: rgb(124, 124, 124);
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+}
+#feedMain .box .posts .singlePost .bottom .right .addToBasket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: #a210f7;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: -moz-max-content;
+  width: max-content;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#feedMain .box .posts .singlePost .bottom .right .addToBasket .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+  scale: 1.02;
+}
+#feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 40px;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    scale: 1.02;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 40px;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    scale: 1.02;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
 }

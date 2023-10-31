@@ -1058,6 +1058,7 @@
             .nameAndComment {
               height: 50px !important;
               .commentatorText {
+                height: 32px !important;
                 max-width: 290px !important;
                 overflow-y: hidden !important;
                 &::-webkit-scrollbar{

@@ -31,22 +31,22 @@ tagsinputField.addEventListener("input", () => {
 
 addBtn.addEventListener("click", (e) => {
   let tagAlreadyExists = false;
-  if (inputField.value.length > 1 && inputField.value.length <= 25) {
+  if (tagsinputField.value.length > 1 && tagsinputField.value.length <= 25) {
     if (inputTags.length > 0) {
       inputTags.forEach((tags) => {
-        if (tags.value == inputField.value) {
+        if (tags.value == tagsinputField.value) {
           tagAlreadyExists = true;
         }
       });
       if (!tagAlreadyExists) {
-        tagHolder.innerHTML += inputCreator(inputField.value);
-        tagHolder.innerHTML += tagCreator(inputField.value);
+        tagHolder.innerHTML += inputCreator(tagsinputField.value);
+        tagHolder.innerHTML += tagCreator(tagsinputField.value);
       }
     } else if (inputTags.length == 0) {
-      tagHolder.innerHTML += inputCreator(inputField.value);
-      tagHolder.innerHTML += tagCreator(inputField.value);
+      tagHolder.innerHTML += inputCreator(tagsinputField.value);
+      tagHolder.innerHTML += tagCreator(tagsinputField.value);
     }
-    inputField.value = "";
+    tagsinputField.value = "";
     inputTags = document.querySelectorAll("#uploadMain .singleTag");
     theTags = document.querySelectorAll("#uploadMain .theTag");
     if (inputTags.length >= 3) {
@@ -76,7 +76,7 @@ addBtn.addEventListener("click", (e) => {
   if (inputTags.length >= 3) {
     addBtn.setAttribute("hidden", "");
   }
-  inputIcon.textContent = `${inputField.value.length}/25`;
+  inputIcon.textContent = `${tagsinputField.value.length}/25`;
 });
 
 let descs = document.querySelectorAll("#uploadMain .desc");
@@ -134,7 +134,7 @@ fileButtons.forEach((filebtn) => {
           reader.readAsDataURL(file);
         }
       }
-      fileInput.value = "";
+      filebtn.value = "";
     }
   });
 });
