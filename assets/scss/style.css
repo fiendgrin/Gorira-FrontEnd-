@@ -17292,11 +17292,24 @@ label {
   justify-content: flex-start;
   gap: 10px;
 }
-#feedMain .box .posts .singlePost .bottom .right .title .trackBtn {
+#feedMain .box .posts .singlePost .bottom .right .title .trackBtn,
+#feedMain .box .posts .singlePost .bottom .right .title .pause {
   border-radius: 50%;
   padding: 4px;
   border: 2px solid white;
   cursor: pointer;
+}
+#feedMain .box .posts .singlePost .bottom .right .title .pause {
+  display: none;
+}
+#feedMain .box .posts .singlePost .bottom .right .title .pause.active {
+  display: inline-block;
+}
+#feedMain .box .posts .singlePost .bottom .right .title .trackBtn {
+  display: inline-block;
+}
+#feedMain .box .posts .singlePost .bottom .right .title .trackBtn.active {
+  display: none;
 }
 #feedMain .box .posts .singlePost .bottom .right .title .theTitle {
   font-size: 18px;
@@ -17305,6 +17318,8 @@ label {
   font-weight: 600;
   line-height: 100%;
   color: white;
+  max-height: 36px;
+  overflow: hidden;
 }
 #feedMain .box .posts .singlePost .bottom .right .about {
   font-size: 16px;

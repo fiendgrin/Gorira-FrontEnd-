@@ -1,7 +1,6 @@
-let plays = document.querySelectorAll("#trending .myCard .play");
-let pauses = document.querySelectorAll("#trending .myCard .pause");
+let plays = document.querySelectorAll("#feedMain .singlePost .trackBtn");
+let pauses = document.querySelectorAll("#feedMain .singlePost .pause");
 let ap = null;
-
 plays.forEach((play) => {
   play.addEventListener("click", () => {
     //pause or new handle
@@ -16,7 +15,7 @@ plays.forEach((play) => {
         pause.previousElementSibling.style.display = "inline-block";
       });
       ap = new APlayer({
-        container: document.querySelector("#trending #aplayer"),
+        container: document.querySelector("#feedMain #aplayer"),
         autoplay: false,
         loop: "all",
         preload: "auto",
@@ -24,6 +23,7 @@ plays.forEach((play) => {
         mutex: true,
         listFolded: true,
         fixed: true,
+        theme:"#a210f7",
         audio: [
           {
             name: play.getAttribute("name"),
@@ -34,10 +34,10 @@ plays.forEach((play) => {
         ],
       });
       document
-        .querySelector("#trending #aplayer")
+        .querySelector("#feedMain #aplayer")
         .classList.remove("aplayer-narrow");
       document
-        .querySelector("#trending #aplayer")
+        .querySelector("#feedMain #aplayer")
         .classList.remove("aplayer-arrow");
       document.querySelector(".aplayer-miniswitcher").remove();
       let next = document.querySelector("#aplayer .aplayer-icon-forward");
@@ -46,6 +46,7 @@ plays.forEach((play) => {
       next.remove();
       prev.remove();
       document.querySelector("#aplayer .aplayer-music").style.width = "100%";
+
       ap.play();
     }
 
@@ -64,6 +65,7 @@ plays.forEach((play) => {
         play.nextElementSibling.style.display = "inline-block";
       }
     });
+    //forward prev handle
   });
 });
 
