@@ -65,14 +65,14 @@ window.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 768 && navBar.style.display != "none") {
     navBar.style.display = "none";
-  } else {
+  }
+  if (window.innerWidth > 768 && navBar.style.display == "none") {
     navBar.style.display = "flex";
   }
 });
 
-
-  if (window.innerWidth <= 768) {
-    navBar.style.display = "none";
-  } 
+if (window.innerWidth <= 768) {
+  navBar.style.display = "none";
+}

@@ -23,7 +23,7 @@ plays.forEach((play) => {
         mutex: true,
         listFolded: true,
         fixed: true,
-        theme:"#a210f7",
+        theme: "#a210f7",
         audio: [
           {
             name: play.getAttribute("name"),
@@ -43,10 +43,19 @@ plays.forEach((play) => {
       let next = document.querySelector("#aplayer .aplayer-icon-forward");
       let prev = document.querySelector("#aplayer .aplayer-icon-back");
       document.querySelector("#aplayer .aplayer-icon-play").remove();
+      document.querySelector("#aplayer .aplayer-icon-lrc").remove();
+      document.querySelector(
+        "#aplayer .aplayer-icon-volume-down"
+      ).style.display = "inline-block";
+      document.querySelector("#aplayer .aplayer-volume-bar").style.zIndex =
+        "10";
+      document.querySelector("#aplayer .aplayer-volume-wrap").style.height =
+        "15px";
+      document.querySelector("#aplayer .aplayer-volume-wrap").style.width =
+        "15px";
       next.remove();
       prev.remove();
       document.querySelector("#aplayer .aplayer-music").style.width = "100%";
-
       ap.play();
     }
 

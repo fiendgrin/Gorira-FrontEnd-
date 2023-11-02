@@ -176,8 +176,8 @@ footer {
 @include for-type(mobile) {
   footer {
     .box {
-      width: 400px;
-      padding: 40px 10px 15px 10px;
+      width: 380px;
+      padding: 40px 0px 15px 0px;
       .top {
         margin-bottom: 30px;
         .footerLogo {
@@ -256,7 +256,7 @@ footer {
       }
       .line {
         height: 1px;
-        width: 400px;
+        width: 380px;
         background-color: $lightestGrey-color-web;
       }
       .bottom {

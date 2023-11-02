@@ -340,8 +340,8 @@
   @include for-type(mobile) {
     #trending {
       .trendingContainer {
-        padding: 40px 10px 20px 10px;
-        width: 400px;
+        padding: 40px 0px 20px 0px;
+        width: 380px;
         .topText {
           align-items: center;
           width: 380px;
@@ -587,8 +587,8 @@
     #aboutUs {
       padding: 40px 0 20px 0;
       .aboutUsContainer {
-        width: 400px;
-        padding: 0px 10px 0px 10px;
+        width: 380px;
+        padding: 0px;
         gap: 30px;
         flex-direction: column-reverse;
         .left {
@@ -806,8 +806,8 @@
   @include for-type(mobile) {
     #popularGenres {
       .genresContainer {
-        width: 400px;
-        padding: 30px 10px 30px 10px;
+        width: 380px;
+        padding: 30px 0px 30px 0px;
         .topText {
           width: 380px;
           h3 {
@@ -1004,7 +1004,7 @@
           .slidetextRight {
             top: 2%;
             right: 10px;
-            width: 380px;
+            width: 360px;
             height: 300px;
             @include text(28px, 800, 120%);
             gap: 2px;

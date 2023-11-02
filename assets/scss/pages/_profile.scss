@@ -662,12 +662,12 @@
       background-color: rgba(255, 255, 255, 0.144);
     }
     .box {
-      padding: 40px 10px 40px 10px;
+      padding: 40px 0px 40px 0px;
       display: flex;
       justify-content: flex-start;
       align-items: space-between;
       flex-direction: column;
-      width: 400px;
+      width: 380px;
       gap: 20px;
       .tabs {
         display: flex;

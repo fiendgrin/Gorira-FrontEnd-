@@ -28,8 +28,8 @@ let openFilters = document.querySelector("#tracksMain .openFilters");
 sort.addEventListener("click", (e) => {
   e.stopPropagation();
   sortHolder.classList.toggle("active");
-  if (window.innerWidth < 768) {
-    left.classList.remove("active");
+  if (window.innerWidth <= 768) {
+    left.style.display = "none";
   }
 });
 
@@ -50,18 +50,35 @@ window.addEventListener("click", (e) => {
 //   });
 // });
 
-if (window.innerWidth < 768) {
-  openFilters.addEventListener("click", (e) => {
+openFilters.addEventListener("click", (e) => {
+  if (window.innerWidth <= 768) {
     e.stopPropagation();
-    left.classList.toggle("active");
+    if (left.style.display != "none") {
+      left.style.display = "none";
+    } else {
+      left.style.display = "flex";
+    }
     sortHolder.classList.remove("active");
-  });
-  left.addEventListener("click", (e) => {
+  }
+});
+left.addEventListener("click", (e) => {
+  if (window.innerWidth <= 768) {
     e.stopPropagation();
-  });
+  }
+});
 
-  window.addEventListener("click", (e) => {
-    left.classList.remove("active");
+window.addEventListener("click", (e) => {
+  if (window.innerWidth <= 768) {
+    left.style.display = "none";
+
     sortHolder.classList.remove("active");
-  });
-}
+  }
+});
+
+window.addEventListener("resize", (e) => {
+  if (window.innerWidth > 768) {
+    left.style.display = "flex";
+  } else if (window.innerWidth <= 768 && left.style.display != "none") {
+    left.style.display = "none";
+  }
+});

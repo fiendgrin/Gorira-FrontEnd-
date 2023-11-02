@@ -659,8 +659,8 @@
 @include for-type(mobile) {
   #editProfileMain {
     .box {
-      padding: 40px 10px 20px 10px;
-      width: 400px;
+      padding: 40px 0px 20px 0px;
+      width: 380px;
       gap: 20px;
       .title {
         @include text(26px, 400, 100%);

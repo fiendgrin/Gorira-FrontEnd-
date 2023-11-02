@@ -683,8 +683,8 @@
 @include for-type(mobile) {
   #uploadMain {
     .box {
-      width: 400px;
-      padding: 60px 10px 40px 10px;
+      width: 380px;
+      padding: 60px 0px 40px 0px;
       gap: 20px;
       .title {
         @include text(30px, 600, 100%);

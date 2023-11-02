@@ -1770,8 +1770,8 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   footer .box {
-    width: 400px;
-    padding: 40px 10px 15px 10px;
+    width: 380px;
+    padding: 40px 0px 15px 0px;
   }
   footer .box .top {
     margin-bottom: 30px;
@@ -1859,7 +1859,7 @@ footer .box .bottom {
   }
   footer .box .line {
     height: 1px;
-    width: 400px;
+    width: 380px;
     background-color: rgba(87, 87, 87, 0.3019607843);
   }
   footer .box .bottom {
@@ -2578,8 +2578,8 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   #homeMain #trending .trendingContainer {
-    padding: 40px 10px 20px 10px;
-    width: 400px;
+    padding: 40px 0px 20px 0px;
+    width: 380px;
   }
   #homeMain #trending .trendingContainer .topText {
     align-items: center;
@@ -3081,8 +3081,8 @@ footer .box .bottom {
     padding: 40px 0 20px 0;
   }
   #homeMain #aboutUs .aboutUsContainer {
-    width: 400px;
-    padding: 0px 10px 0px 10px;
+    width: 380px;
+    padding: 0px;
     gap: 30px;
     flex-direction: column-reverse;
   }
@@ -3444,8 +3444,8 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   #homeMain #popularGenres .genresContainer {
-    width: 400px;
-    padding: 30px 10px 30px 10px;
+    width: 380px;
+    padding: 30px 0px 30px 0px;
   }
   #homeMain #popularGenres .genresContainer .topText {
     width: 380px;
@@ -3646,7 +3646,7 @@ footer .box .bottom {
   #homeMain .bottomSlider .swiper-wrapper .swiper-slide .slidetextRight {
     top: 2%;
     right: 10px;
-    width: 380px;
+    width: 360px;
     height: 300px;
     font-size: 28px;
     font-style: normal;
@@ -6634,8 +6634,8 @@ footer .box .bottom {
     position: relative;
   }
   #uploadMain .box {
-    width: 400px;
-    padding: 60px 10px 40px 10px;
+    width: 380px;
+    padding: 60px 0px 40px 0px;
     gap: 20px;
   }
   #uploadMain .box .title {
@@ -8586,12 +8586,12 @@ footer .box .bottom {
     background-color: rgba(255, 255, 255, 0.144);
   }
   #profileMain .box {
-    padding: 40px 10px 40px 10px;
+    padding: 40px 0px 40px 0px;
     display: flex;
     justify-content: flex-start;
     align-items: space-between;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     gap: 20px;
   }
   #profileMain .box .tabs {
@@ -10000,12 +10000,12 @@ footer .box .bottom {
     background-color: rgba(255, 255, 255, 0.144);
   }
   #myProfileMain .box {
-    padding: 40px 10px 40px 10px;
+    padding: 40px 0px 40px 0px;
     display: flex;
     justify-content: flex-start;
     align-items: space-between;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     gap: 20px;
   }
   #myProfileMain .box .tabs {
@@ -12073,8 +12073,8 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   #editProfileMain .box {
-    padding: 40px 10px 20px 10px;
-    width: 400px;
+    padding: 40px 0px 20px 0px;
+    width: 380px;
     gap: 20px;
   }
   #editProfileMain .box .title {
@@ -13195,9 +13195,9 @@ footer .box .bottom {
 }
 @media (max-width: 768px) {
   #musiciansMain .box {
-    width: 400px;
+    width: 380px;
     gap: 10px;
-    padding: 30px 10px 20px 10px;
+    padding: 30px 0px 20px 0px;
   }
   #musiciansMain .box .topText {
     width: 380px;
@@ -14411,8 +14411,8 @@ label {
 }
 @media (max-width: 768px) {
   #tracksMain .box {
-    width: 400px;
-    padding: 60px 10px 30px 10px;
+    width: 380px;
+    padding: 60px 0px 30px 0px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -14757,6 +14757,7 @@ label {
   }
   #tracksMain .box .right .topText .leftName img {
     display: inline-block;
+    cursor: pointer;
     padding: 6px;
     height: 36px;
     border-radius: 20px;
@@ -16888,12 +16889,12 @@ label {
     background-color: rgba(255, 255, 255, 0.144);
   }
   #trackMain .box {
-    padding: 40px 10px 40px 10px;
+    padding: 40px 0px 40px 0px;
     display: flex;
     justify-content: flex-start;
     align-items: space-between;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     gap: 20px;
   }
   #trackMain .box .tabs {
@@ -17475,6 +17476,692 @@ label {
   }
 }
 @media (max-width: 768px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 1359px) {
+  #feedMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #feedMain .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.144);
+  }
+  #feedMain .box {
+    width: 768px;
+    padding: 60px 10px 30px 10px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #feedMain .box .topText {
+    width: 748px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #feedMain .box .topText h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #feedMain .box .topText a {
+    text-decoration: none;
+  }
+  #feedMain .box .topText a p {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+  }
+  #feedMain .box .topText a p:hover {
+    text-decoration: underline;
+  }
+  #feedMain .box .posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  #feedMain .box .posts .singlePost {
+    padding: 20px;
+    border-radius: 6px;
+    background-color: rgb(14, 14, 16);
+    width: 100%;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  }
+  #feedMain .box .posts .singlePost .top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  #feedMain .box .posts .singlePost .top .pfp {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(199, 199, 199, 0.7803921569);
+  }
+  #feedMain .box .posts .singlePost .top .artistName {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #feedMain .box .posts .singlePost .top .releaseDate {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #feedMain .box .posts .singlePost .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  #feedMain .box .posts .singlePost .bottom .cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 156px;
+    width: 156px;
+    border: 1px solid rgba(199, 199, 199, 0.7803921569);
+  }
+  #feedMain .box .posts .singlePost .bottom .right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 430px;
+    position: relative;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .trackBtn,
+  #feedMain .box .posts .singlePost .bottom .right .title .pause {
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .pause {
+    display: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .pause.active {
+    display: inline-block;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .trackBtn {
+    display: inline-block;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .trackBtn.active {
+    display: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .theTitle {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    max-height: 40px;
+    overflow: hidden;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .about {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+    height: 110px;
+    width: 100%;
+    overflow: hidden;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    scale: 1.02;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 40px;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    scale: 1.02;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 40px;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    scale: 1.02;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #feedMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #feedMain .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.144);
+  }
+  #feedMain .box {
+    width: 380px;
+    padding: 40px 0px 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #feedMain .box .topText {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #feedMain .box .topText h3 {
+    font-size: 26px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #feedMain .box .topText a {
+    text-decoration: none;
+  }
+  #feedMain .box .topText a p {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+  }
+  #feedMain .box .topText a p:hover {
+    text-decoration: underline;
+  }
+  #feedMain .box .posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+  #feedMain .box .posts .singlePost {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(14, 14, 16);
+    width: 100%;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  }
+  #feedMain .box .posts .singlePost .top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+  #feedMain .box .posts .singlePost .top .pfp {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(199, 199, 199, 0.7803921569);
+  }
+  #feedMain .box .posts .singlePost .top .artistName {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #feedMain .box .posts .singlePost .top .releaseDate {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #feedMain .box .posts .singlePost .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  #feedMain .box .posts .singlePost .bottom .cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 122px;
+    width: 122px;
+    border: 1px solid rgba(199, 199, 199, 0.7803921569);
+  }
+  #feedMain .box .posts .singlePost .bottom .right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    width: 228px;
+    position: relative;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .trackBtn,
+  #feedMain .box .posts .singlePost .bottom .right .title .pause {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    padding: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .pause {
+    display: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .pause.active {
+    display: inline-block;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .trackBtn {
+    display: inline-block;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .trackBtn.active {
+    display: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .title .theTitle {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    max-height: 16px;
+    width: 100%;
+    overflow: hidden;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .about {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    position: static;
+    right: 0x;
+    bottom: 0;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    scale: 1.02;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 30px;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    scale: 1.02;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 30px;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    scale: 1.02;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
   #feedMain .box .posts .singlePost .bottom .right .addToBasket {
     font-size: 12px;
     font-style: normal;
