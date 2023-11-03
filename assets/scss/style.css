@@ -15348,6 +15348,817 @@ label {
   }
 }
 
+@media (max-width: 1359px) {
+  #cartMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cartMain .box {
+    width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 10px 30px 10px;
+  }
+  #cartMain .box .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.144);
+  }
+  #cartMain .box .topText {
+    width: 748px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #cartMain .box .topText h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #cartMain .box .topText a {
+    text-decoration: none;
+  }
+  #cartMain .box .topText a p {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+  }
+  #cartMain .box .topText a p:hover {
+    text-decoration: underline;
+  }
+  #cartMain .box .content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  #cartMain .box .content .left {
+    width: 528px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(14, 14, 16);
+  }
+  #cartMain .box .content .left .singleArtist {
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  }
+  #cartMain .box .content .left .singleArtist .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #cartMain .box .content .left .singleArtist .top .PfpAndName {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  #cartMain .box .content .left .singleArtist .top .PfpAndName .pfp {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  }
+  #cartMain .box .content .left .singleArtist .top .PfpAndName h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #cartMain .box .content .left .singleArtist .top .singleArtistSum {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #cartMain .box .content .left .singleArtist .beats {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    gap: 10px;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .cover {
+    height: 60px;
+    width: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    border-radius: 6px;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .beatTitleAndPrice {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .beatTitleAndPrice .beatTitle {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    color: white;
+    height: 22px;
+    width: 300px;
+    overflow: hidden;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .beatTitleAndPrice .beatPrice {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    color: white;
+    height: 22px;
+    text-align: center;
+    color: #406cfd;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .licenseAndX {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .licenseAndX .x {
+    rotate: 45deg;
+    opacity: 0.5;
+    height: 24px;
+    width: 24px;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .licenseAndX .license {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #cartMain .box .content .right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 200px;
+    background-color: rgb(8, 8, 8);
+    padding: 8px;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border-radius: 6px;
+    gap: 16px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  #cartMain .box .content .right .line {
+    width: 100%;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+    display: flex;
+    justify-content: space-between;
+  }
+  #cartMain .box .content .right .total {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #cartMain .box .content .right .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 36px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #cartMain .box .content .right .checkout .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #cartMain .box .content .right .checkout:hover {
+    scale: 1.02;
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #cartMain .box .content .right .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 36px;
+  }
+  #cartMain .box .content .right .checkout .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #cartMain .box .content .right .checkout:hover {
+    scale: 1.02;
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #cartMain .box .content .right .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 36px;
+  }
+  #cartMain .box .content .right .checkout .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #cartMain .box .content .right .checkout:hover {
+    scale: 1.02;
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) {
+  #cartMain .box .content .right .checkout:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #cartMain .box .content .right .checkout {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #cartMain .box .content .right .checkout:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #cartMain .box .content .right .checkout {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #cartMain .box .content .right .checkout:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) {
+  #cartMain .box .content .right .checkout .credit {
+    height: 22px;
+  }
+}
+@media (max-width: 768px) {
+  #cartMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cartMain .box {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0px 20px 0px;
+  }
+  #cartMain .box .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.144);
+  }
+  #cartMain .box .topText {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #cartMain .box .topText h3 {
+    font-size: 28px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #cartMain .box .topText a {
+    text-decoration: none;
+  }
+  #cartMain .box .topText a p {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+  }
+  #cartMain .box .topText a p:hover {
+    text-decoration: underline;
+  }
+  #cartMain .box .content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #cartMain .box .content .left {
+    width: 380px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(14, 14, 16);
+  }
+  #cartMain .box .content .left .singleArtist {
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  }
+  #cartMain .box .content .left .singleArtist .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #cartMain .box .content .left .singleArtist .top .PfpAndName {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  #cartMain .box .content .left .singleArtist .top .PfpAndName .pfp {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  }
+  #cartMain .box .content .left .singleArtist .top .PfpAndName h4 {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #cartMain .box .content .left .singleArtist .top .singleArtistSum {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #cartMain .box .content .left .singleArtist .beats {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    gap: 8px;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .cover {
+    height: 56px;
+    width: 56px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    border-radius: 6px;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .beatTitleAndPrice {
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .beatTitleAndPrice .beatTitle {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    height: 22px;
+    width: 200px;
+    overflow: hidden;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .beatTitleAndPrice .beatPrice {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    height: 22px;
+    text-align: center;
+    color: #406cfd;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .licenseAndX {
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .licenseAndX .x {
+    rotate: 45deg;
+    opacity: 0.5;
+    height: 20px;
+    width: 20px;
+  }
+  #cartMain .box .content .left .singleArtist .beats .singleBeat .beatInfo .licenseAndX .license {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 200;
+    line-height: 10px;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #cartMain .box .content .right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    padding: 8px;
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border-radius: 6px;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  #cartMain .box .content .right .line {
+    width: 100%;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgb(124, 124, 124);
+    display: flex;
+    justify-content: space-between;
+  }
+  #cartMain .box .content .right .total {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #cartMain .box .content .right .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #cartMain .box .content .right .checkout .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #cartMain .box .content .right .checkout:hover {
+    scale: 1.02;
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #cartMain .box .content .right .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 28px;
+  }
+  #cartMain .box .content .right .checkout .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #cartMain .box .content .right .checkout:hover {
+    scale: 1.02;
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #cartMain .box .content .right .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 28px;
+  }
+  #cartMain .box .content .right .checkout .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #cartMain .box .content .right .checkout:hover {
+    scale: 1.02;
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #cartMain .box .content .right .checkout:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #cartMain .box .content .right .checkout {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #cartMain .box .content .right .checkout:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #cartMain .box .content .right .checkout {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #cartMain .box .content .right .checkout:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #cartMain .box .content .right .checkout:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #cartMain .box .content .right .checkout .credit {
+    height: 18px;
+  }
+}
 #trackMain {
   background-color: rgb(14, 14, 16);
   display: flex;
