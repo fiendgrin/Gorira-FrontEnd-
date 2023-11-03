@@ -68,7 +68,7 @@
   }
 }
 
-@mixin input($width) {
+@mixin input0($width) {
   width: $width;
   position: relative;
   .inputLabel {
@@ -308,7 +308,7 @@
         transition: 0.3s;
         background-color: $back-color-web;
       }
-      padding-bottom: 6px;
+      padding-bottom: 4px;
       font-weight: 700;
       border-width: 3px;
       border-image: linear-gradient(
@@ -370,7 +370,7 @@
           transition: 0.3s;
           background-color: $back-color-web;
         }
-        padding-bottom: 6px;
+        padding-bottom: 4px;
         font-weight: 700;
         border-width: 3px;
         border-image: linear-gradient(
@@ -432,7 +432,7 @@
           transition: 0.3s;
           background-color: $back-color-web;
         }
-        padding-bottom: 6px;
+        padding-bottom: 4px;
         font-weight: 500;
         border-width: 2px;
         border-image: linear-gradient(
@@ -498,7 +498,7 @@
         transition: 0.3s;
         background-color: $top-color-web;
       }
-      padding-bottom: 6px;
+      padding-bottom: 4px;
       font-weight: 700;
       border-width: 3px;
     }

@@ -384,7 +384,7 @@ header .boxTop .boxContent .left .mySearchForm .inputField:focus {
 }
 header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder-shown) {
   border-bottom: 3px solid rgb(140, 1, 207);
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   font-weight: 700;
   border-width: 3px;
   border-image: linear-gradient(to right, rgb(140, 1, 207), #d9a5ef);
@@ -392,7 +392,7 @@ header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder
 }
 header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-shown), header .boxTop .boxContent .left .mySearchForm .inputField:focus {
   border-bottom: 3px solid rgb(140, 1, 207);
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   font-weight: 700;
   border-width: 3px;
   -o-border-image: linear-gradient(to right, rgb(140, 1, 207), #d9a5ef);
@@ -466,7 +466,7 @@ header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-show
   }
   header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder-shown) {
     border-bottom: 3px solid rgb(140, 1, 207);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     font-weight: 700;
     border-width: 3px;
     border-image: linear-gradient(to right, rgb(140, 1, 207), #d9a5ef);
@@ -474,7 +474,7 @@ header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-show
   }
   header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-shown), header .boxTop .boxContent .left .mySearchForm .inputField:focus {
     border-bottom: 3px solid rgb(140, 1, 207);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     font-weight: 700;
     border-width: 3px;
     -o-border-image: linear-gradient(to right, rgb(140, 1, 207), #d9a5ef);
@@ -549,7 +549,7 @@ header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-show
   }
   header .boxTop .boxContent .left .mySearchForm .inputField:not(:-moz-placeholder-shown) {
     border-bottom: 2px solid rgb(140, 1, 207);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     font-weight: 500;
     border-width: 2px;
     border-image: linear-gradient(to right, rgb(140, 1, 207), #d9a5ef);
@@ -557,7 +557,7 @@ header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-show
   }
   header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-shown), header .boxTop .boxContent .left .mySearchForm .inputField:focus {
     border-bottom: 2px solid rgb(140, 1, 207);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     font-weight: 500;
     border-width: 2px;
     -o-border-image: linear-gradient(to right, rgb(140, 1, 207), #d9a5ef);
@@ -3809,13 +3809,13 @@ footer .box .bottom {
 }
 #registerMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
   border-bottom: 3px solid rgb(140, 1, 207);
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   font-weight: 700;
   border-width: 3px;
 }
 #registerMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #registerMain .box .myForm .loginInput .inputField:focus {
   border-bottom: 3px solid rgb(140, 1, 207);
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   font-weight: 700;
   border-width: 3px;
 }
@@ -4238,13 +4238,13 @@ footer .box .bottom {
   }
   #registerMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
     border-bottom: 3px solid rgb(140, 1, 207);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     font-weight: 700;
     border-width: 3px;
   }
   #registerMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #registerMain .box .myForm .loginInput .inputField:focus {
     border-bottom: 3px solid rgb(140, 1, 207);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     font-weight: 700;
     border-width: 3px;
   }
@@ -4559,13 +4559,13 @@ footer .box .bottom {
 }
 #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
   border-bottom: 3px solid rgb(140, 1, 207);
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   font-weight: 700;
   border-width: 3px;
 }
 #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #loginMain .box .myForm .loginInput .inputField:focus {
   border-bottom: 3px solid rgb(140, 1, 207);
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   font-weight: 700;
   border-width: 3px;
 }
@@ -5001,13 +5001,13 @@ footer .box .bottom {
   }
   #loginMain .box .myForm .loginInput .inputField:not(:-moz-placeholder-shown) {
     border-bottom: 3px solid rgb(140, 1, 207);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     font-weight: 700;
     border-width: 3px;
   }
   #loginMain .box .myForm .loginInput .inputField:not(:placeholder-shown), #loginMain .box .myForm .loginInput .inputField:focus {
     border-bottom: 3px solid rgb(140, 1, 207);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     font-weight: 700;
     border-width: 3px;
   }
@@ -18381,6 +18381,7 @@ label {
   background-color: rgba(255, 255, 255, 0.144);
 }
 #feedMain .box {
+  min-height: calc(100vh - 298px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19390,4 +19391,419 @@ label {
   #feedMain .box .posts .singlePost .bottom .right .addToBasket:active {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   }
+}
+#myTracksMain {
+  background-color: rgb(14, 14, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myTracksMain .box {
+  min-height: calc(100vh - 298px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  padding: 80px 30px 40px 30px;
+}
+#myTracksMain .box .topText {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#myTracksMain .box .topText h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#myTracksMain .box .topText a {
+  text-decoration: none;
+}
+#myTracksMain .box .topText a p {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.3s;
+}
+#myTracksMain .box .topText a p:hover {
+  text-decoration: underline;
+}
+#myTracksMain .box .searchTracks {
+  position: relative;
+  width: 400px;
+  gap: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#myTracksMain .box .searchTracks .inputLabel {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+#myTracksMain .box .searchTracks .inputIcon {
+  height: 16px;
+  opacity: 0.8;
+  bottom: 1px;
+  align-self: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(219, 219, 219);
+}
+#myTracksMain .box .searchTracks .inputField {
+  background-color: rgb(8, 8, 8);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.2s;
+  width: 100%;
+}
+#myTracksMain .box .searchTracks .inputField:hover {
+  border: 1px solid rgba(87, 87, 87, 0.3019607843);
+}
+#myTracksMain .box .searchTracks .inputField:focus {
+  border: 1px solid rgba(162, 16, 247, 0.8);
+}
+#myTracksMain .box .searchTracks img {
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.6;
+}
+#myTracksMain .box .content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#myTracksMain .box .content .myTable {
+  width: 100%;
+}
+#myTracksMain .box .content .myTable .head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 10px;
+}
+#myTracksMain .box .content .myTable .head .tableNamings {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#myTracksMain .box .content .myTable .head .tableNamings div {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+  color: rgb(124, 124, 124);
+}
+#myTracksMain .box .content .myTable .head .tableNamings div:nth-child(1) {
+  width: 40px;
+}
+#myTracksMain .box .content .myTable .head .tableNamings div:nth-child(2) {
+  width: 580px;
+}
+#myTracksMain .box .content .myTable .head .tableNamings div:nth-child(3) {
+  width: 300px;
+}
+#myTracksMain .box .content .myTable .head .tableNamings div:nth-child(4) {
+  width: 200px;
+}
+#myTracksMain .box .content .myTable .head .tableNamings div:nth-child(5) {
+  width: 160px;
+}
+#myTracksMain .box .content .myTable .body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#myTracksMain .box .content .myTable .body .singleTrack {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.2s;
+  border-radius: 6px;
+  padding: 10px;
+}
+#myTracksMain .box .content .myTable .body .singleTrack:hover {
+  background-color: rgba(87, 87, 87, 0.3019607843);
+}
+#myTracksMain .box .content .myTable .body .singleTrack:hover .number .pause {
+  display: none;
+}
+#myTracksMain .box .content .myTable .body .singleTrack:hover .number .play {
+  display: inline-block;
+  cursor: pointer;
+}
+#myTracksMain .box .content .myTable .body .singleTrack:hover .number h5 {
+  display: none;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .number {
+  width: 40px;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .number .pause {
+  display: none;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .number .play {
+  display: none;
+  height: 30px;
+  padding: 4px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .number h5 {
+  display: inline-block;
+  width: 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  color: rgba(199, 199, 199, 0.7803921569);
+  text-align: center;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-self: flex-start;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .cover {
+  border-radius: 6px;
+  height: 60px;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .title {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  color: white;
+  width: 510px;
+  height: 20px;
+  overflow: hidden;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .formats {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 300px;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .formats .format {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  color: white;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #406cfd;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .date {
+  width: 200px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  color: white;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .settings {
+  width: 160px;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: #a210f7;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
+  scale: 1.02;
+}
+#myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 140px;
+    height: 40px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
+    scale: 1.02;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 140px;
+    height: 40px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
+    scale: 1.02;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+#myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
+  background-color: rgba(87, 87, 87, 0.3019607843);
 }
