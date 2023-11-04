@@ -19807,3 +19807,551 @@ label {
 #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
   background-color: rgba(87, 87, 87, 0.3019607843);
 }
+
+@media (max-width: 1359px) {
+  #myTracksMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #myTracksMain .box {
+    min-height: calc(100vh - 310px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    width: 768px;
+    padding: 60px 10px 30px 10px;
+  }
+  #myTracksMain .box .topText {
+    width: 748px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #myTracksMain .box .topText h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #myTracksMain .box .topText a {
+    text-decoration: none;
+  }
+  #myTracksMain .box .topText a p {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+  }
+  #myTracksMain .box .topText a p:hover {
+    text-decoration: underline;
+  }
+  #myTracksMain .box .searchTracks {
+    position: relative;
+    width: 400px;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #myTracksMain .box .searchTracks .inputLabel {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #myTracksMain .box .searchTracks .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #myTracksMain .box .searchTracks .inputField {
+    background-color: rgb(8, 8, 8);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #myTracksMain .box .searchTracks .inputField:hover {
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  }
+  #myTracksMain .box .searchTracks .inputField:focus {
+    border: 1px solid rgba(162, 16, 247, 0.8);
+  }
+  #myTracksMain .box .searchTracks img {
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.6;
+  }
+  #myTracksMain .box .content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #myTracksMain .box .content .myTable {
+    width: 100%;
+  }
+  #myTracksMain .box .content .myTable .head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 10px;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(1) {
+    width: 40px;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(2) {
+    width: 340px;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(3) {
+    width: 188px;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(4) {
+    width: 120px;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(5) {
+    width: 40px;
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.2s;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack:hover {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack:hover .number .pause {
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack:hover .number .play {
+    display: inline-block;
+    cursor: pointer;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack:hover .number h5 {
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .number {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .number .pause {
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .number .play {
+    display: none;
+    height: 30px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .number h5 {
+    display: inline-block;
+    width: 30px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgba(199, 199, 199, 0.7803921569);
+    text-align: center;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    align-self: flex-start;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .cover {
+    border-radius: 6px;
+    height: 50px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .title {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    width: 280px;
+    height: 20px;
+    overflow: hidden;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .formats {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    width: 188px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .formats .format {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 14px;
+    color: white;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #406cfd;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .date {
+    width: 120px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    color: white;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings {
+    width: 40px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn > p {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #myTracksMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #myTracksMain #aplayer .aplayer-body {
+    max-width: 380px;
+  }
+  #myTracksMain .box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: 380px;
+    padding: 40px 0px 20px 0px;
+    min-height: calc(100vh - 450px);
+  }
+  #myTracksMain .box .topText {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #myTracksMain .box .topText h3 {
+    font-size: 28px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #myTracksMain .box .topText a {
+    text-decoration: none;
+  }
+  #myTracksMain .box .topText a p {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+  }
+  #myTracksMain .box .topText a p:hover {
+    text-decoration: underline;
+  }
+  #myTracksMain .box .searchTracks {
+    position: relative;
+    width: 380px;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #myTracksMain .box .searchTracks .inputLabel {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #myTracksMain .box .searchTracks .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #myTracksMain .box .searchTracks .inputField {
+    background-color: rgb(8, 8, 8);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #myTracksMain .box .searchTracks .inputField:hover {
+    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  }
+  #myTracksMain .box .searchTracks .inputField:focus {
+    border: 1px solid rgba(162, 16, 247, 0.8);
+  }
+  #myTracksMain .box .searchTracks img {
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.6;
+  }
+  #myTracksMain .box .content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #myTracksMain .box .content .myTable {
+    width: 100%;
+  }
+  #myTracksMain .box .content .myTable .head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 6px;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    color: rgb(124, 124, 124);
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(1) {
+    width: 26px;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(2) {
+    width: 302px;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(3) {
+    width: 188px;
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(4) {
+    width: 120px;
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(5) {
+    width: 38px;
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.2s;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack:hover {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack:hover .number .pause {
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack:hover .number .play {
+    display: inline-block;
+    cursor: pointer;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack:hover .number h5 {
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .number {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .number .pause {
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .number .play {
+    display: none;
+    height: 20px;
+    padding: 0px;
+    border-radius: 50%;
+    border: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .number h5 {
+    display: inline-block;
+    width: 20px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    color: rgba(199, 199, 199, 0.7803921569);
+    text-align: center;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    align-self: flex-start;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .cover {
+    border-radius: 6px;
+    height: 50px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .title {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    width: 242px;
+    height: 20px;
+    overflow: hidden;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .formats {
+    display: flex;
+    display: none;
+    gap: 4px;
+    align-items: center;
+    width: 188px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .formats .format {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 14px;
+    color: white;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #406cfd;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .date {
+    width: 120px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+    color: white;
+    display: none;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings {
+    width: 38px;
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
+    display: flex;
+    width: 38px;
+    height: 38px;
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
+    background-color: rgba(87, 87, 87, 0.3019607843);
+  }
+  #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn > p {
+    display: none;
+  }
+}
