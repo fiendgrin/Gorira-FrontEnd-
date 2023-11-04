@@ -1,7 +1,6 @@
 #myTracksMain {
   background-color: $back-color-web;
   display: flex;
-
   justify-content: center;
   align-items: center;
   .box {
@@ -58,6 +57,7 @@
         border: 1px solid transparent;
         border-radius: 6px;
         padding: 10px 10px;
+        padding-right: 40px;
         @include text(16px, 600, 100%);
         transition: 0.2s;
         width: 100%;

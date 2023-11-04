@@ -1568,7 +1568,7 @@ footer {
   align-items: center;
   background-color: rgb(14, 14, 16);
   box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset;
-  border-top: 2px solid rgba(87, 87, 87, 0.3019607843);
+  border-top: 2px solid rgba(87, 87, 87, 0.302);
 }
 footer .box {
   display: flex;
@@ -1647,7 +1647,7 @@ footer .box .top .infoCard .inside .sMlinks .sMLogo {
 footer .box .line {
   height: 1px;
   width: 1360px;
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 footer .box .bottom {
   font-size: 15px;
@@ -1755,7 +1755,7 @@ footer .box .bottom {
   footer .box .line {
     height: 1px;
     width: 768px;
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   footer .box .bottom {
     font-size: 12px;
@@ -1860,7 +1860,7 @@ footer .box .bottom {
   footer .box .line {
     height: 1px;
     width: 380px;
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   footer .box .bottom {
     font-size: 14px;
@@ -5765,7 +5765,7 @@ footer .box .bottom {
   animation: checkAnimation 0.5s ease;
 }
 #uploadMain .submitHolder {
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
   border-top-left-radius: 10px;
   padding: 20px 40px;
   position: fixed;
@@ -6461,7 +6461,7 @@ footer .box .bottom {
     animation: checkAnimation 0.5s ease;
   }
   #uploadMain .submitHolder {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
     border-top-left-radius: 10px;
     padding: 20px 40px;
     position: fixed;
@@ -7172,7 +7172,7 @@ footer .box .bottom {
     animation: checkAnimation 0.5s ease;
   }
   #uploadMain .submitHolder {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
     border-top-left-radius: 10px;
     padding: 10px 20px;
     position: fixed;
@@ -7619,7 +7619,7 @@ footer .box .bottom {
   display: inline-block;
 }
 #profileMain .box .left .account .accountButtons .followActive {
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 #profileMain .box .left .account .accountButtons .followActive:hover {
   background-color: rgba(56, 54, 56, 0.7333333333);
@@ -7660,7 +7660,7 @@ footer .box .bottom {
   color: white;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   text-decoration: none;
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 #profileMain .box .left .account .accountButtons .message .btnImg {
   height: 22px;
@@ -8343,7 +8343,7 @@ footer .box .bottom {
     display: inline-block;
   }
   #profileMain .box .left .account .accountButtons .followActive {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #profileMain .box .left .account .accountButtons .followActive:hover {
     background-color: rgba(56, 54, 56, 0.7333333333);
@@ -8355,7 +8355,7 @@ footer .box .bottom {
     display: none;
   }
   #profileMain .box .left .account .accountButtons .message {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #profileMain .box .left .account .accountButtons .message:hover {
     background-color: rgba(56, 54, 56, 0.7333333333);
@@ -8882,7 +8882,7 @@ footer .box .bottom {
     display: inline-block;
   }
   #profileMain .box .left .account .accountButtons .followActive {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #profileMain .box .left .account .accountButtons .followActive:hover {
     background-color: rgba(56, 54, 56, 0.7333333333);
@@ -8894,7 +8894,7 @@ footer .box .bottom {
     display: none;
   }
   #profileMain .box .left .account .accountButtons .message {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #profileMain .box .left .account .accountButtons .message:hover {
     background-color: rgba(56, 54, 56, 0.7333333333);
@@ -9253,7 +9253,7 @@ footer .box .bottom {
   color: white;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   text-decoration: none;
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 #myProfileMain .box .left .account .accountButtons .edit .btnImg {
   height: 22px;
@@ -9769,7 +9769,7 @@ footer .box .bottom {
     width: 100%;
   }
   #myProfileMain .box .left .account .accountButtons .edit {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #myProfileMain .box .left .account .accountButtons .edit:hover {
     background-color: rgba(56, 54, 56, 0.7333333333);
@@ -10129,7 +10129,7 @@ footer .box .bottom {
     width: 100%;
   }
   #myProfileMain .box .left .account .accountButtons .edit {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #myProfileMain .box .left .account .accountButtons .edit:hover {
     background-color: rgba(56, 54, 56, 0.7333333333);
@@ -13442,7 +13442,7 @@ label {
   border-radius: 6px;
 }
 #tracksMain .box .left .filter .top:hover {
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 #tracksMain .box .left .filter .top .filterName {
   display: flex;
@@ -13722,7 +13722,7 @@ label {
   border-radius: 20px;
 }
 #tracksMain .box .right .topText .sort:hover {
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 #tracksMain .box .right .topText .sortHolder {
   z-index: 2;
@@ -13957,7 +13957,7 @@ label {
     border-radius: 6px;
   }
   #tracksMain .box .left .filter .top:hover {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #tracksMain .box .left .filter .top .filterName {
     display: flex;
@@ -14245,7 +14245,7 @@ label {
     height: 18px;
   }
   #tracksMain .box .right .topText .sort:hover {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #tracksMain .box .right .topText .sortHolder {
     z-index: 2;
@@ -14487,7 +14487,7 @@ label {
     border-radius: 6px;
   }
   #tracksMain .box .left .filter .top:hover {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #tracksMain .box .left .filter .top .filterName {
     display: flex;
@@ -14763,7 +14763,7 @@ label {
     border-radius: 20px;
   }
   #tracksMain .box .right .topText .leftName img:hover {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #tracksMain .box .right .topText .sort {
     font-size: 14px;
@@ -14784,7 +14784,7 @@ label {
     height: 18px;
   }
   #tracksMain .box .right .topText .sort:hover {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #tracksMain .box .right .topText .sortHolder {
     z-index: 2;
@@ -15026,7 +15026,7 @@ label {
   flex-direction: column;
   gap: 10px;
   padding: 20px;
-  border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  border: 1px solid rgba(87, 87, 87, 0.302);
 }
 #cartMain .box .content .left .singleArtist .top {
   width: 100%;
@@ -15047,7 +15047,7 @@ label {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  border: 1px solid rgba(87, 87, 87, 0.302);
 }
 #cartMain .box .content .left .singleArtist .top .PfpAndName h4 {
   font-size: 22px;
@@ -15079,7 +15079,7 @@ label {
   flex-direction: column;
   padding: 20px;
   border-radius: 6px;
-  border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  border: 1px solid rgba(87, 87, 87, 0.302);
   gap: 20px;
 }
 #cartMain .box .content .left .singleArtist .beats .singleBeat {
@@ -15165,7 +15165,7 @@ label {
   width: 420px;
   background-color: rgb(8, 8, 8);
   padding: 16px;
-  border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  border: 1px solid rgba(87, 87, 87, 0.302);
   border-radius: 6px;
   gap: 16px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -15424,7 +15424,7 @@ label {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
   }
   #cartMain .box .content .left .singleArtist .top {
     width: 100%;
@@ -15445,7 +15445,7 @@ label {
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
   }
   #cartMain .box .content .left .singleArtist .top .PfpAndName h4 {
     font-size: 18px;
@@ -15477,7 +15477,7 @@ label {
     flex-direction: column;
     padding: 20px;
     border-radius: 6px;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
     gap: 10px;
   }
   #cartMain .box .content .left .singleArtist .beats .singleBeat {
@@ -15563,7 +15563,7 @@ label {
     width: 200px;
     background-color: rgb(8, 8, 8);
     padding: 8px;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
     border-radius: 6px;
     gap: 16px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -15830,7 +15830,7 @@ label {
     flex-direction: column;
     gap: 4px;
     padding: 8px;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
   }
   #cartMain .box .content .left .singleArtist .top {
     width: 100%;
@@ -15851,7 +15851,7 @@ label {
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
   }
   #cartMain .box .content .left .singleArtist .top .PfpAndName h4 {
     font-size: 14px;
@@ -15883,7 +15883,7 @@ label {
     flex-direction: column;
     padding: 6px;
     border-radius: 6px;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
     gap: 8px;
   }
   #cartMain .box .content .left .singleArtist .beats .singleBeat {
@@ -15969,7 +15969,7 @@ label {
     width: 100%;
     background-color: rgb(8, 8, 8);
     padding: 8px;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
     border-radius: 6px;
     gap: 10px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -16274,7 +16274,7 @@ label {
   color: white;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   text-decoration: none;
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 #trackMain .box .left .theTrack .trackButtons .edit .btnImg {
   height: 22px;
@@ -17125,7 +17125,7 @@ label {
   color: white;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   text-decoration: none;
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 #trackMain .box .right .commentSection .seeAll .btnImg {
   height: 22px;
@@ -17375,7 +17375,7 @@ label {
     width: 100%;
   }
   #trackMain .box .left .theTrack .trackButtons .edit {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #trackMain .box .left .theTrack .trackButtons .edit:hover {
     background-color: rgba(56, 54, 56, 0.7333333333);
@@ -18081,7 +18081,7 @@ label {
   }
   #trackMain .box .right .commentSection .seeAll {
     align-self: flex-start;
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #trackMain .box .right .commentSection .seeAll:hover {
     background-color: rgba(56, 54, 56, 0.7333333333);
@@ -18188,7 +18188,7 @@ label {
     width: 100%;
   }
   #trackMain .box .left .theTrack .trackButtons .edit {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #trackMain .box .left .theTrack .trackButtons .edit:hover {
     background-color: rgba(56, 54, 56, 0.7333333333);
@@ -18439,7 +18439,7 @@ label {
   flex-direction: column;
   gap: 20px;
   width: 640px;
-  border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  border: 1px solid rgba(87, 87, 87, 0.302);
 }
 #feedMain .box .posts .singlePost .top {
   width: 100%;
@@ -18773,7 +18773,7 @@ label {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
   }
   #feedMain .box .posts .singlePost .top {
     width: 100%;
@@ -19115,7 +19115,7 @@ label {
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
   }
   #feedMain .box .posts .singlePost .top {
     width: 100%;
@@ -19472,6 +19472,7 @@ label {
   border: 1px solid transparent;
   border-radius: 6px;
   padding: 10px 10px;
+  padding-right: 40px;
   font-size: 16px;
   font-style: normal;
   font-family: "Chakra Petch", sans-serif;
@@ -19482,7 +19483,7 @@ label {
   width: 100%;
 }
 #myTracksMain .box .searchTracks .inputField:hover {
-  border: 1px solid rgba(87, 87, 87, 0.3019607843);
+  border: 1px solid rgba(87, 87, 87, 0.302);
 }
 #myTracksMain .box .searchTracks .inputField:focus {
   border: 1px solid rgba(162, 16, 247, 0.8);
@@ -19559,7 +19560,7 @@ label {
   padding: 10px;
 }
 #myTracksMain .box .content .myTable .body .singleTrack:hover {
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 #myTracksMain .box .content .myTable .body .singleTrack:hover .number .pause {
   display: none;
@@ -19805,7 +19806,7 @@ label {
   }
 }
 #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
-  background-color: rgba(87, 87, 87, 0.3019607843);
+  background-color: rgba(87, 87, 87, 0.302);
 }
 
 @media (max-width: 1359px) {
@@ -19896,7 +19897,7 @@ label {
     width: 100%;
   }
   #myTracksMain .box .searchTracks .inputField:hover {
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
   }
   #myTracksMain .box .searchTracks .inputField:focus {
     border: 1px solid rgba(162, 16, 247, 0.8);
@@ -19974,7 +19975,7 @@ label {
     padding: 10px;
   }
   #myTracksMain .box .content .myTable .body .singleTrack:hover {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #myTracksMain .box .content .myTable .body .singleTrack:hover .number .pause {
     display: none;
@@ -20071,7 +20072,7 @@ label {
     background-color: rgba(56, 54, 56, 0.7333333333);
   }
   #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn > p {
     display: none;
@@ -20168,7 +20169,7 @@ label {
     width: 100%;
   }
   #myTracksMain .box .searchTracks .inputField:hover {
-    border: 1px solid rgba(87, 87, 87, 0.3019607843);
+    border: 1px solid rgba(87, 87, 87, 0.302);
   }
   #myTracksMain .box .searchTracks .inputField:focus {
     border: 1px solid rgba(162, 16, 247, 0.8);
@@ -20249,7 +20250,7 @@ label {
     margin-bottom: 8px;
   }
   #myTracksMain .box .content .myTable .body .singleTrack:hover {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #myTracksMain .box .content .myTable .body .singleTrack:hover .number .pause {
     display: none;
@@ -20349,9 +20350,471 @@ label {
     background-color: rgba(56, 54, 56, 0.7333333333);
   }
   #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
-    background-color: rgba(87, 87, 87, 0.3019607843);
+    background-color: rgba(87, 87, 87, 0.302);
   }
   #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn > p {
     display: none;
   }
+}
+#messangerMain {
+  background-color: rgb(14, 14, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#messangerMain .box {
+  width: 100%;
+  min-height: calc(100vh - 116px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#messangerMain .box .left {
+  height: calc(100vh - 116px);
+  margin-top: 50px;
+  width: 400px;
+  border-right: 2px solid rgb(70, 70, 70);
+  background: linear-gradient(180deg, #d9a5ef 0%, #7e8ce6 100%);
+}
+#messangerMain .box .left .topLeft {
+  background-color: rgb(14, 14, 14);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+  padding: 20px;
+}
+#messangerMain .box .left .topLeft h1 {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#messangerMain .box .left .searchUsers {
+  position: relative;
+  padding: 20px;
+  width: 400px;
+  gap: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#messangerMain .box .left .searchUsers .inputLabel {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+#messangerMain .box .left .searchUsers .inputIcon {
+  height: 16px;
+  opacity: 0.8;
+  bottom: 1px;
+  align-self: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(219, 219, 219);
+}
+#messangerMain .box .left .searchUsers .inputField {
+  background-color: rgb(8, 8, 8);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px 10px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.2s;
+  width: 100%;
+}
+#messangerMain .box .left .searchUsers .inputField:hover {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+#messangerMain .box .left .searchUsers .inputField:focus {
+  border: 1px solid white;
+}
+#messangerMain .box .left .searchUsers img {
+  height: 25px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  opacity: 0.6;
+}
+#messangerMain .box .left .messangers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: calc(100vh - 116px - 58px - 83px);
+  overflow: auto;
+}
+#messangerMain .box .left .messangers::-webkit-scrollbar {
+  display: none;
+}
+#messangerMain .box .left .messangers .singleMessanger {
+  min-height: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  transition: 0.3s;
+  box-shadow: transparent;
+  width: 100%;
+  gap: 10px;
+  cursor: pointer;
+}
+#messangerMain .box .left .messangers .singleMessanger:hover {
+  background-color: rgba(87, 87, 87, 0.302);
+  box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset, 0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+}
+#messangerMain .box .left .messangers .singleMessanger .pfp {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+#messangerMain .box .left .messangers .singleMessanger .rightMessanger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+#messangerMain .box .left .messangers .singleMessanger .rightMessanger .name {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+  color: white;
+  height: 18px;
+  width: 318px;
+  color: rgb(8, 8, 8);
+  overflow: hidden;
+}
+#messangerMain .box .left .messangers .singleMessanger .rightMessanger .lastMessage {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  line-height: 18px;
+  color: white;
+  color: rgb(29, 29, 29);
+  height: 18px;
+  width: 308px;
+  overflow: hidden;
+  padding-right: 10px;
+}
+#messangerMain .box .right {
+  height: calc(100vh - 116px);
+  margin-top: 50px;
+  width: 100%;
+  border-right: 2px solid gray;
+  background-color: rgb(8, 8, 8);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#messangerMain .box .right .topRight {
+  width: 100%;
+  background-color: rgb(14, 14, 14);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+  padding: 20px;
+}
+#messangerMain .box .right .topRight h1 {
+  width: 100%;
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 100%;
+  color: white;
+  text-align: center;
+}
+#messangerMain .box .right .bottom {
+  height: calc(100vh - 116px - 58px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+#messangerMain .box .right .bottom .meaasagingBox {
+  padding-bottom: 10px;
+  width: 100%;
+  height: calc(100vh - 116px - 58px - 53px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-y: auto;
+}
+#messangerMain .box .right .bottom .meaasagingBox::-webkit-scrollbar {
+  display: none;
+}
+#messangerMain .box .right .bottom .meaasagingBox .singleMessage {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: calc(50% - 60px);
+}
+#messangerMain .box .right .bottom .meaasagingBox .singleMessage .theMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+  color: white;
+  background-color: rgba(56, 54, 56, 0.7333333333);
+  border-radius: 6px;
+  border: 1px solid grey;
+}
+#messangerMain .box .right .bottom .meaasagingBox .singleMessage .pfpMsg {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid grey;
+}
+#messangerMain .box .right .bottom .meaasagingBox .me {
+  align-self: flex-end;
+}
+#messangerMain .box .right .bottom .meaasagingBox .interlocutor {
+  align-self: flex-start;
+}
+#messangerMain .box .right .bottom .send {
+  position: relative;
+  width: 100%;
+  gap: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: flex-end;
+}
+#messangerMain .box .right .bottom .send .inputLabel {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+#messangerMain .box .right .bottom .send .inputIcon {
+  height: 16px;
+  opacity: 0.8;
+  bottom: 1px;
+  align-self: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(219, 219, 219);
+}
+#messangerMain .box .right .bottom .send .inputField {
+  background-color: rgb(34, 34, 34);
+  outline: none;
+  border: transparent;
+  padding: 16px 10px 16px 10px;
+  padding-right: 120px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.2s;
+  width: 100%;
+}
+#messangerMain .box .right .bottom .send .sendBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: #a210f7;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: -moz-max-content;
+  width: max-content;
+  height: 32px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: rgba(56, 54, 56, 0.7333333333);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  justify-self: center;
+  align-self: center;
+}
+#messangerMain .box .right .bottom .send .sendBtn .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#messangerMain .box .right .bottom .send .sendBtn:hover {
+  scale: 1.02;
+}
+#messangerMain .box .right .bottom .send .sendBtn:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 32px;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1.02;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 32px;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1.02;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#messangerMain .box .right .bottom .send .sendBtn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#messangerMain .box .right .bottom .send .sendBtn:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+#messangerMain .box .right .bottom .send .sendBtn:hover {
+  scale: 1;
+}
+#messangerMain .box .right .bottom .send .sendBtn:active {
+  scale: 0.98;
 }
