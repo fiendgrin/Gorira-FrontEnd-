@@ -20375,6 +20375,8 @@ label {
   width: 400px;
   border-right: 2px solid rgb(70, 70, 70);
   background: linear-gradient(180deg, #d9a5ef 0%, #7e8ce6 100%);
+  display: flex;
+  flex-direction: column;
 }
 #messangerMain .box .left .topLeft {
   background-color: rgb(14, 14, 14);
@@ -20542,6 +20544,9 @@ label {
   color: white;
   text-align: center;
 }
+#messangerMain .box .right .topRight .people {
+  display: none;
+}
 #messangerMain .box .right .bottom {
   height: calc(100vh - 116px - 58px);
   display: flex;
@@ -20569,7 +20574,7 @@ label {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
-  max-width: calc(50% - 60px);
+  max-width: 50%;
 }
 #messangerMain .box .right .bottom .meaasagingBox .singleMessage .theMessage {
   display: flex;
@@ -20596,6 +20601,13 @@ label {
   height: 50px;
   width: 50px;
   border: 1px solid grey;
+}
+#messangerMain .box .right .bottom .meaasagingBox .singleMessage .interlocutorMessages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 #messangerMain .box .right .bottom .meaasagingBox .me {
   align-self: flex-end;
@@ -20817,4 +20829,968 @@ label {
 }
 #messangerMain .box .right .bottom .send .sendBtn:active {
   scale: 0.98;
+}
+
+@media (max-width: 1359px) {
+  #messangerMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #messangerMain .box {
+    width: 100%;
+    min-height: calc(100vh - 96px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #messangerMain .box .left {
+    height: calc(100vh - 96px);
+    margin-top: 40px;
+    width: 220px;
+    border-right: 2px solid rgb(70, 70, 70);
+    background: linear-gradient(180deg, #d9a5ef 0%, #7e8ce6 100%);
+  }
+  #messangerMain .box .left .topLeft {
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+    padding: 10px;
+  }
+  #messangerMain .box .left .topLeft h1 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #messangerMain .box .left .searchUsers {
+    position: relative;
+    padding: 10px;
+    width: 220px;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #messangerMain .box .left .searchUsers .inputLabel {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #messangerMain .box .left .searchUsers .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #messangerMain .box .left .searchUsers .inputField {
+    background-color: rgb(8, 8, 8);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 6px 6px;
+    padding-right: 28px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #messangerMain .box .left .searchUsers .inputField:hover {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  #messangerMain .box .left .searchUsers .inputField:focus {
+    border: 1px solid white;
+  }
+  #messangerMain .box .left .searchUsers img {
+    height: 20px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    opacity: 0.6;
+  }
+  #messangerMain .box .left .messangers {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: calc(100vh - 96px - 36px - 52px);
+    overflow: auto;
+  }
+  #messangerMain .box .left .messangers::-webkit-scrollbar {
+    display: none;
+  }
+  #messangerMain .box .left .messangers .singleMessanger {
+    min-height: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: transparent;
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
+  }
+  #messangerMain .box .left .messangers .singleMessanger:hover {
+    background-color: rgba(87, 87, 87, 0.302);
+    box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset, 0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+  }
+  #messangerMain .box .left .messangers .singleMessanger .pfp {
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 36px;
+    width: 36px;
+    margin-left: 10px;
+  }
+  #messangerMain .box .left .messangers .singleMessanger .rightMessanger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  #messangerMain .box .left .messangers .singleMessanger .rightMessanger .name {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    height: 16px;
+    width: 162px;
+    color: rgb(8, 8, 8);
+    overflow: hidden;
+  }
+  #messangerMain .box .left .messangers .singleMessanger .rightMessanger .lastMessage {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 16px;
+    color: white;
+    color: rgb(29, 29, 29);
+    height: 16px;
+    width: 162px;
+    overflow: hidden;
+    padding-right: 10px;
+  }
+  #messangerMain .box .right {
+    height: calc(100vh - 96px);
+    margin-top: 40px;
+    width: 100%;
+    border-right: 2px solid gray;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #messangerMain .box .right .topRight {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+    padding: 10px;
+  }
+  #messangerMain .box .right .topRight h1 {
+    width: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    text-align: center;
+  }
+  #messangerMain .box .right .bottom {
+    height: calc(100vh - 96px - 36px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox {
+    padding-bottom: 6px;
+    width: 100%;
+    height: calc(100vh - 96px - 36px - 53px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox::-webkit-scrollbar {
+    display: none;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .singleMessage {
+    padding: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    max-width: 50%;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .singleMessage .theMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 120%;
+    color: white;
+    background-color: rgba(56, 54, 56, 0.7333333333);
+    border-radius: 6px;
+    border: 1px solid grey;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .singleMessage .pfpMsg {
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 28px;
+    width: 28px;
+    border: 1px solid grey;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .singleMessage .interlocutorMessages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .me {
+    align-self: flex-end;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .interlocutor {
+    align-self: flex-start;
+  }
+  #messangerMain .box .right .bottom .send {
+    position: relative;
+    width: 100%;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    justify-self: flex-end;
+  }
+  #messangerMain .box .right .bottom .send .inputLabel {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #messangerMain .box .right .bottom .send .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #messangerMain .box .right .bottom .send .inputField {
+    background-color: rgb(34, 34, 34);
+    outline: none;
+    border: transparent;
+    padding: 16px 10px 16px 10px;
+    padding-right: 120px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 32px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: rgba(56, 54, 56, 0.7333333333);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    justify-self: center;
+    align-self: center;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1.02;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 32px;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1.02;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 32px;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1.02;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 1359px) {
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 1359px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) and (max-width: 768px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 1359px) {
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #messangerMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #messangerMain .box {
+    width: 100%;
+    min-height: calc(100vh - 52px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+  }
+  #messangerMain .box .left {
+    height: 400px;
+    width: 220px;
+    border: 1px solid rgb(70, 70, 70);
+    background: linear-gradient(180deg, #d9a5ef 0%, #7e8ce6 100%);
+    position: absolute;
+    z-index: 1;
+    display: none;
+    border-radius: 10px;
+    top: -4px;
+    left: 0;
+  }
+  #messangerMain .box .left .topLeft {
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+    padding: 10px;
+  }
+  #messangerMain .box .left .topLeft h1 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #messangerMain .box .left .searchUsers {
+    position: relative;
+    padding: 10px;
+    width: 220px;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #messangerMain .box .left .searchUsers .inputLabel {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #messangerMain .box .left .searchUsers .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #messangerMain .box .left .searchUsers .inputField {
+    background-color: rgb(8, 8, 8);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 6px 6px;
+    padding-right: 28px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #messangerMain .box .left .searchUsers .inputField:hover {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+  }
+  #messangerMain .box .left .searchUsers .inputField:focus {
+    border: 1px solid white;
+  }
+  #messangerMain .box .left .searchUsers img {
+    height: 20px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    opacity: 0.6;
+  }
+  #messangerMain .box .left .messangers {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 312px;
+    overflow: auto;
+  }
+  #messangerMain .box .left .messangers::-webkit-scrollbar {
+    display: none;
+  }
+  #messangerMain .box .left .messangers .singleMessanger {
+    min-height: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: transparent;
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
+  }
+  #messangerMain .box .left .messangers .singleMessanger:hover {
+    background-color: rgba(87, 87, 87, 0.302);
+    box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset, 0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+  }
+  #messangerMain .box .left .messangers .singleMessanger .pfp {
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 36px;
+    width: 36px;
+    margin-left: 10px;
+  }
+  #messangerMain .box .left .messangers .singleMessanger .rightMessanger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  #messangerMain .box .left .messangers .singleMessanger .rightMessanger .name {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    height: 16px;
+    width: 162px;
+    color: rgb(8, 8, 8);
+    overflow: hidden;
+  }
+  #messangerMain .box .left .messangers .singleMessanger .rightMessanger .lastMessage {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    line-height: 16px;
+    color: white;
+    color: rgb(29, 29, 29);
+    height: 16px;
+    width: 162px;
+    overflow: hidden;
+    padding-right: 10px;
+  }
+  #messangerMain .box .right {
+    height: calc(100vh - 52px);
+    margin-top: 0px;
+    width: 100%;
+    border-right: 2px solid gray;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #messangerMain .box .right .topRight {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+    padding: 10px;
+  }
+  #messangerMain .box .right .topRight h1 {
+    width: 100%;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    text-align: end;
+  }
+  #messangerMain .box .right .topRight .people {
+    position: absolute;
+    display: inline-block;
+    left: 6px;
+    top: 6px;
+    cursor: pointer;
+  }
+  #messangerMain .box .right .bottom {
+    height: calc(100vh - 52px - 36px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox {
+    padding-bottom: 6px;
+    width: 100%;
+    height: calc(100vh - 52px - 36px - 53px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox::-webkit-scrollbar {
+    display: none;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .singleMessage {
+    padding: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    max-width: 50%;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .singleMessage .theMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 120%;
+    color: white;
+    background-color: rgba(56, 54, 56, 0.7333333333);
+    border-radius: 6px;
+    border: 1px solid grey;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .singleMessage .pfpMsg {
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 28px;
+    width: 28px;
+    border: 1px solid grey;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .singleMessage .interlocutorMessages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .me {
+    align-self: flex-end;
+  }
+  #messangerMain .box .right .bottom .meaasagingBox .interlocutor {
+    align-self: flex-start;
+  }
+  #messangerMain .box .right .bottom .send {
+    position: relative;
+    width: 100%;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    justify-self: flex-end;
+  }
+  #messangerMain .box .right .bottom .send .inputLabel {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #messangerMain .box .right .bottom .send .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #messangerMain .box .right .bottom .send .inputField {
+    background-color: rgb(34, 34, 34);
+    outline: none;
+    border: transparent;
+    padding: 16px 10px 16px 10px;
+    padding-right: 120px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 32px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: rgba(56, 54, 56, 0.7333333333);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    justify-self: center;
+    align-self: center;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn .btnImg {
+    height: 22px;
+    transform: translateX(-1px);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1.02;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 32px;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1.02;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: -moz-max-content;
+    width: max-content;
+    height: 32px;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1.02;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 1359px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #messangerMain .box .right .bottom .send .sendBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #messangerMain .box .right .bottom .send .sendBtn:hover {
+    scale: 1;
+  }
+  #messangerMain .box .right .bottom .send .sendBtn:active {
+    scale: 0.98;
+  }
 }
