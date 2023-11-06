@@ -33,3 +33,49 @@ let ap = new APlayer({
   theme: "#a210f7",
   audio: audioList,
 });
+
+let myNumberElements = document.querySelectorAll(
+  "#playlistMain .numberElement"
+);
+
+myNumberElements.forEach((numberElement) => {
+  let number = parseInt(numberElement.textContent);
+
+  let formattedNumber = number.toLocaleString();
+
+  numberElement.textContent = formattedNumber;
+});
+
+let playlistInfoTab = document.querySelector("#playlistMain .info");
+let playlistTracksTab = document.querySelector("#playlistMain .tracks");
+let playlistTracks = document.querySelector("#playlistMain .right");
+let playlist = document.querySelector("#playlistMain .left");
+
+playlistInfoTab.addEventListener("click", () => {
+  playlistInfoTab.classList.add("tabActive");
+  playlistTracksTab.classList.remove("tabActive");
+  playlist.style.display = "flex";
+  playlistTracks.style.display = "none";
+});
+playlistTracksTab.addEventListener("click", () => {
+  playlistTracksTab.classList.add("tabActive");
+  playlistInfoTab.classList.remove("tabActive");
+  playlistTracks.style.display = "flex";
+  playlist.style.display = "none";
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 1360) {
+    playlist.style.display = "flex";
+    playlistTracks.style.display = "flex";
+  } else if (
+    window.innerWidth < 1360 &&
+    playlist.style.display == "flex" &&
+    playlistTracks.style.display == "flex"
+  ) {
+    playlistInfoTab.classList.add("tabActive");
+    playlistTracksTab.classList.remove("tabActive");
+    playlist.style.display = "flex";
+    playlistTracks.style.display = "none";
+  }
+});
