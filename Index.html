@@ -3,24 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
     <link src="./assets/jquerry/jquerry.js" />
     <link
       rel="stylesheet"
@@ -44,8 +26,14 @@
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="./assets/images/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="./assets/scss/style.css" />
-    <title>Gorira</title>
+    <title>Index</title>
   </head>
   <body>
     <!--Start-->
@@ -58,7 +46,7 @@
             <a href=""
               ><img class="logo" src="./assets/images/logo/Logo.png" alt=""
             /></a>
-            <div class="mySearchForm">
+            <form class="mySearchForm">
               <input
                 type="input"
                 autocomplete="off"
@@ -68,12 +56,11 @@
                 placeholder="Search"
               />
               <label class="inputLabel">Search</label>
-              <img
-                class="searchIcon"
-                src="./assets/images/icons/search.svg"
-                alt=""
-              />
-            </div>
+
+              <button class="searchIcon">
+                <img class="theSearchIcon" src="./assets/images/icons/search.svg" alt="" />
+              </button>
+            </form>
           </div>
 
           <div class="right">
@@ -95,14 +82,28 @@
               />
               <div class="accountContent">
                 <!--Single Line start-->
-                <a href="profile.html" class="accountLine">
+                <a href="myProfile.html" class="accountLine">
                   <img src="./assets/images/icons/user.svg" alt="" />
                   <p>My Profile</p>
                 </a>
                 <div class="divider"></div>
                 <!--Single Line End-->
+                   <!--Single Line start-->
+                   <a href="myPlaylists.html" class="accountLine">
+                    <img src="./assets/images/icons/play-list-5.svg" alt="" />
+                    <p>My Playlists</p>
+                  </a>
+                  <div class="divider"></div>
+                  <!--Single Line End-->
                 <!--Single Line start-->
-                <a href="profile.html" class="accountLine">
+                <a href="messanger.html" class="accountLine">
+                  <img src="./assets/images/icons/message.svg" alt="" />
+                  <p>Messages</p>
+                </a>
+                <div class="divider"></div>
+                <!--Single Line End-->
+                <!--Single Line start-->
+                <a href="myTracks.html" class="accountLine">
                   <img src="./assets/images/icons/music.svg" alt="" />
                   <p>My Tracks</p>
                 </a>
@@ -123,7 +124,7 @@
                 <div class="divider"></div>
                 <!--Single Line end-->
                 <!--Single Line start-->
-                <a href="logOut" class="accountLine">
+                <a href="logOut.html" class="accountLine">
                   <img src="./assets/images/icons/power.svg" alt="" />
                   <p>Sign Out</p>
                 </a>
@@ -133,6 +134,7 @@
             </div>
             <!--Basket-->
             <div class="basketHolder">
+              <div class="basketCounter">3</div>
               <img
                 class="basketIcon"
                 src="./assets/images/icons/shopping-cart.svg"
@@ -220,11 +222,11 @@
     <nav class="navBar">
       <div class="boxBottom">
         <div class="bottomBoxContent">
-          <a id="feed" href="">Feed</a>
-          <a id="myMedia" href="">My Media</a>
-          <a id="home" href="">Home</a>
-          <a id="tracks" href="">Tracks</a>
-          <a id="artists" href="">Artists</a>
+          <a id="feed" href="feed.html">Feed</a>
+          <a id="playlists" href="playlists.html">Playlists</a>
+          <a id="home" href="Index.html">Home</a>
+          <a id="tracks" href="tracks.html">Tracks</a>
+          <a id="artists" href="musicians.html">Artists</a>
         </div>
       </div>
     </nav>
@@ -407,7 +409,6 @@
                 >
                 <a href=""><p class="artist">Metro Boomin</p></a>
               </div>
-              
             </div>
             <!--Single Card End-->
           </div>

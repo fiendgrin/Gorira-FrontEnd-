@@ -345,6 +345,7 @@ header .boxTop .boxContent .left .mySearchForm {
   margin-left: 80px;
   width: 400px;
   position: relative;
+  position: relative;
 }
 header .boxTop .boxContent .left .mySearchForm .inputLabel {
   color: #807e7e;
@@ -593,13 +594,22 @@ header .boxTop .boxContent .left .mySearchForm .inputField:not(:placeholder-show
   }
 }
 header .boxTop .boxContent .left .mySearchForm .searchIcon {
-  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  height: 23px;
+  width: 23px;
   opacity: 0.8;
   position: absolute;
-  bottom: 1px;
-  right: 5px;
-  bottom: 8px;
+  right: 6px;
+  bottom: 6px;
   cursor: pointer;
+}
+header .boxTop .boxContent .left .mySearchForm .searchIcon .theSearchIcon {
+  height: 23px;
+  width: 23px;
 }
 header .boxTop .boxContent .right {
   display: flex;
@@ -860,6 +870,25 @@ header .boxTop .boxContent .right .basketHolder {
   transition: 0.2s;
   position: relative;
   border-radius: 20px;
+}
+header .boxTop .boxContent .right .basketHolder .basketCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 12px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 100;
+  line-height: 100%;
+  color: white;
+  background-color: #8c01cf;
+  padding: 4px;
+  height: 16px;
+  width: 16px;
+  top: 3px;
+  right: 17px;
+  border-radius: 50%;
 }
 header .boxTop .boxContent .right .basketHolder .basketIcon {
   width: 30px;
@@ -1122,7 +1151,7 @@ nav .boxBottom .bottomBoxContent #home {
 nav .boxBottom .bottomBoxContent #home:hover {
   box-shadow: rgba(162, 16, 247, 0.4) 0px 5px, rgba(162, 16, 247, 0.3) 0px 10px, rgba(162, 16, 247, 0.2) 0px 15px, rgba(162, 16, 247, 0.1) 0px 20px, rgba(162, 16, 247, 0.05) 0px 25px;
 }
-nav .boxBottom .bottomBoxContent #myMedia,
+nav .boxBottom .bottomBoxContent #playlists,
 nav .boxBottom .bottomBoxContent #tracks {
   font-size: 20px;
 }
@@ -1144,20 +1173,20 @@ nav .boxBottom .bottomBoxContent #artists:hover:first-child {
   transform: translateX(-5px);
   transform: translateY(-2px);
 }
-nav .boxBottom .bottomBoxContent #myMedia,
+nav .boxBottom .bottomBoxContent #playlists,
 nav .boxBottom .bottomBoxContent #feed {
   transform: translateY(1px);
 }
-nav .boxBottom .bottomBoxContent #myMedia:first-child,
+nav .boxBottom .bottomBoxContent #playlists:first-child,
 nav .boxBottom .bottomBoxContent #feed:first-child {
   transform: translateY(2px);
 }
-nav .boxBottom .bottomBoxContent #myMedia:hover,
+nav .boxBottom .bottomBoxContent #playlists:hover,
 nav .boxBottom .bottomBoxContent #feed:hover {
   transform: translateX(3px);
   box-shadow: rgba(162, 16, 247, 0.4) -5px 5px, rgba(162, 16, 247, 0.3) -10px 10px, rgba(162, 16, 247, 0.2) -15px 15px, rgba(162, 16, 247, 0.1) -20px 20px, rgba(162, 16, 247, 0.05) -25px 25px;
 }
-nav .boxBottom .bottomBoxContent #myMedia:hover:last-child,
+nav .boxBottom .bottomBoxContent #playlists:hover:last-child,
 nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   transform: translateX(5px);
   transform: translateY(-2px);
@@ -1176,13 +1205,17 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
     width: 300px;
   }
   header .boxTop .boxContent .left .mySearchForm .searchIcon {
-    height: 16px;
+    height: 18px;
+    width: 18px;
     opacity: 0.8;
     position: absolute;
-    bottom: 1px;
-    right: 5px;
-    bottom: 7px;
+    right: 4px;
+    bottom: 6px;
     cursor: pointer;
+  }
+  header .boxTop .boxContent .left .mySearchForm .searchIcon .theSearchIcon {
+    height: 18px;
+    width: 18px;
   }
   header .boxTop .boxContent .right {
     gap: 18px;
@@ -1339,7 +1372,7 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   nav .boxBottom .bottomBoxContent #home {
     font-size: 22px;
   }
-  nav .boxBottom .bottomBoxContent #myMedia,
+  nav .boxBottom .bottomBoxContent #playlists,
   nav .boxBottom .bottomBoxContent #tracks {
     font-size: 16px;
   }
@@ -1379,12 +1412,16 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   }
   header .boxTop .boxContent .left .mySearchForm .searchIcon {
     height: 16px;
+    width: 16px;
     opacity: 0.8;
     position: absolute;
-    bottom: 1px;
-    right: 5px;
+    right: 3px;
     bottom: 7px;
     cursor: pointer;
+  }
+  header .boxTop .boxContent .left .mySearchForm .searchIcon .theSearchIcon {
+    height: 16px;
+    width: 16px;
   }
   header .boxTop .boxContent .right {
     gap: 6px;
@@ -1443,6 +1480,13 @@ nav .boxBottom .bottomBoxContent #feed:hover:last-child {
   }
   header .boxTop .boxContent .right .basketHolder {
     gap: 2px;
+  }
+  header .boxTop .boxContent .right .basketHolder .basketCounter {
+    height: 12px;
+    width: 12px;
+    right: 11px;
+    padding: 0px;
+    font-size: 10px;
   }
   header .boxTop .boxContent .right .basketHolder .basketIcon {
     width: 20px;

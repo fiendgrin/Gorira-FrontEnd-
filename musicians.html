@@ -3,24 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
     <link src="./assets/jquerry/jquerry.js" />
     <link
       rel="stylesheet"
@@ -44,191 +26,211 @@
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      href="./assets/images/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="./assets/scss/style.css" />
-    <title>Artists</title>
+    <title>Musicians</title>
   </head>
   <body>
     <!--Start-->
-    <!--Header start-->
-    <header>
-      <div class="boxTop">
-        <div class="boxContent">
-          <div class="left">
-            <img class="burger" src="./assets/images/icons/burger.svg" alt="" />
-            <a href=""
-              ><img class="logo" src="./assets/images/logo/Logo.png" alt=""
-            /></a>
-            <div class="mySearchForm">
-              <input
-                type="input"
-                autocomplete="off"
-                class="inputField"
-                name="search"
-                id="search"
-                placeholder="Search"
-              />
-              <label class="inputLabel">Search</label>
-              <img
-                class="searchIcon"
-                src="./assets/images/icons/search.svg"
-                alt=""
-              />
-            </div>
-          </div>
+  <!--Header start-->
+  <header>
+    <div class="boxTop">
+      <div class="boxContent">
+        <div class="left">
+          <img class="burger" src="./assets/images/icons/burger.svg" alt="" />
+          <a href=""
+            ><img class="logo" src="./assets/images/logo/Logo.png" alt=""
+          /></a>
+          <form class="mySearchForm">
+            <input
+              type="input"
+              autocomplete="off"
+              class="inputField"
+              name="search"
+              id="search"
+              placeholder="Search"
+            />
+            <label class="inputLabel">Search</label>
 
-          <div class="right">
-            <a href="upload.html" class="myBtn">
-              <img
-                class="btnImg"
-                src="./assets/images/icons/upload.svg"
-                alt=""
-              />Upload
-            </a>
-            <!--Account-->
-            <div class="accountHolder">
-              <img class="pfp" src="./assets/images/pfp/1.jpg" alt="" />
-              <!-- <img class="loginIcon" src="./assets/images/icons/user.svg" alt=""> -->
-              <img
-                class="chevronAcc"
-                src="./assets/images/icons/chevron-down.svg"
-                alt=""
-              />
-              <div class="accountContent">
-                <!--Single Line start-->
-                <a href="profile.html" class="accountLine">
-                  <img src="./assets/images/icons/user.svg" alt="" />
-                  <p>My Profile</p>
+            <button class="searchIcon">
+              <img class="theSearchIcon" src="./assets/images/icons/search.svg" alt="" />
+            </button>
+          </form>
+        </div>
+
+        <div class="right">
+          <a href="upload.html" class="myBtn">
+            <img
+              class="btnImg"
+              src="./assets/images/icons/upload.svg"
+              alt=""
+            />Upload
+          </a>
+          <!--Account-->
+          <div class="accountHolder">
+            <img class="pfp" src="./assets/images/pfp/1.jpg" alt="" />
+            <!-- <img class="loginIcon" src="./assets/images/icons/user.svg" alt=""> -->
+            <img
+              class="chevronAcc"
+              src="./assets/images/icons/chevron-down.svg"
+              alt=""
+            />
+            <div class="accountContent">
+              <!--Single Line start-->
+              <a href="myProfile.html" class="accountLine">
+                <img src="./assets/images/icons/user.svg" alt="" />
+                <p>My Profile</p>
+              </a>
+              <div class="divider"></div>
+              <!--Single Line End-->
+                 <!--Single Line start-->
+                 <a href="myPlaylists.html" class="accountLine">
+                  <img src="./assets/images/icons/play-list-5.svg" alt="" />
+                  <p>My Playlists</p>
                 </a>
                 <div class="divider"></div>
                 <!--Single Line End-->
-                <!--Single Line start-->
-                <a href="profile.html" class="accountLine">
-                  <img src="./assets/images/icons/music.svg" alt="" />
-                  <p>My Tracks</p>
-                </a>
-                <div class="divider"></div>
-                <!--Single Line End-->
-                <!--Single Line start-->
-                <a href="login.html" class="accountLine">
-                  <img src="./assets/images/icons/lock-open.svg" alt="" />
-                  <p>Sign In</p>
-                </a>
-                <div class="divider"></div>
-                <!--Single Line End-->
-                <!--Single Line start-->
-                <a href="register.html" class="accountLine">
-                  <img src="./assets/images/icons/squareAndPencil.svg" alt="" />
-                  <p>Sign Up</p>
-                </a>
-                <div class="divider"></div>
-                <!--Single Line end-->
-                <!--Single Line start-->
-                <a href="logOut" class="accountLine">
-                  <img src="./assets/images/icons/power.svg" alt="" />
-                  <p>Sign Out</p>
-                </a>
-                <div class="divider"></div>
-                <!--Single Line End-->
-              </div>
+              <!--Single Line start-->
+              <a href="messanger.html" class="accountLine">
+                <img src="./assets/images/icons/message.svg" alt="" />
+                <p>Messages</p>
+              </a>
+              <div class="divider"></div>
+              <!--Single Line End-->
+              <!--Single Line start-->
+              <a href="myTracks.html" class="accountLine">
+                <img src="./assets/images/icons/music.svg" alt="" />
+                <p>My Tracks</p>
+              </a>
+              <div class="divider"></div>
+              <!--Single Line End-->
+              <!--Single Line start-->
+              <a href="login.html" class="accountLine">
+                <img src="./assets/images/icons/lock-open.svg" alt="" />
+                <p>Sign In</p>
+              </a>
+              <div class="divider"></div>
+              <!--Single Line End-->
+              <!--Single Line start-->
+              <a href="register.html" class="accountLine">
+                <img src="./assets/images/icons/squareAndPencil.svg" alt="" />
+                <p>Sign Up</p>
+              </a>
+              <div class="divider"></div>
+              <!--Single Line end-->
+              <!--Single Line start-->
+              <a href="logOut.html" class="accountLine">
+                <img src="./assets/images/icons/power.svg" alt="" />
+                <p>Sign Out</p>
+              </a>
+              <div class="divider"></div>
+              <!--Single Line End-->
             </div>
-            <!--Basket-->
-            <div class="basketHolder">
-              <img
-                class="basketIcon"
-                src="./assets/images/icons/shopping-cart.svg"
-                alt=""
-              />
-              <img
-                class="chevronBasket"
-                src="./assets/images/icons/chevron-down.svg"
-                alt=""
-              />
-              <div class="basketContent">
-                <div class="cartCount"></div>
-                <!--One Beat Start-->
-                <div class="oneBeat">
-                  <a class="beatDetail" href=""
-                    ><img
-                      class="beatCover"
-                      src="./assets/images/covers/youngThug.jpg"
-                      alt=""
-                    />
-                    <p class="title">my Beat Title 2023</p>
-                  </a>
-                  <p class="price">$20.99</p>
-                  <a class="removeBasket" href=""
-                    ><img
-                      class="ex"
-                      src="./assets/images/icons/plus.svg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="divider"></div>
-                <!--One Beat End-->
-                <!--One Beat Start-->
-                <div class="oneBeat">
-                  <a class="beatDetail" href=""
-                    ><img
-                      class="beatCover"
-                      src="./assets/images/covers/kevinGates.jpg"
-                      alt=""
-                    />
-                    <p class="title">my Beat Title 2023</p>
-                  </a>
-                  <p class="price">$20.99</p>
-                  <a class="removeBasket" href=""
-                    ><img
-                      class="ex"
-                      src="./assets/images/icons/plus.svg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="divider"></div>
-                <!--One Beat End-->
-                <!--One Beat Start-->
-                <div class="oneBeat">
-                  <a class="beatDetail" href=""
-                    ><img
-                      class="beatCover"
-                      src="./assets/images/covers/kevinGates.jpg"
-                      alt=""
-                    />
-                    <p class="title">my Beat Title 2023</p>
-                  </a>
-                  <p class="price">$20.99</p>
-                  <a class="removeBasket" href=""
-                    ><img
-                      class="ex"
-                      src="./assets/images/icons/plus.svg"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="divider"></div>
-                <!--One Beat End-->
-                <a class="checkout" href=""
+          </div>
+          <!--Basket-->
+          <div class="basketHolder">
+            <div class="basketCounter">3</div>
+            <img
+              class="basketIcon"
+              src="./assets/images/icons/shopping-cart.svg"
+              alt=""
+            />
+            <img
+              class="chevronBasket"
+              src="./assets/images/icons/chevron-down.svg"
+              alt=""
+            />
+            <div class="basketContent">
+              <div class="cartCount"></div>
+              <!--One Beat Start-->
+              <div class="oneBeat">
+                <a class="beatDetail" href=""
                   ><img
-                    src="./assets/images/icons/credit-card.svg"
+                    class="beatCover"
+                    src="./assets/images/covers/youngThug.jpg"
                     alt=""
-                  />Checkout</a
-                >
+                  />
+                  <p class="title">my Beat Title 2023</p>
+                </a>
+                <p class="price">$20.99</p>
+                <a class="removeBasket" href=""
+                  ><img
+                    class="ex"
+                    src="./assets/images/icons/plus.svg"
+                    alt=""
+                /></a>
               </div>
+              <div class="divider"></div>
+              <!--One Beat End-->
+              <!--One Beat Start-->
+              <div class="oneBeat">
+                <a class="beatDetail" href=""
+                  ><img
+                    class="beatCover"
+                    src="./assets/images/covers/kevinGates.jpg"
+                    alt=""
+                  />
+                  <p class="title">my Beat Title 2023</p>
+                </a>
+                <p class="price">$20.99</p>
+                <a class="removeBasket" href=""
+                  ><img
+                    class="ex"
+                    src="./assets/images/icons/plus.svg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="divider"></div>
+              <!--One Beat End-->
+              <!--One Beat Start-->
+              <div class="oneBeat">
+                <a class="beatDetail" href=""
+                  ><img
+                    class="beatCover"
+                    src="./assets/images/covers/kevinGates.jpg"
+                    alt=""
+                  />
+                  <p class="title">my Beat Title 2023</p>
+                </a>
+                <p class="price">$20.99</p>
+                <a class="removeBasket" href=""
+                  ><img
+                    class="ex"
+                    src="./assets/images/icons/plus.svg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="divider"></div>
+              <!--One Beat End-->
+              <a class="checkout" href=""
+                ><img
+                  src="./assets/images/icons/credit-card.svg"
+                  alt=""
+                />Checkout</a
+              >
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <nav class="navBar">
-      <div class="boxBottom">
-        <div class="bottomBoxContent">
-          <a id="feed" href="">Feed</a>
-          <a id="myMedia" href="">My Media</a>
-          <a id="home" href="">Home</a>
-          <a id="tracks" href="">Tracks</a>
-          <a id="artists" href="">Artists</a>
-        </div>
+    </div>
+  </header>
+  <nav class="navBar">
+    <div class="boxBottom">
+      <div class="bottomBoxContent">
+        <a id="feed" href="feed.html">Feed</a>
+        <a id="playlists" href="playlists.html">Playlists</a>
+        <a id="home" href="Index.html">Home</a>
+        <a id="tracks" href="tracks.html">Tracks</a>
+        <a id="artists" href="musicians.html">Artists</a>
       </div>
-    </nav>
-    <!--Header End-->
+    </div>
+  </nav>
+  <!--Header End-->
 
     <!--Main Start-->
     <main id="musiciansMain">
