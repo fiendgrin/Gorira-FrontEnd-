@@ -21838,3 +21838,416 @@ label {
     scale: 0.98;
   }
 }
+#playlistMain {
+  background-color: rgb(14, 14, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#playlistMain .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.144);
+}
+#playlistMain .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  padding: 80px 30px 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#playlistMain .box .tabs {
+  display: none;
+}
+#playlistMain .box .left {
+  padding: 20px;
+  border: 2px solid rgb(80, 80, 80);
+  border-radius: 6px;
+  background-color: rgb(8, 8, 8);
+  width: 300px;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+}
+#playlistMain .box .left .theTrack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  gap: 12px;
+}
+#playlistMain .box .left .theTrack .cover {
+  width: 206px;
+  height: 206px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 1px solid grey;
+}
+#playlistMain .box .left .theTrack .playlistName {
+  font-size: 22px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+#playlistMain .box .left .theTrack .beatMaker {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  width: 80%;
+  text-align: center;
+  color: rgba(199, 199, 199, 0.7803921569);
+}
+#playlistMain .box .left .theTrack .accountButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#playlistMain .box .left .theTrack .accountButtons .follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: #a210f7;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 100%;
+  height: 42px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#playlistMain .box .left .theTrack .accountButtons .follow .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#playlistMain .box .left .theTrack .accountButtons .follow:hover {
+  scale: 1.02;
+}
+#playlistMain .box .left .theTrack .accountButtons .follow:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #playlistMain .box .left .theTrack .accountButtons .follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 42px;
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow:hover {
+    scale: 1.02;
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #playlistMain .box .left .theTrack .accountButtons .follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 42px;
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow:hover {
+    scale: 1.02;
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#playlistMain .box .left .theTrack .accountButtons .follow:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#playlistMain .box .left .theTrack .accountButtons .follow:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #playlistMain .box .left .theTrack .accountButtons .follow {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #playlistMain .box .left .theTrack .accountButtons .follow {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #playlistMain .box .left .theTrack .accountButtons .follow:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+#playlistMain .box .left .theTrack .accountButtons .follow .check {
+  display: none;
+}
+#playlistMain .box .left .theTrack .accountButtons .follow .plus {
+  display: inline-block;
+}
+#playlistMain .box .left .theTrack .accountButtons .followActive {
+  background-color: rgba(87, 87, 87, 0.302);
+}
+#playlistMain .box .left .theTrack .accountButtons .followActive:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#playlistMain .box .left .theTrack .accountButtons .followActive .check {
+  display: inline-block;
+}
+#playlistMain .box .left .theTrack .accountButtons .followActive .plus {
+  display: none;
+}
+#playlistMain .box .left .sectionDefault {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 14px;
+}
+#playlistMain .box .left .sectionDefault h6 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  color: rgb(136, 136, 136);
+}
+#playlistMain .box .left .stats .statLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#playlistMain .box .left .stats .statLine h5 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  line-height: 100%;
+  color: white;
+  color: rgb(224, 224, 224);
+}
+#playlistMain .box .left .stats .statLine .number {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  color: white;
+  color: rgb(224, 224, 224);
+}
+#playlistMain .box .left .aboutTrack .aboutTrackLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#playlistMain .box .left .aboutTrack .aboutTrackLine .text {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+  color: white;
+  color: rgb(224, 224, 224);
+  max-height: 200px;
+  overflow: auto;
+}
+#playlistMain .box .left .tags {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#playlistMain .box .left .tags h6 {
+  display: block;
+  width: 100%;
+}
+#playlistMain .box .left .tags .tag {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(51, 51, 51);
+  border: 1px solid rgba(199, 199, 199, 0.7803921569);
+  border-radius: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 12px;
+  color: white;
+  color: rgb(182, 182, 182);
+  padding: 6px;
+}
+#playlistMain .box .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 964px;
+}
+#playlistMain .box .right #aplayer {
+  width: 100%;
+}
+
+#playlistMain {
+  /* Change the color of the song title and artist name */
+  /* Change the hover color of the loop icon */
+}
+#playlistMain #aplayer {
+  background: rgb(14, 14, 16);
+  box-shadow: 5px 5px 0 0 rgb(162, 16, 247), 10px 10px 0 0 rgba(162, 16, 247, 0.6), 15px 15px 0 0 rgba(162, 16, 247, 0.4), 20px 20px 0 0 rgba(162, 16, 247, 0.2), 25px 25px 0 0 rgba(162, 16, 247, 0.1);
+}
+#playlistMain #aplayer .aplayer-icon {
+  color: rgb(14, 14, 16); /* Replace #fff with your desired icon color */
+}
+#playlistMain #aplayer .aplayer-bar-wrap .aplayer-bar {
+  background: #fff; /* Replace #fff with your desired progress bar color */
+}
+#playlistMain #aplayer .aplayer-info .aplayer-title {
+  color: White; /* Replace #ff0000 with your desired text color */
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#playlistMain .aplayer-list-title {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 32px;
+  color: white;
+  color: rgb(140, 1, 207); /* Replace #ff0000 with your desired text color */
+}
+#playlistMain #aplayer .aplayer-info .aplayer-author {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  color: rgb(112, 112, 112); /* Replace #ff0000 with your desired text color */
+}
+#playlistMain .aplayer-list-author {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+  color: rgb(112, 112, 112); /* Replace #ff0000 with your desired text color */
+}
+#playlistMain #aplayer .aplayer-volume-wrap .aplayer-volume-icon svg path:hover {
+  color: #fff; /* Replace #ff0000 with your desired hover color */
+}
+#playlistMain #aplayer .aplayer-icon-loop:hover {
+  color: #fff; /* Replace #00ff00 with your desired hover color */
+}
