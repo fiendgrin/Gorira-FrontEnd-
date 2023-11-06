@@ -49,8 +49,8 @@ window.addEventListener("resize", () => {
     profileTracks.style.display = "flex";
   } else if (
     window.innerWidth < 1360 &&
-    profile.style.display == "flex" &&
-    profileTracks.style.display == "flex"
+    profile.style.display != "none" &&
+    profileTracks.style.display != "none"
   ) {
     infoTab.classList.add("tabActive");
     tracksTab.classList.remove("tabActive");
@@ -58,3 +58,11 @@ window.addEventListener("resize", () => {
     profileTracks.style.display = "none";
   }
 });
+
+
+if (window.innerWidth < 1360) {
+  playlistInfoTab.classList.add("tabActive");
+  playlistTracksTab.classList.remove("tabActive");
+  playlist.style.display = "flex";
+  playlistTracks.style.display = "none";
+}

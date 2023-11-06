@@ -1,10 +1,4 @@
-let followBtn = document.querySelector("#playlistMain .follow");
-
-followBtn.addEventListener("click", () => {
-  followBtn.classList.toggle("followActive");
-});
-
-let audioElements = document.querySelectorAll("#playlistMain .beat");
+let audioElements = document.querySelectorAll("#myPlaylistMain .beat");
 
 let audioList = [];
 
@@ -27,7 +21,7 @@ audioElements.forEach((audioElement) => {
 });
 
 let ap = new APlayer({
-  container: document.querySelector("#playlistMain #aplayer"),
+  container: document.querySelector("#myPlaylistMain #aplayer"),
   listFolded: false,
   listMaxHeight: 90,
   theme: "#a210f7",
@@ -35,7 +29,7 @@ let ap = new APlayer({
 });
 
 let myNumberElements = document.querySelectorAll(
-  "#playlistMain .numberElement"
+  "#myPlaylistMain .numberElement"
 );
 
 myNumberElements.forEach((numberElement) => {
@@ -46,10 +40,10 @@ myNumberElements.forEach((numberElement) => {
   numberElement.textContent = formattedNumber;
 });
 
-let playlistInfoTab = document.querySelector("#playlistMain .info");
-let playlistTracksTab = document.querySelector("#playlistMain .tracks");
-let playlistTracks = document.querySelector("#playlistMain .right");
-let playlist = document.querySelector("#playlistMain .left");
+let playlistInfoTab = document.querySelector("#myPlaylistMain .info");
+let playlistTracksTab = document.querySelector("#myPlaylistMain .tracks");
+let playlistTracks = document.querySelector("#myPlaylistMain .right");
+let playlist = document.querySelector("#myPlaylistMain .left");
 
 playlistInfoTab.addEventListener("click", () => {
   playlistInfoTab.classList.add("tabActive");
@@ -65,7 +59,7 @@ playlistTracksTab.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-
+ 
   if (window.innerWidth >= 1360) {
     playlist.style.display = "flex";
     playlistTracks.style.display = "flex";
