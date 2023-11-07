@@ -19532,7 +19532,16 @@ label {
 #myTracksMain .box .searchTracks .inputField:focus {
   border: 1px solid rgba(162, 16, 247, 0.8);
 }
-#myTracksMain .box .searchTracks img {
+#myTracksMain .box .searchTracks button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+#myTracksMain .box .searchTracks button img {
   height: 25px;
   position: absolute;
   top: 10px;
@@ -23855,4 +23864,299 @@ label {
 }
 #myPlaylistMain #aplayer .aplayer-icon-loop:hover {
   color: #fff; /* Replace #00ff00 with your desired hover color */
+}
+
+#playlistsMain {
+  background-color: rgb(14, 14, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#playlistsMain .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.144);
+}
+#playlistsMain .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  padding: 80px 30px 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#playlistsMain .box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+#playlistsMain .box .content .topText {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+#playlistsMain .box .content .topText .leftName {
+  font-size: 34px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#playlistsMain .box .content .topText .leftName img {
+  display: none;
+}
+#playlistsMain .box .content .topText .sort {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 20px;
+}
+#playlistsMain .box .content .topText .sort:hover {
+  background-color: rgba(87, 87, 87, 0.302);
+}
+#playlistsMain .box .content .topText .sortHolder {
+  z-index: 3;
+  position: absolute;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: none;
+  flex-direction: column;
+  padding: 4px 2px;
+  gap: 6px;
+  right: 0;
+  top: 43px;
+  width: 120px;
+  background-color: rgb(8, 8, 8);
+  border: 1px solid gray;
+  cursor: pointer;
+}
+#playlistsMain .box .content .topText .sortHolder.active {
+  display: flex;
+}
+#playlistsMain .box .content .topText .sortHolder a {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+}
+#playlistsMain .box .content .topText .sortHolder a:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#playlistsMain .box .content .searchTracks {
+  position: relative;
+  width: 400px;
+  gap: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#playlistsMain .box .content .searchTracks .inputLabel {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+#playlistsMain .box .content .searchTracks .inputIcon {
+  height: 16px;
+  opacity: 0.8;
+  bottom: 1px;
+  align-self: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(219, 219, 219);
+}
+#playlistsMain .box .content .searchTracks .inputField {
+  background-color: rgb(8, 8, 8);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px 10px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.2s;
+  width: 100%;
+}
+#playlistsMain .box .content .searchTracks .inputField:hover {
+  border: 1px solid rgba(87, 87, 87, 0.302);
+}
+#playlistsMain .box .content .searchTracks .inputField:focus {
+  border: 1px solid rgba(162, 16, 247, 0.8);
+}
+#playlistsMain .box .content .searchTracks button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+#playlistsMain .box .content .searchTracks button img {
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.6;
+}
+#playlistsMain .box .content .theTracks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 52px;
+  row-gap: 30px;
+}
+#playlistsMain .box .content .theTracks .myCard {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 18px;
+  padding-top: 34px;
+  transition: 0.3s;
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#playlistsMain .box .content .theTracks .myCard .coverHolder {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+#playlistsMain .box .content .theTracks .myCard .coverHolder .cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 250px;
+  width: 250px;
+  position: absolute !important;
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  z-index: 2;
+}
+#playlistsMain .box .content .theTracks .myCard .coverHolder::before {
+  content: "";
+  position: absolute !important;
+  border: 1px solid silver !important;
+  background-color: rgb(36, 36, 36) !important;
+  border-radius: 10px;
+  height: 230px;
+  width: 230px;
+  top: -8px !important;
+  left: 10px !important;
+  z-index: 1;
+  opacity: 1 !important;
+  filter: blur(0.1px);
+}
+#playlistsMain .box .content .theTracks .myCard .coverHolder::after {
+  content: "";
+  position: absolute !important;
+  border: 1px solid silver !important;
+  background-color: rgb(36, 36, 36) !important;
+  border-radius: 10px;
+  height: 210px;
+  width: 210px;
+  top: -14px !important;
+  left: 20px !important;
+  z-index: 0;
+  opacity: 0.8 !important;
+  filter: blur(0.4px);
+}
+#playlistsMain .box .content .theTracks .myCard .bottomText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2px;
+}
+#playlistsMain .box .content .theTracks .myCard .bottomText .titleHolder {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+}
+#playlistsMain .box .content .theTracks .myCard .bottomText .titleHolder .title {
+  margin-top: 4px;
+  width: 200px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 28px;
+  color: white;
+  height: 28px;
+  overflow: hidden;
+}
+#playlistsMain .box .content .theTracks .myCard .bottomText .authorHolder {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+}
+#playlistsMain .box .content .theTracks .myCard .bottomText .authorHolder .author {
+  width: 200px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  color: rgba(199, 199, 199, 0.7803921569);
+  height: 28px;
+  overflow: hidden;
+}
+#playlistsMain .box .content .theTracks .myCard .bottomText .songCount {
+  margin-top: 4px;
+  width: 200px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  color: rgba(199, 199, 199, 0.7803921569);
+  height: 28px;
+  overflow: hidden;
+}
+#playlistsMain .box .content .theTracks .myCard:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#playlistsMain .box .content .theTracks .myCard:hover .play,
+#playlistsMain .box .content .theTracks .myCard:hover .pause {
+  opacity: 1;
 }
