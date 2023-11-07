@@ -24765,3 +24765,902 @@ label {
     opacity: 1;
   }
 }
+#myPlaylistsMain {
+  background-color: rgb(14, 14, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myPlaylistsMain .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.144);
+}
+#myPlaylistsMain .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1360px;
+  padding: 80px 30px 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#myPlaylistsMain .box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+#myPlaylistsMain .box .content .topText {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+#myPlaylistsMain .box .content .topText .leftName {
+  font-size: 34px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+}
+#myPlaylistsMain .box .content .topText .leftName img {
+  display: none;
+}
+#myPlaylistsMain .box .content .topText .sort {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 20px;
+}
+#myPlaylistsMain .box .content .topText .sort:hover {
+  background-color: rgba(87, 87, 87, 0.302);
+}
+#myPlaylistsMain .box .content .topText .sortHolder {
+  z-index: 3;
+  position: absolute;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: none;
+  flex-direction: column;
+  padding: 4px 2px;
+  gap: 6px;
+  right: 0;
+  top: 43px;
+  width: 120px;
+  background-color: rgb(8, 8, 8);
+  border: 1px solid gray;
+  cursor: pointer;
+}
+#myPlaylistsMain .box .content .topText .sortHolder.active {
+  display: flex;
+}
+#myPlaylistsMain .box .content .topText .sortHolder a {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+}
+#myPlaylistsMain .box .content .topText .sortHolder a:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#myPlaylistsMain .box .content .searchTracks {
+  position: relative;
+  width: 400px;
+  gap: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#myPlaylistsMain .box .content .searchTracks .inputLabel {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  color: white;
+}
+#myPlaylistsMain .box .content .searchTracks .inputIcon {
+  height: 16px;
+  opacity: 0.8;
+  bottom: 1px;
+  align-self: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(219, 219, 219);
+}
+#myPlaylistsMain .box .content .searchTracks .inputField {
+  background-color: rgb(8, 8, 8);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px 10px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  transition: 0.2s;
+  width: 100%;
+}
+#myPlaylistsMain .box .content .searchTracks .inputField:hover {
+  border: 1px solid rgba(87, 87, 87, 0.302);
+}
+#myPlaylistsMain .box .content .searchTracks .inputField:focus {
+  border: 1px solid rgba(162, 16, 247, 0.8);
+}
+#myPlaylistsMain .box .content .searchTracks button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+#myPlaylistsMain .box .content .searchTracks button img {
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.6;
+}
+#myPlaylistsMain .box .content .theTracks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 52px;
+  row-gap: 30px;
+}
+#myPlaylistsMain .box .content .theTracks .myCard {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 18px;
+  padding-top: 34px;
+  transition: 0.3s;
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#myPlaylistsMain .box .content .theTracks .myCard .coverHolder {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+#myPlaylistsMain .box .content .theTracks .myCard .coverHolder .cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 250px;
+  width: 250px;
+  position: absolute !important;
+  border-radius: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  z-index: 2;
+}
+#myPlaylistsMain .box .content .theTracks .myCard .coverHolder::before {
+  content: "";
+  position: absolute !important;
+  border: 1px solid silver !important;
+  background-color: rgb(36, 36, 36) !important;
+  border-radius: 10px;
+  height: 230px;
+  width: 230px;
+  top: -8px !important;
+  left: 10px !important;
+  z-index: 1;
+  opacity: 1 !important;
+  filter: blur(0.1px);
+}
+#myPlaylistsMain .box .content .theTracks .myCard .coverHolder::after {
+  content: "";
+  position: absolute !important;
+  border: 1px solid silver !important;
+  background-color: rgb(36, 36, 36) !important;
+  border-radius: 10px;
+  height: 210px;
+  width: 210px;
+  top: -14px !important;
+  left: 20px !important;
+  z-index: 0;
+  opacity: 0.8 !important;
+  filter: blur(0.4px);
+}
+#myPlaylistsMain .box .content .theTracks .myCard .bottomText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2px;
+}
+#myPlaylistsMain .box .content .theTracks .myCard .bottomText .titleHolder {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+}
+#myPlaylistsMain .box .content .theTracks .myCard .bottomText .titleHolder .title {
+  margin-top: 4px;
+  width: 200px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 28px;
+  color: white;
+  height: 28px;
+  overflow: hidden;
+}
+#myPlaylistsMain .box .content .theTracks .myCard .bottomText .authorHolder {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+}
+#myPlaylistsMain .box .content .theTracks .myCard .bottomText .authorHolder .author {
+  width: 200px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  color: rgba(199, 199, 199, 0.7803921569);
+  height: 28px;
+  overflow: hidden;
+}
+#myPlaylistsMain .box .content .theTracks .myCard .bottomText .songCount {
+  margin-top: 4px;
+  width: 200px;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  color: rgba(199, 199, 199, 0.7803921569);
+  height: 28px;
+  overflow: hidden;
+}
+#myPlaylistsMain .box .content .theTracks .myCard:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#myPlaylistsMain .box .content .theTracks .myCard:hover .play,
+#myPlaylistsMain .box .content .theTracks .myCard:hover .pause {
+  opacity: 1;
+}
+
+@media (max-width: 1359px) {
+  #myPlaylistsMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #myPlaylistsMain .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.144);
+  }
+  #myPlaylistsMain .box {
+    width: 768px;
+    padding: 60px 10px 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  #myPlaylistsMain .box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    width: 100%;
+  }
+  #myPlaylistsMain .box .content .topText {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  #myPlaylistsMain .box .content .topText .leftName {
+    font-size: 34px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #myPlaylistsMain .box .content .topText .leftName img {
+    display: none;
+  }
+  #myPlaylistsMain .box .content .topText .sort {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 20px;
+  }
+  #myPlaylistsMain .box .content .topText .sort:hover {
+    background-color: rgba(87, 87, 87, 0.302);
+  }
+  #myPlaylistsMain .box .content .topText .sortHolder {
+    z-index: 3;
+    position: absolute;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: none;
+    flex-direction: column;
+    padding: 4px 2px;
+    gap: 6px;
+    right: 0;
+    top: 43px;
+    width: 120px;
+    background-color: rgb(8, 8, 8);
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+  #myPlaylistsMain .box .content .topText .sortHolder.active {
+    display: flex;
+  }
+  #myPlaylistsMain .box .content .topText .sortHolder a {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+  }
+  #myPlaylistsMain .box .content .topText .sortHolder a:hover {
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #myPlaylistsMain .box .content .searchTracks {
+    position: relative;
+    width: 400px;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputLabel {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputField {
+    background-color: rgb(8, 8, 8);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 10px 10px;
+    padding-right: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputField:hover {
+    border: 1px solid rgba(87, 87, 87, 0.302);
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputField:focus {
+    border: 1px solid rgba(162, 16, 247, 0.8);
+  }
+  #myPlaylistsMain .box .content .searchTracks button {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  #myPlaylistsMain .box .content .searchTracks button img {
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.6;
+  }
+  #myPlaylistsMain .box .content .theTracks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    row-gap: 20px;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 0px;
+    padding: 10px;
+    transition: 0.3s;
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 364px;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .coverHolder {
+    position: relative;
+    height: 100px;
+    width: 0px;
+    margin-bottom: 0px;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .coverHolder .cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 100px;
+    width: 100px;
+    position: absolute !important;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    z-index: 2;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .coverHolder::before {
+    content: "";
+    position: absolute !important;
+    border: 1px solid silver !important;
+    background-color: rgb(36, 36, 36) !important;
+    border-radius: 10px;
+    height: 90px;
+    width: 90px;
+    top: -4px !important;
+    left: 5px !important;
+    z-index: 1;
+    opacity: 1 !important;
+    filter: blur(0.1px);
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .coverHolder::after {
+    content: "";
+    position: absolute !important;
+    border: 1px solid silver !important;
+    background-color: rgb(36, 36, 36) !important;
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    top: -7px !important;
+    left: 10px !important;
+    z-index: 0;
+    opacity: 0.8 !important;
+    filter: blur(0.4px);
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    gap: 8px;
+    margin-left: 110px;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .titleHolder {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    text-decoration: none;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .titleHolder .title {
+    margin-top: 0px;
+    width: 190px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    color: white;
+    height: 20px;
+    overflow: hidden;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .titleHolder img {
+    height: 20px;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .authorHolder {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    text-decoration: none;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .authorHolder .author {
+    width: 200px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+    color: rgba(199, 199, 199, 0.7803921569);
+    height: 18px;
+    overflow: hidden;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .songCount {
+    margin-top: 0px;
+    width: 200px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    color: rgba(199, 199, 199, 0.7803921569);
+    height: 16px;
+    overflow: hidden;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard:hover {
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard:hover .play,
+  #myPlaylistsMain .box .content .theTracks .myCard:hover .pause {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  #myPlaylistsMain {
+    background-color: rgb(14, 14, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #myPlaylistsMain .divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.144);
+  }
+  #myPlaylistsMain .box {
+    width: 380px;
+    padding: 40px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  #myPlaylistsMain .box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    width: 100%;
+  }
+  #myPlaylistsMain .box .content .topText {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  #myPlaylistsMain .box .content .topText .leftName {
+    font-size: 28px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+  }
+  #myPlaylistsMain .box .content .topText .leftName img {
+    display: none;
+  }
+  #myPlaylistsMain .box .content .topText .sort {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 20px;
+  }
+  #myPlaylistsMain .box .content .topText .sort:hover {
+    background-color: rgba(87, 87, 87, 0.302);
+  }
+  #myPlaylistsMain .box .content .topText .sort img {
+    height: 18px;
+  }
+  #myPlaylistsMain .box .content .topText .sortHolder {
+    z-index: 3;
+    position: absolute;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: none;
+    flex-direction: column;
+    padding: 4px 2px;
+    gap: 6px;
+    right: 0;
+    top: 36px;
+    width: 120px;
+    background-color: rgb(8, 8, 8);
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+  #myPlaylistsMain .box .content .topText .sortHolder.active {
+    display: flex;
+  }
+  #myPlaylistsMain .box .content .topText .sortHolder a {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+  }
+  #myPlaylistsMain .box .content .topText .sortHolder a:hover {
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #myPlaylistsMain .box .content .searchTracks {
+    position: relative;
+    width: 380px;
+    gap: 6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputLabel {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    color: white;
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputIcon {
+    height: 16px;
+    opacity: 0.8;
+    bottom: 1px;
+    align-self: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputField {
+    background-color: rgb(8, 8, 8);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 10px 10px;
+    padding-right: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    transition: 0.2s;
+    width: 100%;
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputField:hover {
+    border: 1px solid rgba(87, 87, 87, 0.302);
+  }
+  #myPlaylistsMain .box .content .searchTracks .inputField:focus {
+    border: 1px solid rgba(162, 16, 247, 0.8);
+  }
+  #myPlaylistsMain .box .content .searchTracks button {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  #myPlaylistsMain .box .content .searchTracks button img {
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.6;
+  }
+  #myPlaylistsMain .box .content .theTracks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 0px;
+    padding: 10px;
+    transition: 0.3s;
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .coverHolder {
+    position: relative;
+    height: 100px;
+    width: 0px;
+    margin-bottom: 0px;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .coverHolder .cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 100px;
+    width: 100px;
+    position: absolute !important;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    z-index: 2;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .coverHolder::before {
+    content: "";
+    position: absolute !important;
+    border: 1px solid silver !important;
+    background-color: rgb(36, 36, 36) !important;
+    border-radius: 10px;
+    height: 90px;
+    width: 90px;
+    top: -4px !important;
+    left: 5px !important;
+    z-index: 1;
+    opacity: 1 !important;
+    filter: blur(0.1px);
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .coverHolder::after {
+    content: "";
+    position: absolute !important;
+    border: 1px solid silver !important;
+    background-color: rgb(36, 36, 36) !important;
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    top: -7px !important;
+    left: 10px !important;
+    z-index: 0;
+    opacity: 0.8 !important;
+    filter: blur(0.4px);
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    gap: 8px;
+    margin-left: 110px;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .titleHolder {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    text-decoration: none;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .titleHolder .title {
+    margin-top: 0px;
+    width: 210px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    color: white;
+    height: 20px;
+    overflow: hidden;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .titleHolder img {
+    height: 20px;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .authorHolder {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    text-decoration: none;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .authorHolder .author {
+    width: 220px;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+    color: rgba(199, 199, 199, 0.7803921569);
+    height: 18px;
+    overflow: hidden;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard .bottomText .songCount {
+    margin-top: 0px;
+    width: 220px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    color: rgba(199, 199, 199, 0.7803921569);
+    height: 16px;
+    overflow: hidden;
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard:hover {
+    background-color: rgba(56, 54, 56, 0.7333333333);
+  }
+  #myPlaylistsMain .box .content .theTracks .myCard:hover .play,
+  #myPlaylistsMain .box .content .theTracks .myCard:hover .pause {
+    opacity: 1;
+  }
+}
