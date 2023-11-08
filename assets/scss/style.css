@@ -147,6 +147,12 @@ html {
     left: 0px;
   }
 }
+@keyframes modalSlide {
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
 @keyframes toastTimer {
   100% {
     width: 0px;
@@ -7496,7 +7502,7 @@ footer .box .bottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 4px;
   width: 100%;
 }
 #profileMain .box .left .account .accountButtons .follow {
@@ -7951,8 +7957,8 @@ footer .box .bottom {
 }
 #profileMain .box .right .theTracks {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 20px;
@@ -8216,7 +8222,7 @@ footer .box .bottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 4px;
     width: 100%;
   }
   #profileMain .box .left .account .accountButtons .follow {
@@ -8534,7 +8540,7 @@ footer .box .bottom {
   #profileMain .box .right .theTracks {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 20px;
@@ -8543,9 +8549,6 @@ footer .box .bottom {
   #profileMain .box .right .theTracks .myCard {
     width: 220px;
     padding: 17px;
-  }
-  #profileMain .box .right .theTracks .myCard:last-child {
-    display: none;
   }
   #profileMain .box .right .theTracks .myCard .play,
   #profileMain .box .right .theTracks .myCard .pause {
@@ -8755,7 +8758,7 @@ footer .box .bottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 4px;
     width: 100%;
   }
   #profileMain .box .left .account .accountButtons .follow {
@@ -9074,7 +9077,7 @@ footer .box .bottom {
   #profileMain .box .right .theTracks {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 20px;
@@ -9544,8 +9547,8 @@ footer .box .bottom {
 }
 #myProfileMain .box .right .theTracks {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 20px;
@@ -9957,9 +9960,6 @@ footer .box .bottom {
   #myProfileMain .box .right .theTracks .myCard {
     width: 220px;
     padding: 17px;
-  }
-  #myProfileMain .box .right .theTracks .myCard:last-child {
-    display: none;
   }
   #myProfileMain .box .right .theTracks .myCard .play,
   #myProfileMain .box .right .theTracks .myCard .pause {
@@ -13426,6 +13426,7 @@ label {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
+  min-height: calc(100vh - 298px);
 }
 #tracksMain .box .left {
   padding: 10px;
@@ -13801,8 +13802,8 @@ label {
 }
 #tracksMain .box .right .theTracks {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 20px;
@@ -13905,10 +13906,10 @@ label {
   height: 28px;
   overflow: hidden;
 }
-#tracksMain .box .right .theTracks .myCard .bottomText a {
+#tracksMain .box .right .theTracks .myCard .bottomText .artista {
   text-decoration: none;
 }
-#tracksMain .box .right .theTracks .myCard .bottomText a .artist {
+#tracksMain .box .right .theTracks .myCard .bottomText .artista .artist {
   margin-top: 4px;
   font-size: 16px;
   font-style: normal;
@@ -13918,7 +13919,7 @@ label {
   color: white;
   color: #b4b3b3;
 }
-#tracksMain .box .right .theTracks .myCard .bottomText a .artist:hover {
+#tracksMain .box .right .theTracks .myCard .bottomText .artista .artist:hover {
   text-decoration: underline;
 }
 #tracksMain .box .right .theTracks .myCard:hover {
@@ -16209,6 +16210,332 @@ label {
   justify-content: center;
   align-items: center;
 }
+#trackMain :modal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: rgb(14, 14, 16);
+  border: 1px solid rgba(87, 87, 87, 0.302);
+  border-radius: 5px;
+  width: 40%;
+  height: 50%;
+  opacity: 1;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  padding: 10px;
+  min-width: 380px;
+  min-height: 200px;
+  animation: modalSlide 0.5s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  bottom: -100px;
+  transition: 0.5s all;
+}
+#trackMain :modal .closeModal {
+  align-self: flex-end;
+  width: 24px;
+  rotate: 45deg;
+  cursor: pointer;
+  position: fixed;
+  display: block;
+}
+#trackMain :modal .content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#trackMain :modal .content .myTable {
+  width: 100%;
+}
+#trackMain :modal .content .myTable .body {
+  padding-right: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+}
+#trackMain :modal .content .myTable .body .singleTrack {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.2s;
+  border-radius: 6px;
+  padding: 10px;
+}
+#trackMain :modal .content .myTable .body .singleTrack:hover {
+  background-color: rgba(87, 87, 87, 0.302);
+}
+#trackMain :modal .content .myTable .body .singleTrack .coverAndTitle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+}
+#trackMain :modal .content .myTable .body .singleTrack .coverAndTitle .cover {
+  border-radius: 6px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#trackMain :modal .content .myTable .body .singleTrack .coverAndTitle .title {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+}
+#trackMain :modal .content .myTable .body .singleTrack .coverAndTitle .title .name {
+  font-size: 24px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 470px;
+}
+#trackMain :modal .content .myTable .body .singleTrack .coverAndTitle .title .author {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  color: rgba(199, 199, 199, 0.7803921569);
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 470px;
+}
+@media (max-width: 1359px) {
+  #trackMain :modal .content .myTable .body .singleTrack .coverAndTitle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .coverAndTitle .cover {
+    border-radius: 6px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .coverAndTitle .title {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .coverAndTitle .title .name {
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    color: white;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 470px;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .coverAndTitle .title .author {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    color: rgba(199, 199, 199, 0.7803921569);
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 470px;
+  }
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings {
+  width: 40px;
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: #a210f7;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:hover {
+  scale: 1.02;
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:hover {
+    scale: 1.02;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:hover {
+    scale: 1.02;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #trackMain :modal .content .myTable .body .singleTrack .settings .editBtn:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn .done {
+  display: none;
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn.active {
+  background-color: rgba(87, 87, 87, 0.302);
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn.active .done {
+  display: flex;
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn.active .awaiting {
+  display: none;
+}
+#trackMain :modal .content .myTable .body .singleTrack .settings .editBtn.active:hover {
+  background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#trackMain dialog[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.486);
+}
 #trackMain .divider {
   height: 1px;
   width: 100%;
@@ -16285,7 +16612,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 4px;
   width: 100%;
 }
 #trackMain .box .left .theTrack .trackButtons .edit {
@@ -16448,6 +16775,163 @@ label {
 }
 #trackMain .box .left .theTrack .trackButtons .edit:hover {
   background-color: rgba(56, 54, 56, 0.7333333333);
+}
+#trackMain .box .left .theTrack .trackButtons .addToPlaylist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  background-color: #a210f7;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  line-height: 140%;
+  color: white;
+  padding: 6px 10px;
+  box-shadow: transparent;
+  transition: 0.3s;
+  width: 100%;
+  height: 42px;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#trackMain .box .left .theTrack .trackButtons .addToPlaylist .btnImg {
+  height: 22px;
+  transform: translateX(-1px);
+}
+#trackMain .box .left .theTrack .trackButtons .addToPlaylist:hover {
+  scale: 1.02;
+}
+#trackMain .box .left .theTrack .trackButtons .addToPlaylist:active {
+  box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+  scale: 0.98;
+}
+@media (max-width: 1359px) {
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 140%;
+    color: white;
+    padding: 6px 10px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 42px;
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist .btnImg {
+    height: 18px;
+    transform: translateX(-1px);
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist:hover {
+    scale: 1.02;
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+@media (max-width: 768px) {
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    background-color: #a210f7;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+    padding: 2px 3px;
+    box-shadow: transparent;
+    transition: 0.3s;
+    width: 100%;
+    height: 42px;
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist .btnImg {
+    height: 12px;
+    transform: translateX(-1px);
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist:hover {
+    scale: 1.02;
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist:active {
+    box-shadow: rgb(85, 33, 102) 3px 3px 6px 0px inset, rgba(45, 17, 54, 0.5) -3px -3px 6px 1px inset;
+    scale: 0.98;
+  }
+}
+#trackMain .box .left .theTrack .trackButtons .addToPlaylist:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(187, 70, 255);
+}
+#trackMain .box .left .theTrack .trackButtons .addToPlaylist:active {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1359px) {
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgb(187, 70, 255);
+  }
+  #trackMain .box .left .theTrack .trackButtons .addToPlaylist:active {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
 }
 #trackMain .box .left .sectionDefault {
   display: flex;
@@ -17415,7 +17899,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 4px;
     width: 100%;
   }
   #trackMain .box .left .theTrack .trackButtons .edit {
@@ -18228,7 +18712,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 4px;
     width: 100%;
   }
   #trackMain .box .left .theTrack .trackButtons .edit {

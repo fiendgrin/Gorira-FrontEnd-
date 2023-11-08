@@ -94,7 +94,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 20px;
+          gap: 4px;
           width: 100%;
           .follow {
             @include niceButton(100%, 42px);
@@ -213,8 +213,8 @@
       }
       .theTracks {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-wrap: wrap;
         width: 100%;
         margin-top: 20px;
@@ -447,7 +447,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 4px;
             width: 100%;
             .follow {
               @include niceButton(100%, 42px);
@@ -577,7 +577,7 @@
         .theTracks {
           display: flex;
           justify-content: flex-start;
-          align-items: center;
+          align-items: flex-start;
           flex-wrap: wrap;
           width: 100%;
           margin-top: 20px;
@@ -585,9 +585,7 @@
           .myCard {
             width: 220px;
             padding: 17px;
-            &:last-child {
-              display: none;
-            }
+          
             .play,
             .pause {
               top: 85px;
@@ -772,7 +770,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 4px;
             width: 100%;
             .follow {
               @include niceButton(100%, 42px);
@@ -903,7 +901,7 @@
         .theTracks {
           display: flex;
           justify-content: flex-start;
-          align-items: center;
+          align-items: flex-start;
           flex-wrap: wrap;
           width: 100%;
           margin-top: 20px;

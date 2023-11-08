@@ -3,6 +3,159 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  :modal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: $back-color-web;
+    border: 1px solid $lightestGrey-color-web;
+    border-radius: 5px;
+    width: 40%;
+    height: 50%;
+    opacity: 1;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+      25px 0 20px -20px rgba(0, 0, 0, 0.45),
+      0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+      -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    padding: 10px;
+    min-width: 380px;
+    min-height: 200px;
+    .closeModal {
+      align-self: flex-end;
+      width: 24px;
+      rotate: 45deg;
+      cursor: pointer;
+      position: fixed;
+      display: block;
+    }
+  
+    animation: modalSlide 0.5s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    bottom: -100px;
+    transition: 0.5s all;
+    .content {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      .myTable {
+        width: 100%;
+        
+        .body {
+          padding-right: 24px;
+          width: 100%;
+       
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          overflow: auto;
+          .singleTrack {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            transition: 0.2s;
+            border-radius: 6px;
+            padding: 10px;
+            &:hover {
+              background-color: $lightestGrey-color-web;
+            }
+
+            .coverAndTitle {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              align-self: center;
+              width: 100%;
+              .cover {
+                border-radius: 6px;
+                height: 60px;
+                object-fit: cover;
+                object-position: center;
+              }
+              .title {
+                width: 100%;
+                height: 60px;
+                overflow: hidden;
+                .name {
+                  @include text(24px, 600, 28px);
+                  width: fit-content;
+                  max-width: 470px;
+                }
+                .author {
+                  @include text(16px, 400, 28px);
+                  color: #c7c7c7c7;
+                  width: fit-content;
+                  max-width: 470px;
+                }
+              }
+            }
+            @include for-type(tablet){
+              .coverAndTitle {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                align-self: center;
+                width: 100%;
+                .cover {
+                  border-radius: 6px;
+                  height: 40px;
+                  object-fit: cover;
+                  object-position: center;
+                }
+                .title {
+                  width: 100%;
+                  height: 40px;
+                  overflow: hidden;
+                  .name {
+                    @include text(14px, 600, 20px);
+                    width: fit-content;
+                    max-width: 470px;
+                  }
+                  .author {
+                    @include text(12px, 400, 20px);
+                    color: #c7c7c7c7;
+                    width: fit-content;
+                    max-width: 470px;
+                  }
+                }
+              }
+            }
+            .settings {
+              width: 40px;
+              .editBtn {
+                @include niceButton(40px, 40px);
+                .done {
+                  display: none;
+                }
+                &.active{
+                  .done {
+                    display: flex;
+                  }
+                  .awaiting{
+                    display: none;
+                  }
+                  background-color: $lightestGrey-color-web;
+                  &:hover{
+                  background-color: $lightGrey-color-web;
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  dialog[open]::backdrop {
+    background-color: rgba(0, 0, 0, 0.486);
+  }
   .divider {
     height: 1px;
     width: 100%;
@@ -64,15 +217,17 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 20px;
+          gap: 4px;
           width: 100%;
-
           .edit {
             @include niceButton(100%, 42px);
             background-color: $lightestGrey-color-web;
             &:hover {
               background-color: $lightGrey-color-web;
             }
+          }
+          .addToPlaylist {
+            @include niceButton(100%, 42px);
           }
         }
       }
@@ -508,7 +663,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 4px;
             width: 100%;
 
             .edit {
@@ -938,7 +1093,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 4px;
             width: 100%;
 
             .edit {
@@ -1061,7 +1216,7 @@
                 height: 32px !important;
                 max-width: 290px !important;
                 overflow-y: hidden !important;
-                &::-webkit-scrollbar{
+                &::-webkit-scrollbar {
                   display: none;
                 }
               }

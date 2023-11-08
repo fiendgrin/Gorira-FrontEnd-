@@ -19,6 +19,7 @@ label {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
+    min-height: calc(100vh - 298px);
     .left {
       padding: 10px;
       border-radius: 6px;
@@ -202,8 +203,8 @@ label {
       }
       .theTracks {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-wrap: wrap;
         width: 100%;
         margin-top: 20px;
@@ -290,7 +291,7 @@ label {
                 overflow: hidden;
               }
             }
-            a {
+            .artista {
               text-decoration: none;
               .artist {
                 margin-top: 4px;

@@ -193,8 +193,8 @@
       }
       .theTracks {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-wrap: wrap;
         width: 100%;
         margin-top: 20px;
@@ -429,7 +429,7 @@
             align-items: center;
             gap: 20px;
             width: 100%;
-            
+
             .edit {
               background-color: $lightestGrey-color-web;
               &:hover {
@@ -545,9 +545,7 @@
           .myCard {
             width: 220px;
             padding: 17px;
-            &:last-child {
-              display: none;
-            }
+
             .play,
             .pause {
               top: 85px;
@@ -734,7 +732,7 @@
             align-items: center;
             gap: 20px;
             width: 100%;
-           
+
             .edit {
               background-color: $lightestGrey-color-web;
               &:hover {
