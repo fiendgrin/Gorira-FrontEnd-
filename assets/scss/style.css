@@ -20000,7 +20000,7 @@ label {
   border: 1px solid transparent;
   border-radius: 6px;
   padding: 10px 10px;
-  padding-right: 40px;
+  padding-right: 40px !important;
   font-size: 16px;
   font-style: normal;
   font-family: "Chakra Petch", sans-serif;
@@ -20069,7 +20069,7 @@ label {
   width: 40px;
 }
 #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(2) {
-  width: 580px;
+  width: 540px;
 }
 #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(3) {
   width: 300px;
@@ -20078,7 +20078,7 @@ label {
   width: 200px;
 }
 #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(5) {
-  width: 160px;
+  width: 200px;
 }
 #myTracksMain .box .content .myTable .body {
   width: 100%;
@@ -20143,6 +20143,11 @@ label {
 #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .cover {
   border-radius: 6px;
   height: 60px;
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .title {
   font-size: 18px;
@@ -20151,7 +20156,7 @@ label {
   font-weight: 600;
   line-height: 20px;
   color: white;
-  width: 510px;
+  width: 470px;
   height: 20px;
   overflow: hidden;
 }
@@ -20182,7 +20187,9 @@ label {
   color: white;
 }
 #myTracksMain .box .content .myTable .body .singleTrack .settings {
-  width: 160px;
+  width: 200px;
+  display: flex;
+  gap: 10px;
 }
 #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
   display: flex;
@@ -20342,6 +20349,11 @@ label {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   }
 }
+#myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
   background-color: rgba(87, 87, 87, 0.302);
 }
@@ -20483,16 +20495,16 @@ label {
     width: 40px;
   }
   #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(2) {
-    width: 340px;
+    width: 300px;
   }
   #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(3) {
-    width: 188px;
+    width: 168px;
   }
   #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(4) {
     width: 120px;
   }
   #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(5) {
-    width: 40px;
+    width: 120px;
     display: none;
   }
   #myTracksMain .box .content .myTable .body {
@@ -20562,6 +20574,7 @@ label {
   #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .cover {
     border-radius: 6px;
     height: 50px;
+    width: 50px;
   }
   #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .title {
     font-size: 14px;
@@ -20570,7 +20583,7 @@ label {
     font-weight: 400;
     line-height: 20px;
     color: white;
-    width: 280px;
+    width: 240px;
     height: 20px;
     overflow: hidden;
   }
@@ -20578,7 +20591,7 @@ label {
     display: flex;
     gap: 4px;
     align-items: center;
-    width: 188px;
+    width: 168px;
   }
   #myTracksMain .box .content .myTable .body .singleTrack .formats .format {
     font-size: 12px;
@@ -20601,11 +20614,11 @@ label {
     color: white;
   }
   #myTracksMain .box .content .myTable .body .singleTrack .settings {
-    width: 40px;
+    width: 100px;
   }
   #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background-color: rgba(56, 54, 56, 0.7333333333);
   }
   #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn:hover {
@@ -20755,7 +20768,7 @@ label {
     width: 26px;
   }
   #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(2) {
-    width: 302px;
+    width: 218px;
   }
   #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(3) {
     width: 188px;
@@ -20766,7 +20779,7 @@ label {
     display: none;
   }
   #myTracksMain .box .content .myTable .head .tableNamings div:nth-child(5) {
-    width: 38px;
+    width: 78px;
     display: none;
   }
   #myTracksMain .box .content .myTable .body {
@@ -20836,7 +20849,8 @@ label {
   }
   #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .cover {
     border-radius: 6px;
-    height: 50px;
+    height: 40px;
+    width: 40px;
   }
   #myTracksMain .box .content .myTable .body .singleTrack .coverAndTitle .title {
     font-size: 14px;
@@ -20845,7 +20859,7 @@ label {
     font-weight: 400;
     line-height: 20px;
     color: white;
-    width: 242px;
+    width: 196px;
     height: 20px;
     overflow: hidden;
   }
@@ -20878,7 +20892,7 @@ label {
     display: none;
   }
   #myTracksMain .box .content .myTable .body .singleTrack .settings {
-    width: 38px;
+    width: 86px;
   }
   #myTracksMain .box .content .myTable .body .singleTrack .settings .editBtn {
     display: flex;
@@ -27902,5 +27916,241 @@ label {
   }
   #createPlaylistMain .submitHolder button:active {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pagination-container {
+  width: 100%;
+}
+
+.pagination li {
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.pagination li.active {
+  margin: 0 6px;
+  border-radius: 6px;
+  background: #202020;
+  max-width: auto;
+  min-width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 6px;
+  color: white;
+  transition: 0.3s;
+}
+
+.pagination a {
+  text-decoration: none;
+  margin: 0 6px;
+  border-radius: 6px;
+  background: #202020;
+  max-width: auto;
+  min-width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 6px;
+  color: gray;
+  transition: 0.3s;
+}
+
+.pagination a:hover {
+  background: #282828;
+}
+
+.pagination .disabled a {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #999;
+  padding: 0 6px;
+}
+
+@media (min-width: 768px) and (max-width: 1359px) {
+  #trackMain .box .content .myTable .body .coverAndTitle .cover {
+    width: 50px !important;
+    height: 50px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  .pagination li {
+    margin: 0 1px;
+    transition: 0.3s;
+  }
+  .pagination li.active {
+    margin: 0 4px;
+    border-radius: 6px;
+    background: #202020;
+    max-width: auto;
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 2px;
+    color: white;
+    transition: 0.3s;
+  }
+  .pagination a {
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 6px;
+    background: #202020;
+    max-width: auto;
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 2px;
+    color: gray;
+    transition: 0.3s;
+  }
+  .pagination .disabled a {
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #999;
+    padding: 0 1px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  #trackMain .box .content .myTable .body .coverAndTitle .cover {
+    width: 50px !important;
+    height: 50px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  .pagination li {
+    margin: 0 1px;
+    transition: 0.3s;
+  }
+  .pagination li.active {
+    margin: 0 2px;
+    border-radius: 6px;
+    background: #202020;
+    max-width: auto;
+    min-width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 2px;
+    color: white;
+    transition: 0.3s;
+  }
+  .pagination a {
+    text-decoration: none;
+    margin: 0 2px;
+    border-radius: 6px;
+    background: #202020;
+    max-width: auto;
+    min-width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 2px;
+    color: gray;
+    transition: 0.3s;
+  }
+  .pagination .disabled a {
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #999;
+    padding: 0 1px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  #trackMain .box .content .myTable .body .coverAndTitle {
+    width: 200px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #trackMain .box .content .myTable .body .coverAndTitle .title {
+    width: 200px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .musicianCard h5 {
+    max-width: 266px;
+  }
+  .aplayer-body {
+    width: 380px;
+  }
+  .BasketTopIcons {
+    padding: 0px;
+  }
+}
+.BasketTopIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+
+.BasketHolder {
+  padding: 0px;
+}
+
+header .boxTop .boxContent .right .basketHolder .BasketTopIcons:hover {
+  background-color: rgba(137, 43, 226, 0.3);
+}
+
+#trackMain .box .content .myTable .body .coverAndTitle .cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 1359px) {
+  #trackMain .box .content .myTable .body .coverAndTitle .cover {
+    width: 60px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
